@@ -54,6 +54,7 @@
     deadnix
     nixfmt-rfc-style
     nurl
+    nix-init
     inputs.nh.packages.x86_64-linux.default
 
     # Fonts
