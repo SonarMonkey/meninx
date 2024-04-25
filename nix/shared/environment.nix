@@ -61,5 +61,6 @@
     switch = "nh os switch --ask";
     boot = "nh os boot --ask";
     search = "nh search";
+    test = "nh os build --ask . -- --accept-flake-config";
   };
 }
