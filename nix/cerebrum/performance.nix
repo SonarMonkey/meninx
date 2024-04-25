@@ -18,7 +18,7 @@
     btrfs.autoScrub = {
       enable = true;
       fileSystems = ["/"];
-      interval = "monthly";
+      interval = "weekly";
     };
 
     # Nice rules for performance
