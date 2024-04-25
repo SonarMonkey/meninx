@@ -1,0 +1,443 @@
+# Explicitly-Installed Packages
+
+## Home Manager
+
+### Shared
+
+- emacs29-pgtk **TODO**
+  - binutils
+  - aspellWithDicts (en en-computers en-science)
+  - enchant
+  - hunspell
+  - ripgrep
+  - ripgrep-all
+  - fd
+  - zstd
+  - texlive.combined.scheme-medium
+  - gnupg
+  - python3
+  - imagemagick
+  - sqlite
+  - pandoc
+  - maim
+  - graphviz
+  - beancount
+  - beancount-black
+  - fava\nodePackages.prettier
+  - shellcheck
+  - shfmt
+  - clojure
+  - clj-kondo
+  - cljfmt
+  - html-tidy
+  - stylelint
+  - nodePackages.js-beautify
+  - beancount-language-server
+- firefox **DONE**
+  - bitwarden
+  - clearurls
+  - darkreader
+  - duckduckgo-privacy-essentials
+  - firefox-color
+  - foxytab
+  - ghostery
+  - improved-tube
+  - privacy-badger
+  - sidebery
+  - stylus
+  - ublock-origin
+  - wikiwand-wikipedia-modernized
+- helix **DONE**
+  - clang-tools
+  - clojure-lsp
+  - markdown-oxide
+  - marksman
+  - nil
+  - nodePackages.bash-language-server
+  - nodePackages.vscode-css-languageserver-bin
+  - nodePackages.vscode-html-languageserver-bin
+  - nodePackages.vscode-json-languageserver
+  - texlab
+  - yaml-language-server
+- kitty
+- starship
+- command-not-found
+- nix-index
+- nix-index-database
+- comma
+- bat
+  - prettybat
+  - batwatch
+  - batpipe
+  - batman
+  - batgrep
+  - batdiff
+- bottom
+- eza
+- git
+- yazi
+- zoxide
+- vscode
+  - vscode-extensions.bbenoist.nix
+  - vscode-extensions.christian-kohler.path-intellisense
+  - vscode-extensions.esbenp.prettier-vscode
+  - vscode-extensions.kamadorueda.alejandra
+  - vscode-extensions.oderwat.indent-rainbow
+  - vscode-extensions.yzhang.markdown-all-in-one
+  - vscode-extensions.ms-vscode.cpptools-extension-pack
+  - vscode-extensions.ms-vscode-remote.remote-ssh
+- zsh
+  - prezto
+
+### Cerebrum **DONE**
+
+- kdePackages.breeze-gtk
+- kdePackages.breeze-icons
+- noto-fonts
+- kdePackages.kdeconnect-kde
+
+### Encephalon **REMOVE**
+
+- gnome.gnome-boxes
+- gnome.gnome-tweaks
+- adwsteamgtk
+- gnomeExtensions.caffeine
+- gnomeExtensions.mullvad-indicator
+- gnomeExtensions.grand-theft-focus
+- gnomeExtensions.app-hider
+- gnomeExtensions.alphabetical-app-grid
+- gnomeExtensions.thinkpad-battery-threshold
+- maple-mono-NF
+- nerdfonts **REMOVE?**
+- inter **REMOVE?**
+- corefonts
+- adw-gtk3
+- stylix
+- nix-colors
+- vscode-extensions.catppuccin.catppuccin-vsc
+- vscode-extensions.catppuccin.catppuccin-vsc-icons
+
+## NixOS
+
+### Shared **DONE**
+
+- nix-alien
+- appimage-run
+- nix-ld
+- goverlay
+- mangohud
+- vkbasalt
+- vulkan-tools
+- osu-lazer-bin
+- prismlauncher
+- steam
+  - proton-ge-bin
+- gamescope
+- piper
+- via
+- fwupd
+- ratbagd
+- qmk
+- opentabletdriver
+- libimobiledevice
+- ifuse
+- usbmuxd
+- openssh
+- mullvad-vpn
+- tailscale
+- gcc
+- git
+- unzip
+- fzf
+- ripgrep
+- ripgrep-all
+- wl-clipboard
+- suckit
+- ookla-speedtest
+- qmk
+- fzf
+- ventoy-full
+- genact
+- jq
+- moreutils
+- gimp-with-plugins
+- inkscape-with-extensions
+- libreoffice-fresh
+- krita
+- scribus
+- vlc
+- alejandra
+- deadnix
+- nixfmt-rfc-style
+- nurl
+- nh
+- adoptopenjdk-bin
+- nodejs
+- ntfs3g
+- cups
+  - gutenprint
+  - gutenprintBin
+  - canon-cups-ufr2
+  - hplip
+  - avahi
+- agenix
+- pipewire
+- command-not-found
+- bash
+  - blesh
+- zsh
+- libvirtd
+- nix-index-database
+- comma
+
+### Cerebrum
+
+**Note:** Skipped `gnome.nix` packages and DM/DE
+
+- linuxPackages_xanmod_latest
+- systemd-boot
+- nix-gaming.packages.x86_64-linux.wine-ge
+- nix-gaming.packages.x86_64-linux.wine-tkg
+- wineWowPackages.stagingFull
+- steam.gamescopeSession
+- gamemode
+- kdeconnect **CHECK?**
+- dconf
+- kdePackages.yakuake
+- kdePackages.sweeper **REMOVE?**
+- kdePackages.partitionmanager
+- kdePackages.okular
+- kdePackages.ktorrent **REPLACE**
+- kdePackages.kdenlive
+- kdePackages.kalk
+- kdePackages.filelight
+- kdePackages.ark
+- kdePackages.audiotube **REMOVE?**
+- kernelPackages.nvidia_x11
+- nvidiaSettings
+- openGL
+  - vaapiVdpau
+- gamemode **DUPLICATE**
+- inter **REMOVE?**
+- maple-mono-NF
+- betterdiscordctl
+- (blender.override {cudaSupport = true;})
+- gwe
+- lutris
+- obs
+  - wlrobs
+  - obs-vaapi
+  - obs-nvfbc
+  - obs-vkcapture
+  - obs-gstreamer
+  - obs-backgroundremoval
+  - obs-pipewire-audio-capture
+- ananicy-cpp
+
+### Encephalon
+
+**Note:** Skipped DM/DE
+
+- linuxPackages_zen
+- systemd-boot
+- plymouth
+- disko
+- gamemode
+- adwsteamgtk
+- adw-gtk3
+- bottles
+- dconf2nix
+- vesktop
+- thunderbird
+- libreoffice-fresh
+- logseq
+- pika-backup
+- bottles **DUPLICATE**
+- mediawriter
+- adwsteamgtk **DUPLICATE**
+- transmission_4-gtk
+- obs **REMOVE?**
+  - wlrobs
+  - obs-vaapi
+  - obs-nvfbc
+  - obs-vkcapture
+  - obs-gstreamer
+  - obs-backgroundremoval
+  - obs-pipewire-audio-capture
+- ananicy-cpp
+- stylix
+- catppuccin-cursors.mochaLight
+- cantarell-fonts
+- maple-mono-NF
+- noto-fonts-color-emoji
+
+## Current Configuration
+
+### Home Manager
+
+- emacs29-pgtk
+  - binutils
+  - (aspellWithDicts (dicts: with dicts; [en en-computers en-science]))
+  - enchant
+  - hunspell
+  - ripgrep
+  - ripgrep-all
+  - fd
+  - zstd
+  - texlive.combined.scheme-medium
+  - gnupg
+  - python3
+  - imagemagick
+  - sqlite
+  - pandoc
+  - maim
+  - graphviz
+  - nodePackages.prettier
+  - shellcheck
+  - shfmt
+  - clojure
+  - clj-kondo
+  - cljfmt
+  - html-tidy
+  - stylelint
+  - nodePackages.js-beautify
+  - nixfmt-rfc-style
+  - beancount-language-server
+- helix
+  - marksman
+  - ltex-ls
+  - nil
+  - nixpkgs-fmt
+  - vscode-langservers-extracted
+  - nodePackages.bash-language-server
+- vscode
+  - bbenoist.nix
+  - christian-kohler.path-intellisense
+  - esbenp.prettier-vscode
+  - kamadorueda.alejandra
+  - oderwat.indent-rainbow
+  - yzhang.markdown-all-in-one
+  - ms-vscode.cpptools-extension-pack
+  - ms-vscode-remote.remote-ssh
+  - catppuccin.catppuccin-vsc
+  - catppuccin.catppuccin-vsc-icons
+- vesktop
+- thunderbird
+- libreoffice-fresh
+- logseq
+- beancount
+- beancount-black
+- fava
+- scribus
+- pika-backup
+- bottles
+- mediawriter
+- gimp-with-plugins
+- inkscape-with-extensions
+- krita
+- vlc
+- jellyfin-media-player
+- osu-lazer-bin
+- prismlauncher
+- piper
+- via
+- firefox
+  - bitwarden
+  - clearurls
+  - darkreader
+  - duckduckgo-privacy-essentials
+  - firefox-color
+  - foxytab
+  - ghostery
+  - improved-tube
+  - privacy-badger
+  - sidebery
+  - stylus
+  - ublock-origin
+  - wikiwand-wikipedia-modernized
+- alejandra
+- appimage-run
+- dconf2nix
+- deadnix
+- nurl
+- statix
+- nix-init
+- suckit
+- ookla-speedtest
+- qmk
+- fzf
+- ventoy-full
+- genact
+- moreutils
+- jq
+- warp-terminal
+- bash
+- zsh
+  - prezto
+- bat
+- bottom
+- eza
+- git
+- zoxide
+- yazi
+- kitty
+- starship
+- maple-mono-NF
+- nerdfonts
+- inter
+- corefonts
+- adw-gtk3
+- stylix
+- gnome.gnome-boxes
+- gnome.gnome-tweaks
+- gnomeExtensions.caffeine
+- gnomeExtensions.mullvad-indicator
+- gnomeExtensions.grand-theft-focus
+- gnomeExtensions.app-hider
+- gnomeExtensions.alphabetical-app-grid
+- gnomeExtensions.thinkpad-battery-threshold
+
+### NixOS
+
+- disko
+- goverlay
+- mangohud
+- vkbasalt
+- adwsteamgtk
+- steam
+- gamescope
+- gamemode
+- openssh
+- mullvad
+- cups
+- avahi
+- tailscale
+- transmission_4-gtk
+- gcc
+- adoptopenjdk-bin
+- nodejs
+- libimobiledevice
+- ifuse
+- ntfs3g
+- wl-clipboard
+- nh
+- agenix
+- nix-alien
+- linuxPackages_zen
+- plymouth
+- appimage-run
+- fwupd
+- ananicy-cpp
+- ratbagd
+- usbmuxd
+- ollama
+- gnupg-agent
+- qmk
+- opentabletdriver
+- bash
+  - blesh
+- zsh
+- command-not-found
+- stylix
+- qt
+- disko
