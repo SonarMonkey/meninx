@@ -68,7 +68,6 @@
 
     # Experimental settings
     accept-flake-config = true;
-    always-allow-substitutes = true;
 
     # Binary caches
     extra-substituters = [

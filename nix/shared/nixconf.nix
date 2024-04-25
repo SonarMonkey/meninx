@@ -18,7 +18,6 @@
 
       # Experimental settings
       accept-flake-config = true;
-      always-allow-substitutes = true;
 
       # Cachix package caches
       extra-substituters = [
