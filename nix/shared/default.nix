@@ -14,7 +14,7 @@
     ./nixconf.nix
     ./packages.nix
     ./printing.nix
-    ./secrets.nix
+    ./security.nix
     ./sound.nix
     ./terminal.nix
     ./user.nix
