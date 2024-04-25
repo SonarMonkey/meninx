@@ -17,4 +17,10 @@
     encephalon.file = ../../secrets/encephalon.age;
     mullvad.file = ../../secrets/mullvad.age;
   };
+
+  # System GNUPG agent with SSH support
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+  };
 }
