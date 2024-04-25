@@ -1,5 +1,7 @@
 # meninx
 
+**Please note that this is a re-factor of my current configuration, which is not public! It is a work in progress, and may or may not work at all!**
+
 An overly complicated flake configuration for my Nix(OS) systems. Named for a variant of the word [Meninges](https://en.wikipedia.org/wiki/Meninges), the membranes that surround the human nervous system. Years ago I started naming all my computers after parts of the brain, and when I decided to group all my Nix configurations I needed an umbrella term that was on-theme. "Meninx" fit perfectly, and also almost has the word "Nix" in it. :shrug:
 
 ## Disclaimer
