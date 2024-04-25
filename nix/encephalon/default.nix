@@ -21,6 +21,7 @@
     ./home.nix
     ./network.nix
     ./packages.nix
+    ./performance.nix
     ./theme.nix
   ];
 }
