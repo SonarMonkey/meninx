@@ -46,6 +46,8 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [ ] Create disko config for cerebrum
 - [ ] Add inline links/documentation
 - [ ] Configure git correctly for switch to GitHub
+- [ ] Figure out networking stuff for Tailscale/NextDNS/Mullvad
+- [ ] Finish testing builds for all systems
 
 ## Future Plans
 
@@ -55,6 +57,7 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - Modularize further for Nix code I'm re-using heavily, and things that don't have modules. Especially for declarative Mullvad settings, as this is currently not possible with the default module/package. Also want to look into adding a firefox-csshacks module that covers options for the whole repo. Hoping to end up contributing some of these to Nix itself.
 - Use my own machines as package caches for each other in case I need/want to do a full reinstall of one, or if I get a new machine and have to set it up behind slow internet.
 - Set up the old server I have lying around on Nix as well, mostly to be a better package cache instead of my main machines. Also for a bit of cloud storage and some low-demand services I'd like to run going forward.
+- Switch from Tailscale to a self-hosted Headscale instance. Should be easily(???) configured with NixOS, given that most of my machines (current and planned) will be running Nix as well. In general, want to self-host as much as possible going forward.
 
 ## Structure
 
