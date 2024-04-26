@@ -10,7 +10,6 @@
     ./hardware.nix
     ./iphone.nix
     ./locale.nix
-    ./network.nix
     ./nixconf.nix
     ./packages.nix
     ./printing.nix
