@@ -21,6 +21,7 @@
       yzhang.markdown-all-in-one
       ms-vscode.cpptools-extension-pack
       ms-vscode-remote.remote-ssh
+      vscode-extensions.gruntfuggly.todo-tree
     ];
 
     # General settings mostly taken from piousdeer
