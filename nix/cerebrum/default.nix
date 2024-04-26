@@ -7,15 +7,14 @@
     # Generic shared configuration
     ../shared
 
-    # TODO pre-defined hardware configs?
-
     # Cerebrum-specific configuration
+    ./amdgpu.nix
     ./boot.nix
     ./gaming.nix
     ./hardware-configuration.nix
     ./home.nix
     ./network.nix
-    ./nvidia.nix
+    #./nvidia.nix
     ./packages.nix
     ./performance.nix
     ./kde.nix

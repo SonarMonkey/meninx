@@ -27,11 +27,13 @@
 
   # Configure OpenGL
   hardware.opengl = {
+    enable = true; # Enabled by default I think
     driSupport = true; # This is already enabled by default
     driSupport32Bit = true; # For 32 bit applications
 
     # Enable OpenCL and add AMDVLK drivers in addition to RADV
     extraPackages = with pkgs; [
+      rocmPackages.clr
       rocmPackages.clr.icd
       amdvlk
     ];
