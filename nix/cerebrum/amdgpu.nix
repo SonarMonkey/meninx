@@ -3,8 +3,10 @@
   pkgs,
   ...
 }: {
+  # Most settings copied directly from https://wiki.nixos.org/wiki/AMD_GPU
   # TODO add OC tool (tuxclocker, corectrl, lact)
   # TODO add HIP/etc. packages
+  # TODO consider https://github.com/nixos-rocm/nixos-rocm
 
   # Load the AMD kernel drivers
   boot.initrd.kernelModules = ["amdgpu"];
