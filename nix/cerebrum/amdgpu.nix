@@ -1,0 +1,48 @@
+{
+  config,
+  pkgs,
+  ...
+}: {
+  # TODO add OC tool (tuxclocker, corectrl, lact)
+  # TODO add HIP/etc. packages
+
+  # Load the AMD kernel drivers
+  boot.initrd.kernelModules = ["amdgpu"];
+
+  # Enable ROCM support in nixpkgs
+  nixpkgs.config.rocmSupport = true;
+
+  # Make sure the X server uses correct driver
+  services.xserver = {
+    enable = true;
+    videoDrivers = ["modesetting"];
+  };
+
+  # Override hard-coded HIP libraries
+  # FIXME I do not know what this means
+  # See https://wiki.nixos.org/wiki/AMD_GPU#HIP
+  systemd.tmpfiles.rules = [
+    "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
+  ];
+
+  # Configure OpenGL
+  hardware.opengl = {
+    driSupport = true; # This is already enabled by default
+    driSupport32Bit = true; # For 32 bit applications
+
+    # Enable OpenCL and add AMDVLK drivers in addition to RADV
+    extraPackages = with pkgs; [
+      rocmPackages.clr.icd
+      amdvlk
+    ];
+    hardware.opengl.extraPackages32 = with pkgs; [
+      driversi686Linux.amdvlk
+    ];
+  };
+
+  # And workaround for my Polaris card
+  # See https://wiki.nixos.org/wiki/AMD_GPU#OpenCL
+  environment.variables = {
+    ROC_ENABLE_PRE_VEGA = "1";
+  };
+}
