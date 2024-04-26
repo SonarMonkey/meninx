@@ -48,7 +48,7 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [ ] Configure git correctly for switch to GitHub
 - [ ] Figure out networking stuff for Tailscale/NextDNS/Mullvad
 - [ ] Finish testing builds for all systems
-- [ ] Add AMD GPU configuration
+- [x] Add AMD GPU configuration
 
 ## Future Plans
 
@@ -59,6 +59,8 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - Use my own machines as package caches for each other in case I need/want to do a full reinstall of one, or if I get a new machine and have to set it up behind slow internet.
 - Set up the old server I have lying around on Nix as well, mostly to be a better package cache instead of my main machines. Also for a bit of cloud storage and some low-demand services I'd like to run going forward.
 - Switch from Tailscale to a self-hosted Headscale instance. Should be easily(???) configured with NixOS, given that most of my machines (current and planned) will be running Nix as well. In general, want to self-host as much as possible going forward.
+- Better document my entire configuration with actual links out to wherever I got the information, especially in weird cases like my network configuration. Alternatively, switch to an entirely literate-programming config with Org or some other tool.
+- Improve overall declarative-ness, especially for key and secret management, wi-fi configurations, shell and browser history, etc.
 
 ## Structure
 
