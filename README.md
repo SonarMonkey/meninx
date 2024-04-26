@@ -48,6 +48,7 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [ ] Configure git correctly for switch to GitHub
 - [ ] Figure out networking stuff for Tailscale/NextDNS/Mullvad
 - [ ] Finish testing builds for all systems
+- [ ] Add AMD GPU configuration
 
 ## Future Plans
 
