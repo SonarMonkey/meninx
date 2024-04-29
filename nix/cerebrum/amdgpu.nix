@@ -39,7 +39,7 @@
       rocmPackages.clr.icd
       amdvlk
     ];
-    hardware.opengl.extraPackages32 = with pkgs; [
+    extraPackages32 = with pkgs; [
       driversi686Linux.amdvlk
     ];
   };
