@@ -43,11 +43,12 @@
 
     # This is apparently what fixes at least MagicDNS
     # Entire resolv.conf may be overwritten by tailscale
-    # Also conflicts with services.resolved.enable below
+    # Conflicts with services.resolved.enable below
     # See https://tailscale.com/kb/1235/resolv-conf/
     #resolvconf.enable = true;
 
     # Explicitly set DNS servers, may be ignored by resolvconf though
+    # Shouldn't be an issue, switched to systemd-resolved as resolvconf
     nameservers = [
       # Tailcale
       "100.100.100.100"
@@ -79,7 +80,8 @@
 
       # Explicitly avoid managing the tailscale interface
       # May be redundant with tailscale service module
-      unmanaged = ["tailscale0"]; # FIXME switched to userspace-networking
+      # FIXME switched to userspace-networking
+      unmanaged = ["tailscale0"];
 
       #insertNameservers = []; # ??? might help adding my dns servers idk
       #appendNameservers = []; # ??? might help adding my dns servers idk
@@ -102,7 +104,8 @@
 
       # Only need below if using regular "tailscale0"
       # Shouldn't be required if interface is "userspace-networking"
-      trustedInterfaces = ["tailscale0"]; # FIXME switched to userspace-networking
+      # FIXME switched to userspace-networking
+      trustedInterfaces = ["tailscale0"];
       allowedUDPPorts = [config.services.tailscale.port]; # maybe redundant with openFirewall setting in tailscale
     };
   };
