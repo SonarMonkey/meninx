@@ -30,6 +30,7 @@
     interfaces.enp0s31f6.useDHCP = lib.mkDefault true;
     interfaces.wlp2s0.useDHCP = lib.mkDefault true;
     interfaces.tailscale0.useDHCP = lib.mkOverride false;
+    interfaces.wg0-mullvad.useDHCP = lib.mkOverride false;
 
     # Disables legacy scripted networking, see "useDHCP" documentation above
     # Also detected by tailscale to create a rule to not manage tailscale
@@ -42,8 +43,9 @@
 
     # This is apparently what fixes at least MagicDNS
     # Entire resolv.conf may be overwritten by tailscale
+    # Also conflicts with services.resolved.enable below
     # See https://tailscale.com/kb/1235/resolv-conf/
-    resolvconf.enable = true;
+    #resolvconf.enable = true;
 
     # Explicitly set DNS servers, may be ignored by resolvconf though
     nameservers = [
@@ -153,7 +155,8 @@
       ];
     };
 
-    # Systemd-resolved configuration
+    # Systemd-resolved configuration, not sure how to deal with this
+    # FIXME conflicts with networking.resolvconf.enable = true;
     resolved = {
       enable = true;
 
