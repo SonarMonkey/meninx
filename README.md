@@ -36,7 +36,7 @@ This is *my personal configuration* and is not intended to be used as-is outside
   - [x] Remove or keep marked packages
 - [x] Consolidate package lists
 - [x] Create module system
-- [ ] Fix `pyClock` module (maybe done??)
+- [x] ~~Fix `pyClock` module (resigned for now)~~
 - [ ] Create "minimal" install config
 - [x] Re-add non-nix assets/files
 - [x] Consider best structure/layout
@@ -45,8 +45,8 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [x] Fix or remove nix-colors (removed)
 - [ ] Create disko config for cerebrum
 - [ ] Add inline links/documentation
-- [ ] Configure git correctly for switch to GitHub
-- [ ] Figure out networking stuff for Tailscale/NextDNS/Mullvad
+- [x] Configure git correctly for switch to GitHub
+- [x] Figure out networking stuff for Tailscale/NextDNS/Mullvad (done enought for now)
 - [ ] Finish testing builds for all systems
 - [x] Add AMD GPU configuration
 
@@ -60,7 +60,7 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - Set up the old server I have lying around on Nix as well, mostly to be a better package cache instead of my main machines. Also for a bit of cloud storage and some low-demand services I'd like to run going forward.
 - Switch from Tailscale to a self-hosted Headscale instance. Should be easily(???) configured with NixOS, given that most of my machines (current and planned) will be running Nix as well. In general, want to self-host as much as possible going forward.
 - Better document my entire configuration with actual links out to wherever I got the information, especially in weird cases like my network configuration. Alternatively, switch to an entirely literate-programming config with Org or some other tool.
-- Improve overall declarative-ness, especially for key and secret management, wi-fi configurations, shell and browser history, etc.
+- Improve overall declarative-ness, especially for key and secret management, wi-fi configurations, shell and browser history, etc. This is already in progress, steps in the right direction in `encephalon/network.nix` at the moment.
 
 ## Structure
 

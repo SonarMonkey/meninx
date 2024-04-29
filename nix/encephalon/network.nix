@@ -142,6 +142,7 @@
       enable = true;
 
       # Networking
+      # TODO consider switching back to `tun` system networking
       port = 0; # autoselect port to use for tailscale, default is 41641
       openFirewall = true; # open selected port in firewall
       useRoutingFeatures = "client"; # "client" sets checkreversepath to "loose", "server" enables IP forwarding
