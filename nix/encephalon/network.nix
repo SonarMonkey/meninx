@@ -21,16 +21,16 @@
     # Set hostname
     hostName = "encephalon";
 
-    # Settings originally from hardware-configuration.nix
-    # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
-    # (the default) this is the recommended approach. When using systemd-networkd it's
-    # still possible to use this option, but it's recommended to use it in conjunction
-    # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
+    # Disable DHCP by default
     useDHCP = lib.mkDefault false;
+
+    # Enable by default on desired interfaces
     interfaces.enp0s31f6.useDHCP = lib.mkDefault true;
     interfaces.wlp2s0.useDHCP = lib.mkDefault true;
-    interfaces.tailscale0.useDHCP = lib.mkOverride false;
-    interfaces.wg0-mullvad.useDHCP = lib.mkOverride false;
+
+    # Disable on VPN interfaces
+    interfaces.tailscale0.useDHCP = false;
+    interfaces.wg0-mullvad.useDHCP = false;
 
     # Disables legacy scripted networking, see "useDHCP" documentation above
     # Also detected by tailscale to create a rule to not manage tailscale
