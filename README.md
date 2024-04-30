@@ -49,6 +49,10 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [x] Figure out networking stuff for Tailscale/NextDNS/Mullvad (done enought for now)
 - [ ] Finish testing builds for all systems
 - [x] Add AMD GPU configuration
+- [ ] Add NixOS-WSL configuration
+  - [ ] Main config
+  - [ ] ISO config
+- [ ] Add more links/wiki/etc.
 
 ## Future Plans
 
