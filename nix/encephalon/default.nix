@@ -15,6 +15,7 @@
     # Encephalon-specific configuration
     ./boot.nix
     ./disko.nix
+    ./experiments.nix
     ./gaming.nix
     ./gnome.nix
     ./hardware-configuration.nix
