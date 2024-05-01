@@ -48,6 +48,7 @@
     scribus
     vlc
     github-desktop
+    zed
 
     # Nix-related utilities
     alejandra
