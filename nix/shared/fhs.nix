@@ -11,7 +11,10 @@
   ];
 
   # Enable nix-ld
-  programs.nix-ld.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    package = pkgs.nix-ld-rs;
+  };
 
   # Register appimages to run correctly
   boot.binfmt.registrations.appimage = {
