@@ -116,6 +116,11 @@ with lib.hm.gvariant; {
       two-finger-scrolling-enabled = true;
     };
 
+    # Disable mouse acceleration
+    "/org/gnome/desktop/peripherals/mouse/accel-profile" = {
+      accel-profile = "flat";
+    };
+
     # My keybindings
     "org/gnome/desktop/wm/keybindings" = {
       activate-window-menu = [];

@@ -27,9 +27,6 @@
   gtk = {
     enable = true;
 
-    # gtk2 FIXME is this necessary?
-    gtk2.configLocation = "${config.xdg.configHome}/gtk-2.0/gtkrc";
-
     # gtk3
     gtk3.extraConfig = {
       Settings = ''
