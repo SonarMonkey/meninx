@@ -12,7 +12,7 @@
   systemd.network.wait-online.enable = false;
 
   # Enable systemd-networkd
-  # Not sure if enabling for boot is good/necessary
+  # FIXME Not sure if enabling for boot is good/necessary
   boot.initrd.systemd.network.enable = true;
   systemd.network.enable = true;
 
@@ -34,6 +34,7 @@
 
     # Disables legacy scripted networking, see "useDHCP" documentation above
     # Also detected by tailscale to create a rule to not manage tailscale
+    # TODO not sure if this makes the above DHCP settings redundant
     useNetworkd = true;
 
     # Whether to enable dhcpcd for device configuration.
@@ -80,7 +81,7 @@
 
       # Explicitly avoid managing the tailscale interface
       # May be redundant with tailscale service module
-      # FIXME switched to userspace-networking
+      # Unnecessary if switched to userspace-networking
       unmanaged = ["tailscale0"];
 
       #insertNameservers = []; # ??? might help adding my dns servers idk
@@ -91,11 +92,12 @@
       # See https://github.com/janik-haag/nm2nix to automatically do this
 
       # Consider setting settings.main.rc-manager = "resolvconf" to make networkmanager use it,
+      # probably can leave the default "auto" setting as this should detect systemd-resolved
       # see https://developer-old.gnome.org/NetworkManager/stable/NetworkManager.conf.html
     };
 
-    # Enable nftable instead of legacy iptables backend for firewall
-    # Questionable, may interfere with docker and libvirtd, not sure
+    # Enable nftables instead of legacy iptables backend for firewall
+    # FIXME Questionable, may interfere with docker and libvirtd, not sure
     nftables.enable = true;
 
     # Firewall settings
@@ -104,9 +106,10 @@
 
       # Only need below if using regular "tailscale0"
       # Shouldn't be required if interface is "userspace-networking"
-      # FIXME switched to userspace-networking
       trustedInterfaces = ["tailscale0"];
-      allowedUDPPorts = [config.services.tailscale.port]; # maybe redundant with openFirewall setting in tailscale
+
+      # Maybe redundant with openFirewall setting in tailscale
+      allowedUDPPorts = [config.services.tailscale.port];
     };
   };
 
@@ -142,15 +145,14 @@
       enable = true;
 
       # Networking
-      # TODO consider switching back to `tun` system networking
       port = 0; # autoselect port to use for tailscale, default is 41641
       openFirewall = true; # open selected port in firewall
       useRoutingFeatures = "client"; # "client" sets checkreversepath to "loose", "server" enables IP forwarding
-      interfaceName = "userspace-networking"; # or "tailscale0" (default)
+      interfaceName = "tailscale0"; # or "tailscale0" (default)
 
       # Security
       #permitCertUid = ""; # to allow specified user getting TLS certs
-      authKeyFile = config.age.secrets.${config.networking.hostName}.path;
+      authKeyFile = config.age.secrets.encephalon.path;
 
       # Configuration
       extraUpFlags = [
@@ -160,11 +162,13 @@
     };
 
     # Systemd-resolved configuration, not sure how to deal with this
-    # FIXME conflicts with networking.resolvconf.enable = true;
+    # Note that this conflicts with networking.resolvconf.enable = true;
+    # See https://wiki.nixos.org/wiki/Systemd/resolved for more info
     resolved = {
       enable = true;
 
       # Explicitly set fallback DNS to primary nameservers
+      # Maybe not necessary with `networking.nameservers` set
       fallbackDns = config.networking.nameservers;
 
       # This is the default, but setting for my own sake
@@ -173,6 +177,9 @@
       # Will encrypt all DNS lookups or fail
       # Should be supported on NextDNS and Quad9
       dnsovertls = "true";
+
+      # Also enable DNSSEC which my servers should support
+      dnssec = "true";
     };
   };
 
