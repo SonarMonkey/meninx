@@ -22,7 +22,7 @@
     # TailScale service
     tailscale = {
       enable = true;
-      authKeyFile = config.age.secrets.${config.networking.hostName}.path;
+      authKeyFile = config.age.secrets.cerebrum.path;
       openFirewall = true;
       useRoutingFeatures = "client";
       interfaceName = "userspace-networking";
