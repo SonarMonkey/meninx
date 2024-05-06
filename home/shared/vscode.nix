@@ -13,6 +13,7 @@
 
     # Extensions
     extensions = with pkgs.vscode-extensions; [
+      piousdeer.adwaita-theme
       bbenoist.nix
       christian-kohler.path-intellisense
       esbenp.prettier-vscode
@@ -31,8 +32,12 @@
       "files.trimTrailingWhitespace" = true;
       "editor.detectIndentation" = true;
       "editor.fontLigatures" = true;
+
+      # Integrated terminal
       "terminal.integrated.cursorBlinking" = true;
       "terminal.integrated.cursorStyle" = "line";
+
+      # Telemetry/updates
       "telemetry.telemetryLevel" = "off";
       "update.mode" = "off";
       "update.showReleaseNotes" = false;
@@ -45,8 +50,17 @@
       "path-intellisense.autoTriggerNextSuggestion" = true;
 
       # Appearance/UI settings
-      "window.commandCenter" = true;
+      "editor.renderLineHighlight" = "none";
       "window.autoDetectColorScheme" = true;
+      "window.commandCenter" = true;
+      "window.titleBarStyle" = "custom";
+      "workbench.tree.indent" = 12;
+
+      # Theme settings
+      "workbench.preferredDarkColorTheme" = "Adwaita Dark";
+      "workbench.preferredLightColorTheme" = "Adwaita Light";
+      "workbench.productIconTheme" = "adwaita";
+      "workbench.iconTheme" = null;
     };
   };
 }
