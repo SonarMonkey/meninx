@@ -46,13 +46,15 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [ ] Create disko config for cerebrum
 - [ ] Add inline links/documentation
 - [x] Configure git correctly for switch to GitHub
-- [x] Figure out networking stuff for Tailscale/NextDNS/Mullvad (done enought for now)
+- [x] Figure out networking stuff for Tailscale/NextDNS/Mullvad (done enough for now)
 - [ ] Finish testing builds for all systems
 - [x] Add AMD GPU configuration
 - [ ] Add NixOS-WSL configuration
   - [ ] Main config
   - [ ] ISO config
 - [ ] Add more links/wiki/etc.
+- [ ] Add back catppuccin themes whenever fixed in GNOME 46
+- [ ] Further update README.md
 
 ## Future Plans
 
