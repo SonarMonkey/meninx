@@ -20,6 +20,9 @@
     gnomeExtensions.thinkpad-battery-threshold
   ];
 
+  # Set envvar for theme just in case
+  home.sessionVariables.GTK_THEME = "adw-gtk3-dark";
+
   # Enable font discovery/etc
   fonts.fontconfig.enable = true;
 
