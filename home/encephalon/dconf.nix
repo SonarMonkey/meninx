@@ -103,11 +103,21 @@ with lib.hm.gvariant; {
 
     # General interface settings
     "org/gnome/desktop/interface" = {
+      # Clock
       clock-format = "12h";
       clock-show-weekday = true;
+
+      # Theme
       color-scheme = "prefer-dark";
+      gtk-theme = "adw-gtk3-dark";
+      cursor-theme = "Adwaita";
+
+      # Font
       font-antialiasing = "rgba";
       font-hinting = "slight";
+      font-name = "Cantarell 12";
+      document-font-name = "Cantarell 12";
+      monospace-font-name = "Maple Mono NF 12";
     };
 
     # Touchpad settings

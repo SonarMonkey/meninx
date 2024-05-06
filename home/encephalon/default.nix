@@ -11,6 +11,9 @@
     ./autostart.nix
     ./dconf.nix
     ./gnome.nix
-    ./theme.nix
+
+    # Catpuccin theme config
+    # FIXME disable for GNOME 46
+    #./theme.nix
   ];
 }

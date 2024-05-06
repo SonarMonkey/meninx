@@ -20,12 +20,40 @@
     gnomeExtensions.thinkpad-battery-threshold
   ];
 
+  # Enable font discovery/etc
+  fonts.fontconfig.enable = true;
+
   # User icon
   home.file.".face".source = ../../assets/face.png;
 
   # GTK settings
   gtk = {
     enable = true;
+
+    # Font settings
+    font = {
+      package = pkgs.cantarell-fonts;
+      name = "Cantarell";
+      size = 12;
+    };
+
+    # Theme settings
+    theme = {
+      package = pkgs.adw-gtk3;
+      name = "adw-gtk3-dark";
+    };
+
+    # Icon theme
+    iconTheme = {
+      package = pkgs.gnome.adwaita-icon-theme;
+      name = "Adwaita";
+    };
+
+    # Cursor theme
+    cursorTheme = {
+      package = pkgs.gnome.adwaita-icon-theme;
+      name = "Adwaita";
+    };
 
     # gtk3
     gtk3.extraConfig = {
@@ -53,6 +81,5 @@
   qt = {
     enable = true;
     style.name = "adwaita-dark";
-    #platformTheme.name = "adwaita"; FIXME currently broken
   };
 }

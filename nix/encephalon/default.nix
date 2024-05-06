@@ -23,6 +23,8 @@
     ./network.nix
     ./packages.nix
     ./performance.nix
-    ./theme.nix
+
+    # FIXME disabled for GNOME 46
+    #./theme.nix
   ];
 }
