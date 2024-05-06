@@ -20,7 +20,7 @@
     ./gnome.nix
     ./hardware-configuration.nix
     ./home.nix
-    ./network.nix
+    ./networking.nix
     ./packages.nix
     ./performance.nix
 
