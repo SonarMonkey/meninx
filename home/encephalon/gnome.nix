@@ -9,6 +9,7 @@
     # GNOME-specific applications
     gnome.gnome-boxes
     gnome.gnome-tweaks
+    gnome.gnome-backgrounds
     adwsteamgtk
 
     # GNOME extensions
