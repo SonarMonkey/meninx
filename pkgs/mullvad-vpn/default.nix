@@ -73,7 +73,7 @@
   };
 
   hash = selectSystem {
-    x86_64-linux = "sha256-/tD1RL8DUcldmi5U8wXUm+CyjdVZSwp8H18R4U6YZF0=";
+    x86_64-linux = "sha256-yOS1V0U4gWMQ13eiFKsB4Mn7oxQR5tQrNWT9LOxDV/M=";
     aarch64-linux = "sha256-QagQIBRjugLU1Bf2wBN42qWGxG8sMoIukpK3YYjBn44=";
   };
 in
