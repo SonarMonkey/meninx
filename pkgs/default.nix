@@ -6,4 +6,5 @@
   dnd-tools = pkgs.callPackage ./dnd-tools {};
   mullvad-vpn = pkgs.callPackage ./mullvad-vpn {};
   zed = pkgs.callPackage ./zed {};
+  heynote = pkgs.callPackage ./heynote {};
 }
