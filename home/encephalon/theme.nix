@@ -67,6 +67,8 @@
       # Theme settings
       "workbench.colorTheme" = "Catppuccin Mocha";
       "workbench.iconTheme" = "catppuccin-mocha";
+      "workbench.preferredDarkColorTheme" = "Catppuccin Mocha";
+      "workbench.preferredLightColorTheme" = "Catppuccin Latte";
 
       # Additional theme-related config
       "catppuccin.workbenchMode" = "flat";
