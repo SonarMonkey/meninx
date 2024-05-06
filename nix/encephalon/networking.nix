@@ -74,21 +74,6 @@
       package = pkgs.mullvad-vpn;
     };
 
-    # TailScale system service configuration
-    # https://github.com/NixOS/nixpkgs/blob/nixos-unstable/nixos/modules/services/networking/tailscale.nix
-    #tailscale = {
-    #  enable = true;
-    #  port = 0; # autoselect port to use for tailscale, default is 41641
-    #  openFirewall = true; # open selected port in firewall
-    #  useRoutingFeatures = "client"; # "client" sets checkreversepath to "loose", "server" enables IP forwarding
-    #  interfaceName = "userspace-networking"; # or "tailscale0" (default)
-    #  authKeyFile = config.age.secrets.encephalon.path;
-    #  extraUpFlags = [
-    #    "--operator=sonar"
-    #    "--ssh"
-    #  ];
-    #};
-
     # Systemd-resolved configuration, not sure how to deal with this
     # Note that this conflicts with networking.resolvconf.enable = true;
     # See https://wiki.nixos.org/wiki/Systemd/resolved for more info
