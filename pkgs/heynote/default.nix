@@ -12,7 +12,7 @@ let
 
   src = fetchurl {
     url = "https://github.com/heyman/heynote/releases/download/v${version}/Heynote_${version}_x86_64.AppImage";
-    sha256 = "sha256-XCxG5G6F/p8ZhyF0t9OPbI18P6ZQKIQMb/6iHpYZ/Fo=";
+    sha256 = "sha256-b8+1W64su+EkvVz6hgh6OQATWqZXX6LcQTMc4y0lPEc=";
   };
 
   appimageContents = appimageTools.extract {
