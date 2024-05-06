@@ -23,7 +23,7 @@
     mediawriter
     adwsteamgtk
     transmission_4-gtk
-    thiefmd
     obsidian
+    heynote
   ];
 }
