@@ -171,7 +171,7 @@
   # Add the actual CSS tweaks
   # TODO consider switch to module
   home.file = let
-    currHash = "sha256-i9WAc+oXuEHgkulBX/dGq/7usnsiUF4xnEfcILYHleg=";
+    currHash = "sha256-t79RFhhbb0xCjQC4oCwWaP7ztMpvn5ch5IdIMsJjhUU=";
   in {
     # Fix window controls
     ".mozilla/firefox/sonar/chrome/window_control_placeholder_support.css".text =
