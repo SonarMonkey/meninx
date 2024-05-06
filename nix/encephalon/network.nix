@@ -185,13 +185,13 @@
 
   # Custom service to restart tailscaled and resolved after sleep
   # TODO see if this is still necessary, might be fixed now
-  systemd.services.tailscaled-restart = {
-    enable = true;
-    description = "Restart tailscaled correctly after sleep";
-    wantedBy = ["post-resume.target"];
-    serviceConfig = {
-      Type = "oneshot";
-      ExecStart = "systemctl restart tailscaled.service systemd-resolved.service";
-    };
-  };
+  #systemd.services.tailscaled-restart = {
+  #  enable = true;
+  #  description = "Restart tailscaled correctly after sleep";
+  #  wantedBy = ["post-resume.target"];
+  #  serviceConfig = {
+  #    Type = "oneshot";
+  #    ExecStart = "systemctl restart tailscaled.service systemd-resolved.service";
+  #  };
+  #};
 }
