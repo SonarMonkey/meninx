@@ -1,24 +1,24 @@
-{ lib
-, rustPlatform
-, fetchFromGitHub
-, curl
-, pkg-config
-, protobuf
-, fontconfig
-, freetype
-, libgit2
-, libxkbcommon
-, openssl
-, sqlite
-, vulkan-loader
-, zlib
-, zstd
-, stdenv
-, darwin
-, alsa-lib
-, wayland
+{
+  lib,
+  rustPlatform,
+  fetchFromGitHub,
+  curl,
+  pkg-config,
+  protobuf,
+  fontconfig,
+  freetype,
+  libgit2,
+  libxkbcommon,
+  openssl,
+  sqlite,
+  vulkan-loader,
+  zlib,
+  zstd,
+  stdenv,
+  darwin,
+  alsa-lib,
+  wayland,
 }:
-
 rustPlatform.buildRustPackage rec {
   pname = "zed";
   version = "0.133.5";
@@ -67,33 +67,36 @@ rustPlatform.buildRustPackage rec {
     rustPlatform.bindgenHook
   ];
 
-  buildInputs = [
-    curl
-    fontconfig
-    freetype
-    libgit2
-    libxkbcommon
-    openssl
-    sqlite
-    vulkan-loader
-    zlib
-    zstd
-  ] ++ lib.optionals stdenv.isDarwin [
-    darwin.apple_sdk.frameworks.AppKit
-    darwin.apple_sdk.frameworks.CoreAudio
-    darwin.apple_sdk.frameworks.CoreFoundation
-    darwin.apple_sdk.frameworks.CoreGraphics
-    darwin.apple_sdk.frameworks.CoreServices
-    darwin.apple_sdk.frameworks.CoreText
-    darwin.apple_sdk.frameworks.Foundation
-    darwin.apple_sdk.frameworks.IOKit
-    darwin.apple_sdk.frameworks.Metal
-    darwin.apple_sdk.frameworks.Security
-    darwin.apple_sdk.frameworks.SystemConfiguration
-  ] ++ lib.optionals stdenv.isLinux [
-    alsa-lib
-    wayland
-  ];
+  buildInputs =
+    [
+      curl
+      fontconfig
+      freetype
+      libgit2
+      libxkbcommon
+      openssl
+      sqlite
+      vulkan-loader
+      zlib
+      zstd
+    ]
+    ++ lib.optionals stdenv.isDarwin [
+      darwin.apple_sdk.frameworks.AppKit
+      darwin.apple_sdk.frameworks.CoreAudio
+      darwin.apple_sdk.frameworks.CoreFoundation
+      darwin.apple_sdk.frameworks.CoreGraphics
+      darwin.apple_sdk.frameworks.CoreServices
+      darwin.apple_sdk.frameworks.CoreText
+      darwin.apple_sdk.frameworks.Foundation
+      darwin.apple_sdk.frameworks.IOKit
+      darwin.apple_sdk.frameworks.Metal
+      darwin.apple_sdk.frameworks.Security
+      darwin.apple_sdk.frameworks.SystemConfiguration
+    ]
+    ++ lib.optionals stdenv.isLinux [
+      alsa-lib
+      wayland
+    ];
 
   env = {
     ZSTD_SYS_USE_PKG_CONFIG = true;
@@ -102,8 +105,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter";
     homepage = "https://github.com/zed-industries/zed";
-    license = with licenses; [ asl20 agpl3Only gpl3Only ];
-    maintainers = with maintainers; [ ];
+    license = with licenses; [asl20 agpl3Only gpl3Only];
+    maintainers = with maintainers; [];
     mainProgram = "zed";
   };
 }
