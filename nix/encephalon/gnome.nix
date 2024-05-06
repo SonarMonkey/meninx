@@ -25,6 +25,5 @@
   qt = {
     enable = true;
     style = "adwaita-dark";
-    #platformTheme.name = "adwaita"; FIXME currently broken
   };
 }
