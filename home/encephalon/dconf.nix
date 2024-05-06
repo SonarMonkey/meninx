@@ -127,7 +127,7 @@ with lib.hm.gvariant; {
     };
 
     # Disable mouse acceleration
-    "/org/gnome/desktop/peripherals/mouse" = {
+    "org/gnome/desktop/peripherals/mouse" = {
       accel-profile = "flat";
     };
 
