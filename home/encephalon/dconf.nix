@@ -154,6 +154,12 @@ with lib.hm.gvariant; {
       workspaces-only-on-primary = true;
     };
 
+    # Settings daemon
+    "org/gnome/settings-daemon/plugins/color" = {
+      night-light-enabled = true;
+      night-light-schedule-automatic = true;
+    };
+
     # General shell configuration
     "org/gnome/shell" = {
       # Make sure extensions are enabled
