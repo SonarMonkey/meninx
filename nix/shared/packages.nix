@@ -47,7 +47,6 @@
     krita
     scribus
     vlc
-    github-desktop
 
     # Nix-related utilities
     alejandra
