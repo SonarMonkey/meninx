@@ -32,6 +32,7 @@
       "files.trimTrailingWhitespace" = true;
       "editor.detectIndentation" = true;
       "editor.fontLigatures" = true;
+      "editor.fontFamily" = "'Maple Mono NF', 'monospace', monospace";
 
       # Integrated terminal
       "terminal.integrated.cursorBlinking" = true;

@@ -2,6 +2,8 @@
 
 **Please note that this is a re-factor of my current configuration, which is not public! It is a work in progress, and may or may not work at all!**
 
+**This configuration is now current on my main laptop, but the above message still stands! Boots for me though, :shrug:**
+
 An overly complicated flake configuration for my Nix(OS) systems. Named for a variant of the word [Meninges](https://en.wikipedia.org/wiki/Meninges), the membranes that surround the human nervous system. Years ago I started naming all my computers after parts of the brain, and when I decided to group all my Nix configurations I needed an umbrella term that was on-theme. "Meninx" fit perfectly, and also almost has the word "Nix" in it. :shrug:
 
 ## Disclaimer
@@ -24,12 +26,13 @@ This is *my personal configuration* and is not intended to be used as-is outside
 
 - [x] Review for major errors
 - [x] Review `TODO` and `FIXME` items
-- [ ] Make sure everything got migrated
+- [x] Make sure everything got migrated
   - [x] Check against current encephalon config
-  - [ ] Check against old cerebrum config
+  - [x] Check against old cerebrum config
 - [x] Add ISO configurations to flake
   - [x] Make sure ISO config actually working
   - [ ] Create encephalon ISO
+  - [ ] Create AMD GPU ISO
 - [ ] Trim cruft packages
   - [ ] Check emacs-related package list
   - [x] Mark other packages for removal
