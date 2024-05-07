@@ -47,6 +47,7 @@
     aliases = {
       aa = "add -A";
       pu = "push -u origin main";
+      cm = "commit -m";
       ca = "commit -a -m";
       st = "status";
     };
