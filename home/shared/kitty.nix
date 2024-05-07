@@ -7,6 +7,16 @@
   programs.kitty = {
     enable = true;
 
+    # Theme
+    theme = "Adwaita dark";
+
+    # Font settings
+    font = {
+      name = "Maple Mono NF";
+      package = pkgs.maple-mono-NF;
+      size = 12;
+    };
+
     # General settings
     settings = {
       # Basic configuration
