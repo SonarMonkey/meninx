@@ -20,6 +20,9 @@
   # Bottom
   programs.bottom.enable = true;
 
+  # Command-not-found
+  programs.command-not-found.enable = true;
+
   # Eza
   programs.eza = {
     enable = true;
