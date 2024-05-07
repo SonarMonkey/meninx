@@ -53,7 +53,6 @@
       "editor.renderLineHighlight" = "none";
       "window.autoDetectColorScheme" = true;
       "window.commandCenter" = true;
-      "window.titleBarStyle" = "custom";
       "workbench.tree.indent" = 12;
 
       # Theme settings
