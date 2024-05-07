@@ -6,6 +6,15 @@
   # Show password feedback on sudo
   security.sudo.extraConfig = "Defaults pwfeedback";
 
+  # Include .local/bin in path
+  environment.localBinInPath = true;
+
+  # Set global environment variables
+  environment.variables = {
+    FLAKE = "/home/sonar/Nix";
+    NIXOS_OZONE_WL = "1";
+  };
+
   # Permit all shells for user accounts
   environment.shells = with pkgs; [bashInteractive zsh];
 
@@ -28,10 +37,4 @@
     enableCompletion = true;
     enableBashCompletion = true;
   };
-
-  # Make sure completions paths are linked up
-  environment.pathsToLink = [
-    "/share/zsh"
-    "/share/bash-completion"
-  ];
 }

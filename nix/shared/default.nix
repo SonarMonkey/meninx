@@ -4,7 +4,6 @@
   ...
 }: {
   imports = [
-    ./environment.nix
     ./fhs.nix
     ./gaming.nix
     ./hardware.nix
