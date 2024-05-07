@@ -4,13 +4,6 @@
   inputs,
   ...
 }: {
-  # Import pre-built nixpkgs database
-  imports = [inputs.nix-index-database.hmModules.nix-index];
-
-  # Interact with nixpkgs better
-  programs.nix-index.enable = true;
-  programs.nix-index-database.comma.enable = true;
-
   # Bat
   programs.bat = {
     enable = true;

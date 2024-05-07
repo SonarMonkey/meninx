@@ -7,12 +7,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
 
-    # Index of packages
-    nix-index-database = {
-      url = "github:nix-community/nix-index-database";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Run unpatched binaries
     nix-alien.url = "github:thiagokokada/nix-alien";
 
