@@ -9,6 +9,9 @@
   # Permit all shells for user accounts
   environment.shells = with pkgs; [bashInteractive zsh];
 
+  # Set default shell to zsh
+  users.defaultUserShell = pkgs.zsh;
+
   # Tune up bash a little
   programs.bash = {
     # Defaults
