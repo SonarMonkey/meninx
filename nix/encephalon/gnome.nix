@@ -6,6 +6,9 @@
 }: {
   # Enable GDM+GNOME desktop
   services.xserver = {
+    # X11 server
+    enable = true;
+
     # GNOME display manager
     displayManager.gdm = {
       enable = true;
