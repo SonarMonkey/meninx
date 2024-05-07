@@ -16,8 +16,5 @@
       enable = true;
       configurationLimit = 10;
     };
-
-    # Enable plymouth boot animation
-    plymouth.enable = true;
   };
 }
