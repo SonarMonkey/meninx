@@ -205,10 +205,10 @@ with lib.hm.gvariant; {
         "mullvad-vpn.desktop"
         "org.gnome.Nautilus.desktop"
         "emacs.desktop"
+        "obsidian.desktop"
         "logseq.desktop"
         "code.desktop"
         "kitty.desktop"
-        "dev.warp.Warp.desktop"
         "org.gnome.Settings.desktop"
       ];
     };
