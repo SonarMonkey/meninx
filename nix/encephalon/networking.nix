@@ -75,6 +75,13 @@
     # System SSH daemon
     openssh.enable = true;
 
+    # Mullvad
+    mullvad-vpn = {
+      enable = true;
+      enableExcludeWrapper = true;
+      package = pkgs.mullvad-vpn;
+    };
+
     # Systemd-resolved configuration, not sure how to deal with this
     # Note that this conflicts with networking.resolvconf.enable = true;
     # See https://wiki.nixos.org/wiki/Systemd/resolved for more info
@@ -93,4 +100,9 @@
       dnssec = "true";
     };
   };
+
+  # Networking-related system packages
+  environment.systemPackages = with pkgs; [
+    mullvad-vpn
+  ];
 }
