@@ -51,9 +51,6 @@
       ca = "commit -a -m";
       st = "status";
     };
-
-    # TODO Configure signing
-    #signing = {};
   };
 
   # GitHub CLI
@@ -76,7 +73,6 @@
     settings = {
       git_protocol = "ssh";
       editor = "hx";
-      # TODO aliases = {};
     };
   };
 

@@ -57,6 +57,9 @@ This is *my personal configuration* and is not intended to be used as-is outside
   - [ ] ISO config
 - [ ] Add more links/wiki/etc.
 - [ ] Further update README.md
+- [ ] Heavily pare back zsh config
+- [ ] Wait for linux builds to package zed
+- [ ] Consider outright ditching Emacs
 
 ## Notes
 

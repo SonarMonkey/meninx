@@ -5,7 +5,7 @@
   ...
 }:
 with lib; let
-  # FIXME replace cfg.hash with more elegant solution
+  # TODO replace cfg.hash with more elegant solution
   cfg = config.programs.firefox.sidebery-css;
 in {
   options.programs.firefox.sidebery-css = {

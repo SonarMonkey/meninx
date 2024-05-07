@@ -21,7 +21,6 @@
   };
 
   # Override hard-coded HIP libraries
-  # FIXME I do not know what this means
   # See https://wiki.nixos.org/wiki/AMD_GPU#HIP
   systemd.tmpfiles.rules = let
     rocmEnv = pkgs.symlinkJoin {

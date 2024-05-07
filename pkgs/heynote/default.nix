@@ -2,11 +2,7 @@
   lib,
   appimageTools,
   fetchurl,
-}:
-# TODO check that this isn't screwed up
-# TODO verify we don't need any additional packages
-# https://github.com/heyman/heynote?tab=readme-ov-file#notes-on-linux-installation
-let
+}: let
   pname = "heynote";
   version = "1.7.0";
 

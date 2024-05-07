@@ -5,7 +5,7 @@
   outputs,
   ...
 }: {
-  # Import my custom CSS module
+  # TODO Import my custom CSS module
   imports = [outputs.hmModules.sidebery-css];
 
   # Enable and configure FireFox
@@ -169,7 +169,6 @@
   };
 
   # Add the actual CSS tweaks
-  # TODO consider switch to module
   home.file = let
     currHash = "sha256-t79RFhhbb0xCjQC4oCwWaP7ztMpvn5ch5IdIMsJjhUU=";
   in {

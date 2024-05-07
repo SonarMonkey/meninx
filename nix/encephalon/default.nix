@@ -24,7 +24,7 @@
     ./packages.nix
     ./performance.nix
 
-    # FIXME disabled for GNOME 46
+    # Disabled for GNOME 46
     #./theme.nix
   ];
 }
