@@ -15,23 +15,21 @@
       eval "$(nh completions -s zsh)"
     '';
 
-    # FIXME Session variables for ZSH
+    # Session variables for ZSH
     sessionVariables = {
       FLAKE = "/home/sonar/Nix";
       NIXOS_OZONE_WL = "1";
     };
 
-    # FIXME Global abbreviations
-    shellGlobalAliases = {
+    # Shell aliases
+    shellAliases = {
+      # General stuff
       e = "$EDITOR";
       se = "sudo $EDITOR";
       h = "hx";
       ns = "nix-env -qa | fzf";
       s = "kitten ssh";
-    };
 
-    # FIXME Shell aliases
-    shellAliases = {
       # Tailscale
       ts = "tailscale";
       tss = "tailscale status";
@@ -67,8 +65,8 @@
       hdot = "e ~/Nix/home.d/";
 
       # nixOS
-      nfm = "nix fmt && git ca \"Format with Alejandra\"";
-      fup = "nix flake update && git ca \"Update flake inputs\"";
+      nfm = "nix fmt && git -a -m \"Format with Alejandra\"";
+      fup = "nix flake update && git -a -m \"Update flake inputs\"";
       fch = "nix flake check";
       nup = "sudo nixos-rebuild switch -v";
       nbo = "sudo nixos-rebuild boot -v";
@@ -85,7 +83,7 @@
     prezto = {
       enable = true;
 
-      # TODO Editor configuration
+      # Editor configuration
       editor = {
         dotExpansion = true;
         keymap = "vi";
