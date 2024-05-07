@@ -101,6 +101,23 @@ with lib.hm.gvariant; {
       xkb-options = ["terminate:ctrl_alt_bksp" "caps:ctrl_modifier"];
     };
 
+    # Set wallpaper and properties
+    "org/gnome/desktop/background" = {
+      color-shading-type = "solid";
+      picture-options = "zoom";
+      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/adwaita-l.jxl";
+      picture-uri-dark = "file:///run/current-system/sw/share/backgrounds/gnome/adwaita-d.jxl";
+      primary-color = "#3071AE";
+      secondary-color = "#000000";
+    };
+
+    # Set screensaver and properties
+    "org/gnome/desktop/screensaver" = {
+      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/adwaita-l.jxl";
+      primary-color = "#3071AE";
+      secondary-color = "#000000";
+    };
+
     # General interface settings
     "org/gnome/desktop/interface" = {
       # Clock
