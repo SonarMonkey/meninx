@@ -56,8 +56,12 @@ This is *my personal configuration* and is not intended to be used as-is outside
   - [ ] Main config
   - [ ] ISO config
 - [ ] Add more links/wiki/etc.
-- [ ] Add back catppuccin themes whenever fixed in GNOME 46
 - [ ] Further update README.md
+
+## Notes
+
+- Themes are currently disabled, as the GNOME 46 update just hit and I did not feel like fixing things. May or may not add them back, honestly don't mind the default dark look of Adwaita these days.
+- My network configuration is still *heavily* a work-in-progress, but adding things back after switching to this config has gone pretty well so far. I still don't actually know how all this low-level networking stuff really works, though.
 
 ## Future Plans
 
