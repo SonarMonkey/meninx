@@ -25,5 +25,6 @@
     transmission_4-gtk
     obsidian
     heynote
+    nb
   ];
 }
