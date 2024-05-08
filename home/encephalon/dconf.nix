@@ -207,6 +207,7 @@ with lib.hm.gvariant; {
         "emacs.desktop"
         "obsidian.desktop"
         "logseq.desktop"
+        "heynote.desktop"
         "code.desktop"
         "kitty.desktop"
         "org.gnome.Settings.desktop"
