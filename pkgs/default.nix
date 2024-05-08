@@ -7,4 +7,5 @@
   mullvad-vpn = pkgs.callPackage ./mullvad-vpn {};
   zed = pkgs.callPackage ./zed {};
   heynote = pkgs.callPackage ./heynote {};
+  beaver-notes = pkgs.callPackage ./beaver-notes {};
 }
