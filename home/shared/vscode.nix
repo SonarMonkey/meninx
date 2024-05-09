@@ -45,6 +45,7 @@
 
       # Language settings
       "[nix]"."editor.tabSize" = 2;
+      "[markdown]"."editor.defaultFormatter" = "esbenp.prettier-vscode";
 
       # Configure path autocomplete
       "path-intellisense.showHiddenFiles" = true;
