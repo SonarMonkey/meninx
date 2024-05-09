@@ -43,6 +43,10 @@
 
     # Other settings and configuration options
     settings = {
+      # Theme
+      theme = "adwaita-dark";
+
+      # Editor settings
       editor = {
         line-number = "relative";
         cursorline = true;
