@@ -17,43 +17,45 @@
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     # General utilities
+    fd
+    fzf
+    fzf
     gcc
-    git
-    unzip
-    fzf
-    ripgrep
-    ripgrep-all
-    wl-clipboard
-    suckit
-    ookla-speedtest
-    qmk
-    fzf
-    ventoy-full
     genact
+    gh
+    git
     jq
     moreutils
-    gh
+    ookla-speedtest
+    pandoc
+    qmk
+    ripgrep
+    ripgrep-all
+    suckit
+    unzip
+    ventoy-full
+    wl-clipboard
 
     # Desktop applications
     gimp-with-plugins
     inkscape-with-extensions
-    libreoffice-fresh
     krita
+    libreoffice-fresh
     scribus
     vlc
 
     # Nix-related utilities
     alejandra
     deadnix
+    inputs.nh.packages.x86_64-linux.default
+    nix-init
     nixfmt-rfc-style
     nurl
-    nix-init
-    inputs.nh.packages.x86_64-linux.default
 
     # Fonts
-    maple-mono-NF
-    inter
     corefonts
+    inter
+    maple-mono-NF
     nerdfonts
 
     # Leave some java laying around
