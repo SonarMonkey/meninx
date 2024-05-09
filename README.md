@@ -34,9 +34,10 @@ This is *my personal configuration* and is not intended to be used as-is outside
   - [ ] Create encephalon ISO
   - [ ] Create AMD GPU ISO
 - [ ] Trim cruft packages
-  - [ ] Check emacs-related package list
+  - [x] Check emacs-related package list
   - [x] Mark other packages for removal
   - [x] Remove or keep marked packages
+  - [ ] Probably do another pass now
 - [x] Consolidate package lists
 - [x] Create module system
 - [x] ~~Fix `pyClock` module (resigned for now)~~
@@ -51,6 +52,8 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [x] Configure git correctly for switch to GitHub
 - [x] Figure out networking stuff for Tailscale/NextDNS/Mullvad (done enough for now)
 - [ ] Finish testing builds for all systems
+  - [x] Encephalon
+  - [ ] Cerebrum
 - [x] Add AMD GPU configuration
 - [ ] Add NixOS-WSL configuration
   - [ ] Main config
@@ -59,7 +62,8 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [ ] Further update README.md
 - [ ] Heavily pare back zsh config
 - [ ] Wait for linux builds to package zed
-- [ ] Consider outright ditching Emacs
+- [x] Consider outright ditching Emacs
+- [ ] Switch to `programs.gnome-shell` for extensions
 
 ## Notes
 
