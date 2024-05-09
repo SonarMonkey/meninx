@@ -14,16 +14,16 @@
     adw-gtk3
 
     # Desktop applications
-    vesktop
-    thunderbird
+    adwsteamgtk
+    bottles
+    heynote
     libreoffice-fresh
     logseq
-    pika-backup
-    bottles
     mediawriter
-    adwsteamgtk
-    transmission_4-gtk
     obsidian
-    heynote
+    pika-backup
+    thunderbird
+    transmission_4-gtk
+    vesktop
   ];
 }
