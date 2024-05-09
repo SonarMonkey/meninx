@@ -14,7 +14,6 @@
 
     # GNOME extensions
     gnomeExtensions.caffeine
-    gnomeExtensions.mullvad-indicator
     gnomeExtensions.grand-theft-focus
     gnomeExtensions.app-hider
     gnomeExtensions.alphabetical-app-grid
