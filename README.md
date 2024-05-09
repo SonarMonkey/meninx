@@ -65,6 +65,7 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [x] Consider outright ditching Emacs
 - [ ] Switch to `programs.gnome-shell` for extensions
 - [ ] Add and configure espanso
+- [ ] Add back nix-index-database?
 
 ## Notes
 
