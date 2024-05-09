@@ -26,9 +26,6 @@
   # Enable font discovery/etc
   fonts.fontconfig.enable = true;
 
-  # User icon
-  home.file.".face".source = ../../assets/face.png;
-
   # GTK settings
   gtk = {
     enable = true;

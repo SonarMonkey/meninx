@@ -10,6 +10,9 @@
   # Extra theme packages
   home.packages = with pkgs; [adw-gtk3];
 
+  # User icon
+  home.file.".face".source = ../../assets/face.png;
+
   # Stylix options for Home Manager
   stylix = {
     # Target settings
