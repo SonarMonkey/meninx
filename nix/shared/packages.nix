@@ -17,6 +17,7 @@
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     # General utilities
+    espanso-wayland
     fd
     fzf
     fzf
