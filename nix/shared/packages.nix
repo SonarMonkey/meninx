@@ -35,6 +35,7 @@
     unzip
     ventoy-full
     wl-clipboard
+    nodePackages.prettier
 
     # Desktop applications
     gimp-with-plugins
