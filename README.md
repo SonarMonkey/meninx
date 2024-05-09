@@ -64,6 +64,7 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [ ] Wait for linux builds to package zed
 - [x] Consider outright ditching Emacs
 - [ ] Switch to `programs.gnome-shell` for extensions
+- [ ] Add and configure espanso
 
 ## Notes
 
