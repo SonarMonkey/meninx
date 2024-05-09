@@ -15,7 +15,6 @@
     # Target settings
     targets = {
       # Disable undesired targets
-      emacs.enable = false;
       vscode.enable = false;
 
       # Enable the 256-color kitty variant

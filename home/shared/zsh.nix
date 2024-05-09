@@ -50,13 +50,6 @@
       mud = "mullvad disconnect";
       mue = "mullvad-exclude";
 
-      # Doom Emacs
-      dup = "doom upgrade";
-      dsup = "doom sync -up";
-      ddoc = "doom doctor";
-      dre = "doom build -r";
-      dcl = "doom clean && doom purge && doom purge -g";
-
       # Nix configs
       ne = "e ~/Nix/";
       nc = "e ~/Nix/configuration.nix";

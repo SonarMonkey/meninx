@@ -12,8 +12,8 @@
       package = vesktop;
     })
     (makeAutostartItem {
-      name = "emacs";
-      package = emacs29-pgtk;
+      name = "obsidian";
+      package = obsidian;
     })
     (makeAutostartItem {
       name = "firefox";
