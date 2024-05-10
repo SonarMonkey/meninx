@@ -10,13 +10,6 @@
     # Run unpatched binaries
     nix-alien.url = "github:thiagokokada/nix-alien";
 
-    # Better setup instead of whole NUR
-    # TODO switch to using this for firefox addons
-    firefox-addons = {
-      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Gaming optimizations
     nix-gaming.url = "github:fufexan/nix-gaming";
 
