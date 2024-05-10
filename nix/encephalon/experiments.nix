@@ -13,6 +13,5 @@
     melt
     mods
     skate
-    vhs
   ];
 }
