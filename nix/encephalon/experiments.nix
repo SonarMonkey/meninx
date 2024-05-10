@@ -8,9 +8,11 @@
 
   # Stuff from charm.sh for scripts and experiments
   environment.systemPackages = with pkgs; [
+    charm-freeze
     gum
     melt
     mods
     skate
+    vhs
   ];
 }
