@@ -69,8 +69,6 @@
           # General
           bashls.enable = true;
           jsonls.enable = true;
-          ltex.enable = true;
-          marksman.enable = true;
 
           # Nix
           nil_ls = {
