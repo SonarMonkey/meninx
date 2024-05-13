@@ -21,6 +21,7 @@
     # Configuration options
     opts = {
       conceallevel = 1;
+      linebreak = true;
     };
 
     # Clipboard configuration
