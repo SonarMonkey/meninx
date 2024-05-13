@@ -18,8 +18,8 @@
     withNodeJs = true;
     withRuby = true;
 
-    # Extra plugins not in nixvim
-    extraPlugins = [];
+    # Conceal level
+    localOpts.conceallevel = 1;
 
     # Clipboard configuration
     clipboard = {
