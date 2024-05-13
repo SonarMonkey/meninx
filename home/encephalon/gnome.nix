@@ -72,8 +72,9 @@
     # Nautilus bookmarks
     gtk3.bookmarks = [
       "file:///home/sonar/Nix"
-      "file:///home/sonar/Orgseq"
+      "file:///home/sonar/Notes"
       "file:///home/sonar/Projects"
+      "file:///home/sonar/Documents/Work"
     ];
   };
 
