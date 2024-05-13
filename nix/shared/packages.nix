@@ -25,6 +25,7 @@
     gh
     git
     jq
+    yq
     moreutils
     ookla-speedtest
     pandoc
