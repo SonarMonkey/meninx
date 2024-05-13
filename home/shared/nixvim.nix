@@ -141,6 +141,7 @@
           # Note creation
           new_notes_location = "notes_subdir";
           daily_notes.template = "Daily.md";
+          disable_frontmatter = true;
 
           # Preferred picker
           picker.name = "telescope.nvim";
