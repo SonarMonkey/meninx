@@ -87,7 +87,7 @@
       nix.enable = true;
 
       # Autopair
-      nvim-autopair.enable = true;
+      nvim-autopairs.enable = true;
 
       # Picker
       telescope = {
