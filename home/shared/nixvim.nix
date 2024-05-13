@@ -18,8 +18,10 @@
     withNodeJs = true;
     withRuby = true;
 
-    # Conceal level
-    localOpts.conceallevel = 1;
+    # Configuration options
+    opts = {
+      conceallevel = 1;
+    };
 
     # Clipboard configuration
     clipboard = {
