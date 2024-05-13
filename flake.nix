@@ -40,6 +40,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Nix-ified neovim
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Pre-configured themes
     stylix = {
       url = "github:danth/stylix";
@@ -86,7 +92,7 @@
     nixosModules = import ./modules/nixos;
 
     # Reusable home-manager modules
-    hmModules = import ./modules/home-manager;
+    homeManagerModules = import ./modules/home-manager;
 
     # My local custom packages and modifications
     overlays = import ./overlays {inherit inputs;};

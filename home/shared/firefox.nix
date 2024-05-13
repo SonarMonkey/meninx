@@ -6,7 +6,7 @@
   ...
 }: {
   # TODO Import my custom CSS module
-  imports = [outputs.hmModules.sidebery-css];
+  imports = [outputs.homeManagerModules.sidebery-css];
 
   # Enable and configure FireFox
   programs.firefox = {
