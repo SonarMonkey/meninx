@@ -26,7 +26,7 @@
       register = "unnamedplus";
       providers = {
         # Wayland provider
-        wl-clipboard = {
+        wl-copy = {
           enable = true;
           package = pkgs.wl-clipboard;
         };
