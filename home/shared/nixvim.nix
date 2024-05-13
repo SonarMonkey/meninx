@@ -124,10 +124,12 @@
         settings = {
           # Vault location
           dir = "/home/sonar/Notes";
-          workspaces.Notes = {
-            names = "Notes";
-            path = "/home/sonar/Notes";
-          };
+          workspaces = [
+            {
+              name = "Notes";
+              path = "/home/sonar/Notes";
+            }
+          ];
 
           # Subdirectory config
           notes_subdir = "pages";
