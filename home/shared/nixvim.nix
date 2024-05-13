@@ -92,11 +92,13 @@
       # Picker
       telescope = {
         enable = true;
-        file-browser.enable = true;
-        frecency.enable = true;
-        media-files.enable = true;
-        ui-select.enable = true;
-        undo.enable = true;
+        extensions = {
+          file-browser.enable = true;
+          frecency.enable = true;
+          media-files.enable = true;
+          ui-select.enable = true;
+          undo.enable = true;
+        };
       };
 
       # Syntax highlighting
