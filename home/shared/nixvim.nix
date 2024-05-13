@@ -133,10 +133,13 @@
 
           # Subdirectory config
           notes_subdir = "pages";
-          new_notes_location = "notes_subdir";
           attachments.img_folder = "assets";
           daily_notes.folder = "journals";
           templates.subdir = "templates";
+
+          # Note creation
+          new_notes_location = "notes_subdir";
+          daily_notes.template = "Daily.md";
 
           # Preferred picker
           picker.name = "telescope.nvim";
