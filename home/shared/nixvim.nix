@@ -6,7 +6,7 @@
 }: {
   # Get the nixvim module
   imports = [
-    inputs.homeManagerModules.nixvim
+    inputs.nixvim.homeManagerModules.nixvim
   ];
 
   # Configure nixvim
