@@ -24,16 +24,17 @@
     # Clipboard configuration
     clipboard = {
       register = "unnamedplus";
+      providers = {
+        # Wayland provider
+        wl-clipboard = {
+          enable = true;
+          package = pkgs.wl-clipboard;
+        };
 
-      # Wayland provider
-      wl-clipboard = {
-        enable = true;
-        package = pkgs.wl-clipboard;
+        # X11 provider
+        xclip.enable = true;
+        xsel.enable = true;
       };
-
-      # X11 provider
-      xclip.enable = true;
-      xsel.enable = true;
     };
 
     # Theme configuration
