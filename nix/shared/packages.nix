@@ -20,7 +20,6 @@
     espanso-wayland
     fd
     fzf
-    fzf
     gcc
     genact
     gh
@@ -53,12 +52,6 @@
     nix-init
     nixfmt-rfc-style
     nurl
-
-    # Fonts
-    corefonts
-    inter
-    maple-mono-NF
-    nerdfonts
 
     # Leave some java laying around
     adoptopenjdk-bin
