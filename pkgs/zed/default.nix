@@ -1,33 +1,33 @@
-{
-  lib,
-  rustPlatform,
-  fetchFromGitHub,
-  curl,
-  pkg-config,
-  protobuf,
-  fontconfig,
-  freetype,
-  libgit2,
-  libxkbcommon,
-  openssl,
-  sqlite,
-  vulkan-loader,
-  zlib,
-  zstd,
-  stdenv,
-  darwin,
-  alsa-lib,
-  wayland,
+{ lib
+, rustPlatform
+, fetchFromGitHub
+, curl
+, pkg-config
+, protobuf
+, fontconfig
+, freetype
+, libgit2
+, libxkbcommon
+, openssl
+, sqlite
+, vulkan-loader
+, zlib
+, zstd
+, stdenv
+, darwin
+, alsa-lib
+, wayland
 }:
+
 rustPlatform.buildRustPackage rec {
   pname = "zed";
-  version = "0.133.5";
+  version = "0.134.4";
 
   src = fetchFromGitHub {
     owner = "zed-industries";
     repo = "zed";
     rev = "v${version}";
-    hash = "sha256-52vWOlaxVcjlKLrBW+anh6i7kfBCD5cTHWcjLFiY9BA=";
+    hash = "sha256-2/onI/tc5FlwyRuu4Yq3xJYqwNXhnIrCebQQpCKGzfs=";
     fetchSubmodules = true;
   };
 
@@ -35,7 +35,7 @@ rustPlatform.buildRustPackage rec {
     lockFile = ./Cargo.lock;
     outputHashes = {
       "async-pipe-0.1.3" = "sha256-g120X88HGT8P6GNCrzpS5SutALx5H+45Sf4iSSxzctE=";
-      "blade-graphics-0.4.0" = "sha256-S1PNdQ9YbJgLLsJU1mvDZ3feVDIrZGwU37JqIm+kfcE=";
+      "blade-graphics-0.4.0" = "sha256-J6mVvMC8u3+8RGp6qSwU/EpvdtUPyIs2Ry9XGGiimB0=";
       "font-kit-0.11.0" = "sha256-+4zMzjFyMS60HfLMEXGfXqKn6P+pOngLA45udV09DM8=";
       "heed-0.20.0-alpha.9" = "sha256-8bzoMmfKS+6AmeTzh0/F7WM9OBdIex+NYFER28bpA/s=";
       "lsp-types-0.94.1" = "sha256-kplgPsafrgZFMI1D9pQCwmg+FKMn5HNWLbcgdXHUFVU=";
@@ -67,36 +67,33 @@ rustPlatform.buildRustPackage rec {
     rustPlatform.bindgenHook
   ];
 
-  buildInputs =
-    [
-      curl
-      fontconfig
-      freetype
-      libgit2
-      libxkbcommon
-      openssl
-      sqlite
-      vulkan-loader
-      zlib
-      zstd
-    ]
-    ++ lib.optionals stdenv.isDarwin [
-      darwin.apple_sdk.frameworks.AppKit
-      darwin.apple_sdk.frameworks.CoreAudio
-      darwin.apple_sdk.frameworks.CoreFoundation
-      darwin.apple_sdk.frameworks.CoreGraphics
-      darwin.apple_sdk.frameworks.CoreServices
-      darwin.apple_sdk.frameworks.CoreText
-      darwin.apple_sdk.frameworks.Foundation
-      darwin.apple_sdk.frameworks.IOKit
-      darwin.apple_sdk.frameworks.Metal
-      darwin.apple_sdk.frameworks.Security
-      darwin.apple_sdk.frameworks.SystemConfiguration
-    ]
-    ++ lib.optionals stdenv.isLinux [
-      alsa-lib
-      wayland
-    ];
+  buildInputs = [
+    curl
+    fontconfig
+    freetype
+    libgit2
+    libxkbcommon
+    openssl
+    sqlite
+    vulkan-loader
+    zlib
+    zstd
+  ] ++ lib.optionals stdenv.isDarwin [
+    darwin.apple_sdk.frameworks.AppKit
+    darwin.apple_sdk.frameworks.CoreAudio
+    darwin.apple_sdk.frameworks.CoreFoundation
+    darwin.apple_sdk.frameworks.CoreGraphics
+    darwin.apple_sdk.frameworks.CoreServices
+    darwin.apple_sdk.frameworks.CoreText
+    darwin.apple_sdk.frameworks.Foundation
+    darwin.apple_sdk.frameworks.IOKit
+    darwin.apple_sdk.frameworks.Metal
+    darwin.apple_sdk.frameworks.Security
+    darwin.apple_sdk.frameworks.SystemConfiguration
+  ] ++ lib.optionals stdenv.isLinux [
+    alsa-lib
+    wayland
+  ];
 
   env = {
     ZSTD_SYS_USE_PKG_CONFIG = true;
@@ -105,8 +102,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter";
     homepage = "https://github.com/zed-industries/zed";
-    license = with licenses; [asl20 agpl3Only gpl3Only];
-    maintainers = with maintainers; [];
+    license = with licenses; [ asl20 agpl3Only gpl3Only ];
+    maintainers = with maintainers; [ ];
     mainProgram = "zed";
   };
 }
