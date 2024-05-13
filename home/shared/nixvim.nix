@@ -118,22 +118,25 @@
         # Enable
         enable = true;
 
-        # Vault location
-        dir = "/home/sonar/Notes";
-        workspaces.Notes = {
-          names = "Notes";
-          path = "/home/sonar/Notes";
+        # Settings
+        settings = {
+          # Vault location
+          dir = "/home/sonar/Notes";
+          workspaces.Notes = {
+            names = "Notes";
+            path = "/home/sonar/Notes";
+          };
+
+          # Subdirectory config
+          notes_subdir = "pages";
+          new_notes_location = "notes_subdir";
+          attachments.img_folder = "assets";
+          daily_notes.folder = "journals";
+          templates.subdir = "templates";
+
+          # Preferred picker
+          picker.name = "telescope.nvim";
         };
-
-        # Subdirectory config
-        notes_subdir = "pages";
-        new_notes_location = "notes_subdir";
-        attachments.img_folder = "assets";
-        daily_notes.folder = "journals";
-        templates.subdir = "templates";
-
-        # Preferred picker
-        picker.name = "telescope.nvim";
       };
     };
   };
