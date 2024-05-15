@@ -216,13 +216,14 @@ with lib.hm.gvariant; {
     # Apps to hide from appgrid
     "org/gnome/shell/extensions/app-hider" = {
       hidden-apps = [
-        "xterm.desktop"
-        "org.gnome.Tour.desktop"
         "cups.desktop"
-        "yelp.desktop"
         "Helix.desktop"
+        "nvim.desktop"
+        "org.gnome.Tour.desktop"
         "Steam Linux Runtime 3.0 (sniper).desktop"
+        "xterm.desktop"
         "yazi.desktop"
+        "yelp.desktop"
       ];
     };
 
