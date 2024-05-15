@@ -16,6 +16,7 @@
     ./boot.nix
     ./disko.nix
     ./experiments.nix
+    ./fonts.nix
     ./gaming.nix
     ./gnome.nix
     ./hardware-configuration.nix

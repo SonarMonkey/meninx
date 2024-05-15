@@ -13,18 +13,28 @@
     adwsteamgtk
 
     # GNOME extensions
+    gnomeExtensions.alphabetical-app-grid
+    gnomeExtensions.app-hider
     gnomeExtensions.caffeine
     gnomeExtensions.grand-theft-focus
-    gnomeExtensions.app-hider
-    gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.thinkpad-battery-threshold
   ];
 
   # Set envvar for theme just in case
   home.sessionVariables.GTK_THEME = "adw-gtk3-dark";
 
-  # Enable font discovery/etc
-  fonts.fontconfig.enable = true;
+  # Enable font discovery and set defaults
+  fonts.fontconfig = {
+    enable = true;
+
+    # Set defaults
+    defaultFonts = {
+      serif = ["Cantarell"];
+      sansSerif = ["Cantarell"];
+      monospace = ["Maple Mono NF"];
+      emoji = ["Noto Color Emoji"];
+    };
+  };
 
   # GTK settings
   gtk = {

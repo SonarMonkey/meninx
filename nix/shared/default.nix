@@ -5,7 +5,6 @@
 }: {
   imports = [
     ./fhs.nix
-    ./fonts.nix
     ./gaming.nix
     ./hardware.nix
     ./iphone.nix

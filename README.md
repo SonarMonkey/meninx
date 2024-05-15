@@ -66,6 +66,7 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [ ] Switch to `programs.gnome-shell` for extensions
 - [ ] Add and configure espanso
 - [ ] Add back nix-index-database?
+- [ ] Add custom font configuration for encephalon
 
 ## Notes
 
