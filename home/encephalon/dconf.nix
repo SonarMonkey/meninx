@@ -237,9 +237,14 @@ with lib.hm.gvariant; {
     "org/gnome/shell/extensions/happy-appy-hotkey" = {
       app-0 = "Heynote";
       app-1 = "Obsidian";
+      app-2 = "kitty";
+      app-3 = "Firefox";
+      app-4 = "Vesktop";
       hotkey-0 = ["<Alt>space"];
       hotkey-1 = ["<Control>space"];
-      number = 2;
+      hotkey-2 = ["<Control>Return"];
+      hotkey-3 = ["<Control><Alt>o"];
+      hotkey-4 = ["<Control><Alt>m"];
     };
 
     # Battery threshold configuration
