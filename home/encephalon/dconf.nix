@@ -243,7 +243,7 @@ with lib.hm.gvariant; {
       app-4 = "Vesktop";
       hotkey-0 = ["<Alt>space"];
       hotkey-1 = ["<Control>space"];
-      hotkey-2 = ["<Control>Return"];
+      hotkey-2 = ["<Control><Alt>Return"];
       hotkey-3 = ["<Control><Alt>o"];
       hotkey-4 = ["<Control><Alt>m"];
     };
