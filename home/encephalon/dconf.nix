@@ -193,6 +193,7 @@ with lib.hm.gvariant; {
         "app-hider@lynith.dev"
         "caffeine@patapon.info"
         "grand-theft-focus@zalckos.github.com"
+        "happy-appy-hotkey@jqno.nl"
         "thinkpad-battery-threshold@marcosdalvarez.org"
       ];
 

@@ -17,6 +17,7 @@
     gnomeExtensions.app-hider
     gnomeExtensions.caffeine
     gnomeExtensions.grand-theft-focus
+    gnomeExtensions.happy-appy-hotkey
     gnomeExtensions.thinkpad-battery-threshold
   ];
 
