@@ -233,6 +233,15 @@ with lib.hm.gvariant; {
       show-indicator = "only-active";
     };
 
+    # Custom app hotkeys
+    "org/gnome/shell/extensions/happy-appy-hotkey" = {
+      app-0 = "Heynote";
+      app-1 = "Obsidian";
+      hotkey-0 = ["<Alt>space"];
+      hotkey-1 = ["<Control>space"];
+      number = 2;
+    };
+
     # Battery threshold configuration
     "org/gnome/shell/extensions/thinkpad-battery-threshold" = {
       color-mode = false;
