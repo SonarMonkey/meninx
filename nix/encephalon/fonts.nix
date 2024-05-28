@@ -26,6 +26,7 @@
     packages = with pkgs; [
       corefonts
       inter
+      atkinson-hyperlegible
       maple-mono-NF
       nerdfonts
       noto-fonts-color-emoji
