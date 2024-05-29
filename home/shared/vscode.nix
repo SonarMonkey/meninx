@@ -16,6 +16,7 @@
       # Extensions from nix repo
       pkgs.vscode-extensions.christian-kohler.path-intellisense
       pkgs.vscode-extensions.esbenp.prettier-vscode
+      pkgs.vscode-extensions.golang.go
       pkgs.vscode-extensions.gruntfuggly.todo-tree
       pkgs.vscode-extensions.jnoortheen.nix-ide
       pkgs.vscode-extensions.kamadorueda.alejandra

@@ -11,6 +11,7 @@
     extraPackages = with pkgs; [
       clang-tools
       clojure-lsp
+      gopls
       markdown-oxide
       marksman
       nil

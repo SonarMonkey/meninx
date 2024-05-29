@@ -61,5 +61,9 @@
 
     # Explicitly install NTFS drivers
     ntfs3g
+
+    # Programming languages
+    go
+    gopls
   ];
 }
