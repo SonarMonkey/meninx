@@ -18,7 +18,6 @@
     bottles
     heynote
     libreoffice-fresh
-    logseq
     mediawriter
     obsidian
     pika-backup

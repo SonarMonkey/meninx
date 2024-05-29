@@ -205,7 +205,6 @@ with lib.hm.gvariant; {
         "mullvad-vpn.desktop"
         "org.gnome.Nautilus.desktop"
         "obsidian.desktop"
-        "logseq.desktop"
         "heynote.desktop"
         "code.desktop"
         "kitty.desktop"

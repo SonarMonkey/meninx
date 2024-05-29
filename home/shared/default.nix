@@ -5,7 +5,6 @@
 }: {
   imports = [
     ./bash.nix
-    ./espanso.nix
     ./firefox.nix
     ./helix.nix
     ./home.nix
