@@ -9,6 +9,7 @@
   # Stuff from charm.sh for scripts and experiments
   environment.systemPackages = with pkgs; [
     warp-terminal
+    jan
     charm-freeze
     gum
     melt
