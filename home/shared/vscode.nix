@@ -13,16 +13,16 @@
 
     # Extensions
     extensions = with pkgs.vscode-extensions; [
-      piousdeer.adwaita-theme
-      bbenoist.nix
       christian-kohler.path-intellisense
       esbenp.prettier-vscode
-      kamadorueda.alejandra
-      oderwat.indent-rainbow
-      yzhang.markdown-all-in-one
-      ms-vscode.cpptools-extension-pack
-      ms-vscode-remote.remote-ssh
       gruntfuggly.todo-tree
+      jnoortheen.nix-ide
+      kamadorueda.alejandra
+      ms-vscode-remote.remote-ssh
+      ms-vscode.cpptools-extension-pack
+      oderwat.indent-rainbow
+      piousdeer.adwaita-theme
+      yzhang.markdown-all-in-one
     ];
 
     # General settings mostly taken from piousdeer
@@ -45,7 +45,13 @@
 
       # Language settings
       "[nix]"."editor.tabSize" = 2;
+      "[nix]"."editor.defaultFormatter" = "kamadorueda.alejandra";
       "[markdown]"."editor.defaultFormatter" = "esbenp.prettier-vscode";
+
+      # Nix-IDE settings
+      "nix.enableLanguageServer" = true;
+      "nix.serverPath" = "nixd";
+      "nix.formatterPath" = "alejandra";
 
       # Configure path autocomplete
       "path-intellisense.showHiddenFiles" = true;

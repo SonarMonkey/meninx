@@ -53,6 +53,7 @@
     nix-init
     nixfmt-rfc-style
     nurl
+    nixd
 
     # Leave some java laying around
     adoptopenjdk-bin
