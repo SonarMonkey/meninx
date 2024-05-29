@@ -209,6 +209,7 @@ with lib.hm.gvariant; {
         "heynote.desktop"
         "code.desktop"
         "kitty.desktop"
+        "dev.warp.Warp.desktop"
         "org.gnome.Settings.desktop"
       ];
     };
