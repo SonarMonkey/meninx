@@ -26,7 +26,7 @@
       pkgs.vscode-extensions.yzhang.markdown-all-in-one
 
       # Extensions from nix-vscode-extenions
-      pkgs.vscode-extensions.codeium.codeium
+      pkgs.vscode-marketplace.codeium.codeium
     ];
 
     # General settings mostly taken from piousdeer
