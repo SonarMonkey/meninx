@@ -51,22 +51,21 @@ This is *my personal configuration* and is not intended to be used as-is outside
 - [ ] Add inline links/documentation
 - [x] Configure git correctly for switch to GitHub
 - [x] Figure out networking stuff for Tailscale/NextDNS/Mullvad (done enough for now)
-- [ ] Finish testing builds for all systems
+- [x] Finish testing builds for all systems
   - [x] Encephalon
-  - [ ] Cerebrum
+  - [x] Cerebrum
 - [x] Add AMD GPU configuration
 - [ ] Add NixOS-WSL configuration
   - [ ] Main config
   - [ ] ISO config
 - [ ] Add more links/wiki/etc.
 - [ ] Further update README.md
-- [ ] Heavily pare back zsh config
+- [~] Heavily pare back zsh config
 - [ ] Wait for linux builds to package zed
 - [x] Consider outright ditching Emacs
 - [ ] Switch to `programs.gnome-shell` for extensions
-- [ ] Add and configure espanso
 - [ ] Add back nix-index-database?
-- [ ] Add custom font configuration for encephalon
+- [x] Add custom font configuration for encephalon
 
 ## Notes
 
