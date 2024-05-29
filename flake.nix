@@ -6,6 +6,7 @@
     # Packages
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
 
     # Run unpatched binaries
     nix-alien.url = "github:thiagokokada/nix-alien";
