@@ -65,5 +65,7 @@
     # Programming languages
     go
     gopls
+    go-tools
+    delve
   ];
 }
