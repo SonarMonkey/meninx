@@ -119,7 +119,7 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-base.nix"
-          ./nix/cerebrum/iso.nix
+          ./nix/cerebrum/nvidia-kde6-iso.nix
         ];
       };
     };
