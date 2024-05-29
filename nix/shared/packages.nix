@@ -10,6 +10,7 @@
     config.allowUnfree = true;
     overlays = [
       inputs.nur.overlay
+      inputs.nix-vscode-extensions.overlays.default
       outputs.overlays.additions
     ];
   };
