@@ -12,17 +12,21 @@
     mutableExtensionsDir = false;
 
     # Extensions
-    extensions = with pkgs.vscode-extensions; [
-      christian-kohler.path-intellisense
-      esbenp.prettier-vscode
-      gruntfuggly.todo-tree
-      jnoortheen.nix-ide
-      kamadorueda.alejandra
-      ms-vscode-remote.remote-ssh
-      ms-vscode.cpptools-extension-pack
-      oderwat.indent-rainbow
-      piousdeer.adwaita-theme
-      yzhang.markdown-all-in-one
+    extensions = [
+      # Extensions from nix repo
+      pkgs.vscode-extensions.christian-kohler.path-intellisense
+      pkgs.vscode-extensions.esbenp.prettier-vscode
+      pkgs.vscode-extensions.gruntfuggly.todo-tree
+      pkgs.vscode-extensions.jnoortheen.nix-ide
+      pkgs.vscode-extensions.kamadorueda.alejandra
+      pkgs.vscode-extensions.ms-vscode-remote.remote-ssh
+      pkgs.vscode-extensions.ms-vscode.cpptools-extension-pack
+      pkgs.vscode-extensions.oderwat.indent-rainbow
+      pkgs.vscode-extensions.piousdeer.adwaita-theme
+      pkgs.vscode-extensions.yzhang.markdown-all-in-one
+
+      # Extensions from nix-vscode-extenions
+      pkgs.vscode-extensions.codeium.codeium
     ];
 
     # General settings mostly taken from piousdeer
