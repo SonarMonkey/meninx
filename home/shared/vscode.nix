@@ -9,7 +9,7 @@
     enable = true;
     enableUpdateCheck = false;
     enableExtensionUpdateCheck = false;
-    mutableExtensionsDir = true;
+    mutableExtensionsDir = false;
 
     # Extensions
     extensions = [
@@ -28,7 +28,6 @@
 
       # Extensions from nix-vscode-extenions
       #pkgs.vscode-marketplace.tabbyml.vscode-tabby
-      pkgs.vscode-marketplace.codeium.codeium
     ];
 
     # General settings mostly taken from piousdeer
