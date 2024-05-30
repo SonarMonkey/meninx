@@ -10,7 +10,7 @@
 
   # Configure basic Home Manager settings
   home-manager = {
-    backupFileExtension = "hmbak";
+    backupFileExtension = "hm-backup";
     extraSpecialArgs = {inherit inputs outputs;};
     useGlobalPkgs = true;
     useUserPackages = true;
