@@ -24,6 +24,5 @@
     thunderbird
     transmission_4-gtk
     vesktop
-    zed-editor
   ];
 }
