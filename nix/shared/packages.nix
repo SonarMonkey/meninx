@@ -61,5 +61,12 @@
 
     # Explicitly install NTFS drivers
     ntfs3g
+
+    # Other programming language tools
+    go
+    gopls
+    go-tools
+    delve
+    codeium
   ];
 }

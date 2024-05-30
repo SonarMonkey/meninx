@@ -60,6 +60,9 @@
       # Completion
       cmp.enable = true;
 
+      # AI-assistant via codeium
+      codeium-vim.enable = true;
+
       # Language servers
       lsp = {
         enable = true;
@@ -69,6 +72,7 @@
           # General
           bashls.enable = true;
           jsonls.enable = true;
+          gopls.enable = true;
 
           # Nix
           nil_ls = {
