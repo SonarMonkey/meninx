@@ -45,6 +45,7 @@
     libreoffice-fresh
     scribus
     vlc
+    neovide
 
     # Nix-related utilities
     alejandra
