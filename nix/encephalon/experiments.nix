@@ -11,6 +11,7 @@
     warp-terminal
     jan
     charm-freeze
+    glow
     gum
     melt
     mods
