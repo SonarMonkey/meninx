@@ -17,7 +17,6 @@
 
     # Session variables for ZSH
     sessionVariables = {
-      FLAKE = "/home/sonar/Nix";
       NIXOS_OZONE_WL = "1";
     };
 

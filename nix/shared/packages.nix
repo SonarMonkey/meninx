@@ -49,7 +49,6 @@
     # Nix-related utilities
     alejandra
     deadnix
-    inputs.nh.packages.x86_64-linux.default
     nix-init
     nixfmt-rfc-style
     nurl

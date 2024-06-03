@@ -11,7 +11,6 @@
 
   # Set global environment variables
   environment.variables = {
-    FLAKE = "/home/sonar/Nix";
     NIXOS_OZONE_WL = "1";
   };
 

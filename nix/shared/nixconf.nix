@@ -41,4 +41,14 @@
       options = "--delete-older-than 7d";
     };
   };
+
+  # Enable and configure `nh` helper
+  programs.nh = {
+    enable = true;
+    flake = "/etc/nixos";
+    clean = {
+      enable = true;
+      extraArge = "--keep 5";
+    };
+  };
 }
