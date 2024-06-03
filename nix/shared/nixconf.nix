@@ -48,7 +48,7 @@
     flake = "/etc/nixos";
     clean = {
       enable = true;
-      extraArge = "--keep 5";
+      extraArgs = "--keep 5";
     };
   };
 }
