@@ -27,5 +27,9 @@
       name = "mullvad-vpn";
       package = mullvad-vpn;
     })
+    (makeAutostartItem {
+      name = "heynote";
+      package = heynote;
+    })
   ];
 }
