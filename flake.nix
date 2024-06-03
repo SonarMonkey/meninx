@@ -35,12 +35,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Neat nix-helper tool
-    nh = {
-      url = "github:viperML/nh";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Nix-ified neovim
     nixvim = {
       url = "github:nix-community/nixvim";
