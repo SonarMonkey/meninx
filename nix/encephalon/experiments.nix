@@ -6,9 +6,6 @@
   # Install ollama for running local LLMs
   services.ollama.enable = true;
 
-  # Install and configure private-gpt for local AI
-  services.private-gpt.enable = true;
-
   # Stuff from charm.sh for scripts and experiments
   environment.systemPackages = with pkgs; [
     warp-terminal
