@@ -21,7 +21,6 @@
     settings = {
       # Basic configuration
       shell = "zsh";
-      kitty_mod = "alt";
       enabled_layouts = "tall";
       disable_ligatures = "cursor";
       mouse_hide_wait = 3;
@@ -50,8 +49,8 @@
 
       # Tabs
       "kitty_mod+t" = "new_tab";
-      "kitty_mod+shift+l" = "next_tab";
-      "kitty_mod+shift+h" = "previous_tab";
+      "kitty_mod+}" = "next_tab";
+      "kitty_mod+{" = "previous_tab";
       "kitty_mod+1" = "goto_tab 1";
       "kitty_mod+2" = "goto_tab 2";
       "kitty_mod+3" = "goto_tab 3";
