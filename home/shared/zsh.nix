@@ -57,9 +57,9 @@
       hdot = "e ~/Nix/home.d/";
 
       # nixOS
-      nfm = "sudo nix fmt && git -a -m \"Format with Alejandra\"";
-      fup = "sudo nix flake update && git -a -m \"Update flake inputs\"";
-      fch = "sudo nix flake check";
+      nfm = "nix fmt && git -a -m \"Format with Alejandra\"";
+      fup = "nix flake update && git -a -m \"Update flake inputs\"";
+      fch = "nix flake check";
       nup = "sudo nixos-rebuild switch -v";
       nbo = "sudo nixos-rebuild boot -v";
       gcol = "sudo nix-collect-garbage -d";
