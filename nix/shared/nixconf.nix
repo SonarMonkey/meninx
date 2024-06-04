@@ -33,19 +33,12 @@
         "nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="
       ];
     };
-
-    # Automatic garbage collection
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 7d";
-    };
   };
 
   # Enable and configure `nh` helper
   programs.nh = {
     enable = true;
-    flake = "/etc/nixos";
+    flake = "/home/sonar/Nix";
     clean = {
       enable = true;
       extraArgs = "--keep 5";
