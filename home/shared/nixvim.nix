@@ -75,7 +75,7 @@
           gopls.enable = true;
 
           # Nix
-          nil_ls = {
+          nil-ls = {
             enable = true;
             settings.formatting.command = ["alejandra"];
           };
