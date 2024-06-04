@@ -49,8 +49,8 @@
 
       # Tabs
       "kitty_mod+t" = "new_tab";
-      "kitty_mod+}" = "next_tab";
-      "kitty_mod+{" = "previous_tab";
+      "kitty_mod+]" = "next_tab";
+      "kitty_mod+[" = "previous_tab";
       "kitty_mod+1" = "goto_tab 1";
       "kitty_mod+2" = "goto_tab 2";
       "kitty_mod+3" = "goto_tab 3";
