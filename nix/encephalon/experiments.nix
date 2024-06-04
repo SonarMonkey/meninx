@@ -19,6 +19,7 @@
       };
       llm = {
         mode = "ollama";
+        prompt_style = "mistral";
         max_new_tokens = 512;
         context_window = 3900;
         temperature = 0.1;
