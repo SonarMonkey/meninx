@@ -57,8 +57,8 @@
       hdot = "e ~/Nix/home.d/";
 
       # nixOS
-      nfm = "nix fmt && git -a -m \"Format with Alejandra\"";
-      fup = "nix flake update && git -a -m \"Update flake inputs\"";
+      nfm = "nix fmt && git commit -a -m \"Format with Alejandra\"";
+      fup = "nix flake update && git commit -a -m \"Update flake inputs\"";
       fch = "nix flake check";
       nup = "sudo nixos-rebuild switch -v";
       nbo = "sudo nixos-rebuild boot -v";
