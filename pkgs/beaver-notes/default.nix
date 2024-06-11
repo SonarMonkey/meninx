@@ -1,8 +1,8 @@
-{ lib
-, stdenv
-, fetchFromGitHub
+{
+  lib,
+  stdenv,
+  fetchFromGitHub,
 }:
-
 stdenv.mkDerivation rec {
   pname = "beaver-notes";
   version = "3.1.1";
@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
     description = "Your Personal Note-Taking Haven for Privacy and Efficiency";
     homepage = "https://github.com/Daniele-rolli/Beaver-Notes";
     license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    maintainers = with maintainers; [];
     mainProgram = "beaver-notes";
     platforms = platforms.all;
   };
