@@ -36,10 +36,7 @@
     };
 
     # Nix-ified neovim
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nixvim.url = "github:nix-community/nixvim";
 
     # Pre-configured themes
     stylix = {
