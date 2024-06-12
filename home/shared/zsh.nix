@@ -58,7 +58,7 @@
 
       # nixOS
       nfm = "nix fmt && git commit -a -m \"Format with Alejandra\"";
-      fup = "nix flake --refresh update && git commit -a -m \"Update flake inputs\"";
+      fup = "nix flake --refresh update --commit-lock-file";
       fch = "nix flake check";
       nup = "sudo nixos-rebuild switch -v";
       nbo = "sudo nixos-rebuild boot -v";
