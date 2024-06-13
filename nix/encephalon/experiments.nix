@@ -10,7 +10,6 @@
   environment.systemPackages = with pkgs; [
     # Programs to play with
     warp-terminal
-    anytype
 
     # Charm utils
     charm-freeze
