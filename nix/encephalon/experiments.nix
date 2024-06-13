@@ -8,8 +8,11 @@
 
   # Stuff from charm.sh for scripts and experiments
   environment.systemPackages = with pkgs; [
-    # Utils and programs to play with
+    # Programs to play with
     warp-terminal
+    anytype
+
+    # Charm utils
     charm-freeze
     glow
     gum
