@@ -23,7 +23,7 @@
   # Tune up bash a little
   programs.bash = {
     # Defaults
-    enableCompletion = true;
+    completion.enable = true;
     enableLsColors = true;
 
     # Nicer line editor and completion
