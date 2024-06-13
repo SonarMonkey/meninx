@@ -10,7 +10,7 @@
   src = fetchurl {
     url = "https://github.com/anyproto/anytype-ts/releases/download/v${version}/${name}.AppImage";
     name = "Anytype-${version}.AppImage";
-    hash = "sha256-+Fh5uY6P8eo0MxXpk6IBMEIelwtN7JkQIkW2hi26XZk=";
+    hash = "sha256-C9TuB+QGifWlv7d4p1aEJLNcdlsN891FXFBYVjiysqM=";
   };
   appimageContents = appimageTools.extractType2 {inherit name src;};
 in
