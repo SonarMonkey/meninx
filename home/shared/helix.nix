@@ -15,7 +15,7 @@
       markdown-oxide
       marksman
       nil
-      nodePackages.bash-language-server
+      #nodePackages.bash-language-server
       nodePackages.vscode-css-languageserver-bin
       nodePackages.vscode-html-languageserver-bin
       nodePackages.vscode-json-languageserver
