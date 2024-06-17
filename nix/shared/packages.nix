@@ -39,6 +39,7 @@
     nodePackages.prettier
 
     # Desktop applications
+    anytype
     gimp-with-plugins
     inkscape-with-extensions
     krita
