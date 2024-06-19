@@ -15,8 +15,5 @@
 
     # Dwarf fortress "full" pack
     dwarf-fortress-packages.dwarf-fortress-full
-
-    # Consider logseq again
-    logseq
   ];
 }
