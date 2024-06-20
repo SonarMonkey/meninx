@@ -51,13 +51,12 @@
         clearurls
         darkreader
         duckduckgo-privacy-essentials
-        firefox-color
         foxytab
         ghostery
         improved-tube
+        notion-web-clipper
         privacy-badger
         sidebery
-        stylus
         ublock-origin
         wikiwand-wikipedia-modernized
       ];
