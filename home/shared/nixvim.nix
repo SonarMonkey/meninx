@@ -70,7 +70,7 @@
         # Available servers
         servers = {
           # General
-          #bashls.enable = true;
+          bashls.enable = true;
           jsonls.enable = true;
           gopls.enable = true;
 
