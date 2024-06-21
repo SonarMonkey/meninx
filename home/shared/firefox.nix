@@ -23,7 +23,7 @@
       DisableFirefoxStudies = true;
       DisablePocket = true;
       DisableTelemetry = true;
-      DisplayBookmarksToolbar = "never";
+      DisplayBookmarksToolbar = "always";
       OfferToSaveLogins = false;
 
       # Enable and configure NextDNS
