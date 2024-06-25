@@ -10,5 +10,8 @@
   environment.systemPackages = with pkgs; [
     # Charm utils
     gum
+
+    # Logseq to fuck with again
+    logseq
   ];
 }
