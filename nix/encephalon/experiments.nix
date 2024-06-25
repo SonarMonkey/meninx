@@ -10,12 +10,5 @@
   environment.systemPackages = with pkgs; [
     # Charm utils
     gum
-
-    # Logseq to fuck with again
-    logseq
   ];
-
-  nixpkgs.config = {
-    permittedInsecurePackages = ["electron-28.3.3"];
-  };
 }
