@@ -104,16 +104,6 @@
         specialArgs = {inherit inputs outputs;};
         modules = [./nix/cerebrum];
       };
-
-      # Custom `.iso` for desktop
-      nvidia-kde6 = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = {inherit inputs outputs;};
-        modules = [
-          "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-base.nix"
-          ./nix/cerebrum/nvidia-kde6-iso.nix
-        ];
-      };
     };
   };
 }
