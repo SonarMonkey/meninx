@@ -10,8 +10,5 @@
   environment.systemPackages = with pkgs; [
     # Charm utils
     gum
-
-    # Interesting app
-    affine
   ];
 }
