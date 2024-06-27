@@ -9,4 +9,5 @@
   heynote = pkgs.callPackage ./heynote {};
   #beaver-notes = pkgs.callPackage ./beaver-notes {};
   anytype = pkgs.callPackage ./anytype {};
+  affine = pkgs.callPackage ./affine {};
 }
