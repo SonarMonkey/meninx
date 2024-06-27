@@ -21,7 +21,7 @@ in {
   version = "0.14.9";
   src = fetchurl {
     url = "https://github.com/toeverything/AFFiNE/releases/download/v${finalAttrs.version}/affine-${finalAttrs.version}-stable-linux-x64.zip";
-    hash = "sha256-smZ5W7fy3TK3bvjwV4i71j2lVmKSZcyhMhcWfPxNnN4=";
+    hash = "sha256-JGWkmvcdgkvWDAffInzf2lUFHVjkU/a4m25f8BtQqZc=";
   };
   nativeBuildInputs = [
     copyDesktopItems
