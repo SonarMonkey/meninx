@@ -10,5 +10,8 @@
   environment.systemPackages = with pkgs; [
     # Charm utils
     gum
+
+    # Vial for VIA alt
+    vial
   ];
 }
