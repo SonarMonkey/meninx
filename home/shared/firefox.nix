@@ -28,7 +28,7 @@
 
       # Enable and configure NextDNS
       DNSOverHTTPS = {
-        Enabled = false;
+        Enabled = true;
         Locked = true;
         ProviderURL = "https://dns.nextdns.io/df9e75";
       };
