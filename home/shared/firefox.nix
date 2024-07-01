@@ -6,7 +6,7 @@
   ...
 }: {
   # TODO Import my custom CSS module
-  imports = [outputs.homeManagerModules.sidebery-css];
+  #imports = [outputs.homeManagerModules.sidebery-css];
 
   # Enable and configure FireFox
   programs.firefox = {
@@ -28,7 +28,7 @@
 
       # Enable and configure NextDNS
       DNSOverHTTPS = {
-        Enabled = true;
+        Enabled = false;
         Locked = true;
         ProviderURL = "https://dns.nextdns.io/df9e75";
       };
