@@ -15,14 +15,19 @@
 
     # Desktop applications
     adwsteamgtk
+    apostrophe
     bottles
     heynote
+    komikku
     libreoffice-fresh
     mediawriter
     obsidian
     pika-backup
+    tangram
+    textpieces
     thunderbird
     transmission_4-gtk
+    switcheroo
     vesktop
   ];
 }
