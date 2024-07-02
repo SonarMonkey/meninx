@@ -28,7 +28,6 @@
     hostName = "encephalon";
 
     # Disables legacy scripted networking, see "useDHCP" documentation above
-    # Also detected by tailscale to create a rule to not manage tailscale
     useNetworkd = true;
 
     # Whether to enable dhcpcd for device configuration.
@@ -39,12 +38,6 @@
     # Explicitly set DNS servers, may be ignored by resolvconf though
     # Shouldn't be an issue, switched to systemd-resolved as resolvconf
     nameservers = [
-      # NextDNS
-      "45.90.28.0#df9e75.dns.nextdns.io"
-      "45.90.30.0#df9e75.dns.nextdns.io"
-      "2a07:a8c0::#df9e75.dns.nextdns.io"
-      "2a07:a8c1::#df9e75.dns.nextdns.io"
-
       # Quad9 w/ Malware Blocking & DNSSEC Validation
       "9.9.9.9#dns.quad9.net"
       "149.112.112.112#dns.quad9.net"
@@ -53,6 +46,7 @@
     ];
 
     # NetworkManager configuration
+    # TODO add NetworkManager profiles
     networkmanager = {
       # Pretty sure this is enable automatically with GNOME
       # Enabling explicitly just in case as in my previous config
@@ -61,10 +55,6 @@
       # Might need since I'm using systemd-resolved
       dns = "systemd-resolved";
     };
-
-    # Enable nftables instead of legacy iptables backend for firewall
-    # Questionable, may interfere with docker and libvirtd, not sure
-    nftables.enable = true;
 
     # Enable firewall
     firewall.enable = true;
@@ -75,7 +65,7 @@
     # Mullvad
     mullvad-vpn = {
       enable = true;
-      enableExcludeWrapper = true;
+      enableExcludeWrapper = false;
       package = pkgs.mullvad-vpn;
     };
 
@@ -85,10 +75,6 @@
     resolved = {
       enable = true;
 
-      # Explicitly set fallback DNS to primary nameservers
-      # Maybe not necessary with `networking.nameservers` set
-      fallbackDns = config.networking.nameservers;
-
       # Will encrypt all DNS lookups or fail
       # Should be supported on NextDNS and Quad9
       dnsovertls = "true";
@@ -97,9 +83,4 @@
       dnssec = "true";
     };
   };
-
-  # Networking-related system packages
-  environment.systemPackages = with pkgs; [
-    mullvad-vpn
-  ];
 }
