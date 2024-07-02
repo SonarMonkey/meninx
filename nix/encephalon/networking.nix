@@ -76,7 +76,7 @@
       enable = true;
 
       # Will encrypt all DNS lookups or fail
-      # Should be supported on NextDNS and Quad9
+      # Should be supported on Quad9
       dnsovertls = "true";
 
       # Also enable DNSSEC which my servers should support
