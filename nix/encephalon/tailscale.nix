@@ -4,6 +4,8 @@
   pkgs,
   ...
 }: {
+  ## OBSOLETE ##
+
   # Tailscale-specific networking configuration
   networking = {
     # Make MagicDNS work

@@ -25,7 +25,10 @@
     ./packages.nix
     ./performance.nix
 
-    # Disabled for GNOME 46
+    # Disabled modules
     #./theme.nix
+    #./network-old.nix
+    #./internet.nix
+    #./tailscale.nix
   ];
 }

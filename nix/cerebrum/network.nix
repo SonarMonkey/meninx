@@ -19,7 +19,7 @@
       package = pkgs.mullvad-vpn;
     };
 
-    # TailScale service
+    # FIXME TailScale service
     tailscale = {
       enable = true;
       authKeyFile = config.age.secrets.cerebrum.path;
