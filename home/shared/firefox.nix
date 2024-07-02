@@ -26,11 +26,10 @@
       DisplayBookmarksToolbar = "always";
       OfferToSaveLogins = false;
 
-      # Enable and configure NextDNS
+      # Hard-disable Firefox's DoH
       DNSOverHTTPS = {
-        Enabled = true;
+        Enabled = false;
         Locked = true;
-        ProviderURL = "https://dns.nextdns.io/df9e75";
       };
 
       # Search configuration
