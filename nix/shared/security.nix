@@ -21,6 +21,9 @@
   # Enable OpenSSH
   services.openssh.enable = true;
 
+  # TODO Consider setting to declaratively manage known hosts
+  #knownHosts = {};
+
   # System GNUPG agent with SSH support
   programs.gnupg.agent = {
     enable = true;
