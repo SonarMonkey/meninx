@@ -4,6 +4,8 @@
   pkgs,
   ...
 }: {
+  ## OBSOLETE ##
+
   # When systemd-networkd is enabled, but a different service
   # is responsible for managing the system’s internet connection
   # (for example, NetworkManager or connman are used to manage WiFi connections),
