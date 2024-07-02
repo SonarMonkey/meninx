@@ -19,6 +19,7 @@ with lib.hm.gvariant; {
         "scribus.desktop"
         "gimp.desktop"
         "org.inkscape.Inkscape.desktop"
+        "io.gitlab.adhami3310.Converter.desktop"
       ];
       name = "Graphics";
       translate = true;
@@ -27,7 +28,7 @@ with lib.hm.gvariant; {
     # Media applications
     "org/gnome/desktop/app-folders/folders/Media" = {
       apps = [
-        "com.github.iwalton3.jellyfin-media-player.desktop"
+        "info.febvre.Komikku.desktopp"
         "org.gnome.Music.desktop"
         "org.gnome.Totem.desktop"
         "vlc.desktop"
@@ -204,6 +205,7 @@ with lib.hm.gvariant; {
         "thunderbird.desktop"
         "mullvad-vpn.desktop"
         "org.gnome.Nautilus.desktop"
+        "re.sonny.Tangram.desktop"
         "obsidian.desktop"
         "heynote.desktop"
         "code.desktop"

@@ -15,7 +15,6 @@
 
     # Desktop applications
     adwsteamgtk
-    apostrophe
     bottles
     heynote
     komikku
