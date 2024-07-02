@@ -72,9 +72,6 @@
 
   # Networking services
   services = {
-    # System SSH daemon
-    openssh.enable = true;
-
     # Mullvad
     mullvad-vpn = {
       enable = true;
