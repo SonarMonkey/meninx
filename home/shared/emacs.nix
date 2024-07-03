@@ -13,7 +13,6 @@
   home.sessionPath = ["$HOME/.config/emacs/bin"];
 
   # Dependencies, mostly for Doom
-  # TODO check if I really need all these
   home.packages = with pkgs; [
     # Maybe a dependency of `nativecomp` features
     binutils

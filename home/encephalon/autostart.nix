@@ -5,6 +5,7 @@
 }:
 # packages to automatically start with GNOME
 # see https://github.com/NixOS/nixpkgs/blob/master/pkgs/build-support/make-startupitem/default.nix
+# TODO add tangram
 {
   home.packages = with pkgs; [
     (makeAutostartItem {
