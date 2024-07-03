@@ -21,14 +21,13 @@
     ./gnome.nix
     ./hardware-configuration.nix
     ./home.nix
-    ./networking.nix
+    ./net-test.nix
     ./packages.nix
     ./performance.nix
 
     # Disabled modules
     #./theme.nix
-    #./network-old.nix
-    #./internet.nix
     #./tailscale.nix
+    #./networking.nix
   ];
 }
