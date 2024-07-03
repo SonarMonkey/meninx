@@ -28,7 +28,7 @@ with lib.hm.gvariant; {
     # Media applications
     "org/gnome/desktop/app-folders/folders/Media" = {
       apps = [
-        "info.febvre.Komikku.desktopp"
+        "info.febvre.Komikku.desktop"
         "org.gnome.Music.desktop"
         "org.gnome.Totem.desktop"
         "vlc.desktop"
