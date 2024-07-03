@@ -38,7 +38,7 @@
     useRoutingFeatures = "client"; # "client" sets checkreversepath to "loose", "server" enables IP forwarding
     interfaceName = "tailscale0"; # userspace-networking or tailscale0
 
-    # Security
+    # FIXME Security
     authKeyFile = config.age.secrets.encephalon.path;
 
     # Configuration
