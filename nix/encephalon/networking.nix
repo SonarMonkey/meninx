@@ -36,13 +36,12 @@
     dhcpcd.enable = false;
 
     # Explicitly set DNS servers, may be ignored by resolvconf though
-    # Shouldn't be an issue, switched to systemd-resolved as resolvconf
+    # Shouldn't be an issue as resolvconf is disabled on my system
     nameservers = [
-      # Quad9 w/ Malware Blocking & DNSSEC Validation
-      "9.9.9.9"
-      "149.112.112.112"
-      "2620:fe::fe"
-      "2620:fe::9"
+      "9.9.9.9#dns.quad9.net"
+      "149.112.112.112#dns.quad9.net"
+      "2620:fe::fe#dns.quad9.net"
+      "2620:fe::9#dns.quad9.net"
     ];
 
     # NetworkManager configuration
@@ -54,6 +53,9 @@
 
       # Might need since I'm using systemd-resolved
       dns = "systemd-resolved";
+
+      # Try explicitly setting nameservers here too
+      insertNameservers = config.networking.nameservers;
     };
 
     # Enable firewall
@@ -76,11 +78,13 @@
       enable = true;
 
       # Will encrypt all DNS lookups or fail
-      # Should be supported on NextDNS and Quad9
       dnsovertls = "true";
 
       # Also enable DNSSEC which my servers should support
       dnssec = "true";
+
+      # Disable fallback DNS servers
+      fallbackDns = [];
     };
   };
 }
