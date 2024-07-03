@@ -12,31 +12,49 @@
   networking.interfaces.enp0s31f6.useDHCP = lib.mkDefault true;
   networking.interfaces.wlp2s0.useDHCP = lib.mkDefault true;
 
+  # When systemd-networkd is enabled, but a different service
+  # is responsible for managing the system’s internet connection
+  # (for example, NetworkManager or connman are used to manage WiFi connections),
+  # this service is unnecessary and can be disabled.
+  boot.initrd.systemd.network.wait-online.enable = false;
+  systemd.network.wait-online.enable = false;
+
+  # Enable systemd-networkd
+  systemd.network.enable = true;
+
   # General networking settings
   networking = {
     # Set hostname
     hostName = "encephalon";
 
+    # Disables legacy scripted networking, see "useDHCP" documentation above
+    useNetworkd = true;
+
+    # Whether to enable dhcpcd for device configuration.
+    # This is mainly to explicitly disable dhcpcd
+    # (for example when using networkd).
+    dhcpcd.enable = false;
+
     # Explicitly set DNS servers, may be ignored by resolvconf though
     # Shouldn't be an issue, switched to systemd-resolved as resolvconf
     nameservers = [
-      # Local IPs
-      "127.0.0.1"
-      "::1"
+      # Quad9 w/ Malware Blocking & DNSSEC Validation
+      "9.9.9.9"
+      "149.112.112.112"
+      "2620:fe::fe"
+      "2620:fe::9"
     ];
 
     # NetworkManager configuration
     # TODO add NetworkManager profiles
     networkmanager = {
       # Pretty sure this is enable automatically with GNOME
+      # Enabling explicitly just in case as in my previous config
       enable = true;
 
-      # Make sure DNS servers are not overridden
-      dns = "none";
+      # Might need since I'm using systemd-resolved
+      dns = "systemd-resolved";
     };
-
-    # Make sure DNS servers are not overridden
-    dhcpcd.extraConfig = "nohook resolv.conf";
 
     # Enable firewall
     firewall.enable = true;
@@ -51,44 +69,18 @@
       package = pkgs.mullvad-vpn;
     };
 
-    # Encrypted DNS
-    dnscrypt-proxy2 = {
-      # Basic settings
+    # Systemd-resolved configuration, not sure how to deal with this
+    # Note that this conflicts with networking.resolvconf.enable = true;
+    # See https://wiki.nixos.org/wiki/Systemd/resolved for more info
+    resolved = {
       enable = true;
-      settings = {
-        ipv6_servers = config.networking.enableIPv6;
-        block_ipv6 = ! (config.networking.enableIPv6);
 
-        # Server requirements
-        require_dnssec = true;
-        require_nolog = true;
-        require_nofilter = false;
+      # Will encrypt all DNS lookups or fail
+      # Should be supported on NextDNS and Quad9
+      dnsovertls = "true";
 
-        # Quad9 resolvers
-        sources.quad9-resolvers = {
-          urls = [
-            "https://quad9.net/dnscrypt/quad9-resolvers.md"
-            "https://raw.githubusercontent.com/Quad9DNS/dnscrypt-settings/main/dnscrypt/quad9-resolvers.md"
-          ];
-          minisign_key = "RWQBphd2+f6eiAqBsvDZEBXBGHQBJfeG6G+wJPPKxCZMoEQYpmoysKUN";
-          cache_file = "quad9-resolvers.md";
-          refresh_delay = 72;
-          prefix = "quad9-";
-        };
-
-        # Explicitly set Quad9 dnscrypt servers
-        server_names = [
-          # IPv4
-          "dnscrypt-ip4-filter-pri"
-          "dnscrypt-ip4-filter-alt"
-          "dnscrypt-ip4-filter-alt2"
-
-          # IPv6
-          "dnscrypt-ip6-filter-pri"
-          "dnscrypt-ip6-filter-alt"
-          "dnscrypt-ip6-filter-alt2"
-        ];
-      };
+      # Also enable DNSSEC which my servers should support
+      dnssec = "true";
     };
   };
 }
