@@ -13,8 +13,8 @@
       package = vesktop;
     })
     (makeAutostartItem {
-      name = "obsidian";
-      package = obsidian;
+      name = "re.sonny.Tangram";
+      package = tangram;
     })
     (makeAutostartItem {
       name = "firefox";
