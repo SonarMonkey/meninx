@@ -37,6 +37,7 @@
     ventoy-full
     wl-clipboard
     nodePackages.prettier
+    libheif
 
     # Desktop applications
     gimp-with-plugins
