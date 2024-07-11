@@ -13,7 +13,7 @@
         gutenprint
         gutenprintBin
         canon-cups-ufr2
-        #hplip
+        hplip
       ];
     };
 
