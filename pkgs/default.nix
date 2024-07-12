@@ -5,7 +5,7 @@
   warp-terminal = pkgs.callPackage ./warp-terminal {};
   dnd-tools = pkgs.callPackage ./dnd-tools {};
   #mullvad-vpn = pkgs.callPackage ./mullvad-vpn {};
-  #zed = pkgs.callPackage ./zed
+  zed-editor = pkgs.callPackage ./zed-editor {};
   heynote = pkgs.callPackage ./heynote {};
   #beaver-notes = pkgs.callPackage ./beaver-notes {};
   #anytype = pkgs.callPackage ./anytype {};
