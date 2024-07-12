@@ -10,5 +10,10 @@
   environment.systemPackages = with pkgs; [
     # Charm utils
     gum
+
+    # Game dev stuff
+    aseprite
+    famistudio
+    godot_4
   ];
 }
