@@ -150,7 +150,7 @@ This is *my personal configuration* and is not intended to be used as-is outside
 ### Resources
 
 - https://wiki.nixos.org
-- https://nixos.wiki
+- https://wiki.nixos.org
 - https://noogle.dev
 - https://home-manager-options.extranix.com
 - https://search.nixos.org
