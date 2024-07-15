@@ -7,9 +7,6 @@
   # Get the low-latency module from nix-gaming
   imports = [inputs.nix-gaming.nixosModules.pipewireLowLatency];
 
-  # Enable sound
-  sound.enable = true;
-
   # Disable pulseaudio in favor of pipewire
   hardware.pulseaudio.enable = false;
 
