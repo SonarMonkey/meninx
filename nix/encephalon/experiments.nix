@@ -13,7 +13,6 @@
 
     # Game dev stuff
     aseprite
-    famistudio
     godot_4
   ];
 }
