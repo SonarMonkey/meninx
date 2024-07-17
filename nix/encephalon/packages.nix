@@ -25,7 +25,7 @@
     tangram
     textpieces
     thunderbird
-    #transmission_4-gtk
+    transmission_4-gtk
     switcheroo
     vesktop
   ];
