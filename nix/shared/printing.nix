@@ -14,6 +14,14 @@
         gutenprintBin
         canon-cups-ufr2
         hplip
+        hplipWithPlugin
+        postscript-lexmark
+        samsung-unified-linux-driver
+        splix
+        brlaser
+        brgenml1lpr
+        brgenml1cupswrapper
+        cnijfilter2
       ];
     };
 
