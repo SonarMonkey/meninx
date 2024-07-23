@@ -28,5 +28,6 @@
     transmission_4-gtk
     switcheroo
     vesktop
+    bitwarden-desktop
   ];
 }
