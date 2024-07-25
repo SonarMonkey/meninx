@@ -29,5 +29,7 @@
     switcheroo
     vesktop
     bitwarden-desktop
+    gnome-feeds
+    zola
   ];
 }
