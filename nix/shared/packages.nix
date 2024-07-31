@@ -56,8 +56,8 @@
     nixd
 
     # Leave some java laying around
-    adoptopenjdk-bin
     nodejs
+    temurin-bin
 
     # Explicitly install NTFS drivers
     ntfs3g
