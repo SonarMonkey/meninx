@@ -8,7 +8,7 @@
   home.packages = with pkgs; [
     # GNOME-specific applications
     gnome.gnome-boxes
-    gnome.gnome-tweaks
+    gnome-tweaks
     gnome.gnome-backgrounds
     adwsteamgtk
 
@@ -56,13 +56,13 @@
 
     # Icon theme
     iconTheme = {
-      package = pkgs.gnome.adwaita-icon-theme;
+      package = pkgs.adwaita-icon-theme;
       name = "Adwaita";
     };
 
     # Cursor theme
     cursorTheme = {
-      package = pkgs.gnome.adwaita-icon-theme;
+      package = pkgs.adwaita-icon-theme;
       name = "Adwaita";
     };
 
