@@ -12,21 +12,24 @@
     mutableExtensionsDir = false;
 
     # Extensions
-    extensions = [
+    extensions = with pkgs; [
       # Extensions from nix repo
-      pkgs.vscode-extensions.christian-kohler.path-intellisense
-      pkgs.vscode-extensions.esbenp.prettier-vscode
-      pkgs.vscode-extensions.gruntfuggly.todo-tree
-      pkgs.vscode-extensions.jnoortheen.nix-ide
-      pkgs.vscode-extensions.kamadorueda.alejandra
-      pkgs.vscode-extensions.ms-vscode-remote.remote-ssh
-      pkgs.vscode-extensions.ms-vscode.cpptools-extension-pack
-      pkgs.vscode-extensions.oderwat.indent-rainbow
-      pkgs.vscode-extensions.piousdeer.adwaita-theme
-      pkgs.vscode-extensions.yzhang.markdown-all-in-one
+      vscode-extensions.christian-kohler.path-intellisense
+      vscode-extensions.esbenp.prettier-vscode
+      vscode-extensions.gruntfuggly.todo-tree
+      vscode-extensions.jnoortheen.nix-ide
+      vscode-extensions.kamadorueda.alejandra
+      vscode-extensions.ms-vscode-remote.remote-ssh
+      vscode-extensions.ms-vscode.cpptools-extension-pack
+      vscode-extensions.oderwat.indent-rainbow
+      vscode-extensions.piousdeer.adwaita-theme
+      vscode-extensions.yzhang.markdown-all-in-one
+      vscode-extensions.davidanson.vscode-markdownlint
+      vscode-extensions.dbaeumer.vscode-eslint
+      vscode-extensions.ecmel.vscode-html-css
 
       # Extensions from nix-vscode-extenions
-      #pkgs.vscode-marketplace.tabbyml.vscode-tabby
+      vscode-marketplace.karunamurti.tera
     ];
 
     # General settings mostly taken from piousdeer
