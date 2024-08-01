@@ -54,6 +54,8 @@
       "[nix]"."editor.tabSize" = 2;
       "[nix]"."editor.defaultFormatter" = "kamadorueda.alejandra";
       "[markdown]"."editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "[html].editor.defaultFormatter" = "vscode.html-language-features";
+      "[html].editor.tabSize" = 2;
 
       # Nix-IDE settings
       "nix.enableLanguageServer" = true;
