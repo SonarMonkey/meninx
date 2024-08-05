@@ -54,6 +54,8 @@
     nixfmt-rfc-style
     nurl
     nixd
+    nixpkgs-review
+    nix-update
 
     # Leave some java laying around
     nodejs
