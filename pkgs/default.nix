@@ -2,12 +2,9 @@
 # You can build them using 'nix build .#example'
 {pkgs}: {
   # example = pkgs.callPackage ./example { };
-  #warp-terminal = pkgs.callPackage ./warp-terminal {};
-  #dnd-tools = pkgs.callPackage ./dnd-tools {};
   #mullvad-vpn = pkgs.callPackage ./mullvad-vpn {};
+  #mullvad = pkgs.callPackage ./mullvad {};
   #zed-editor = pkgs.callPackage ./zed-editor {};
+  #codieum = pkgs.callPackage ./codeium {};
   heynote = pkgs.callPackage ./heynote {};
-  #beaver-notes = pkgs.callPackage ./beaver-notes {};
-  #anytype = pkgs.callPackage ./anytype {};
-  #affine = pkgs.callPackage ./affine {};
 }
