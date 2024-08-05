@@ -14,5 +14,12 @@
     # Game dev stuff
     aseprite
     godot_4
+
+    # New editor
+    zed-editor
+
+    # MUD client
+    blightmud
+    mudlet
   ];
 }
