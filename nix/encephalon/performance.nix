@@ -15,10 +15,10 @@
     };
 
     # Nice rules for performance
-    #ananicy = {
-    #  enable = true;
-    #  package = pkgs.ananicy-cpp;
-    #  rulesProvider = pkgs.ananicy-cpp;
-    #};
+    ananicy = {
+      enable = true;
+      package = pkgs.ananicy-cpp;
+      rulesProvider = pkgs.ananicy-cpp;
+    };
   };
 }
