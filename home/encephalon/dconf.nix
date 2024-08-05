@@ -20,6 +20,7 @@ with lib.hm.gvariant; {
         "gimp.desktop"
         "org.inkscape.Inkscape.desktop"
         "io.gitlab.adhami3310.Converter.desktop"
+        "aseprite.desktop"
       ];
       name = "Graphics";
       translate = true;
@@ -32,6 +33,7 @@ with lib.hm.gvariant; {
         "org.gnome.Music.desktop"
         "org.gnome.Totem.desktop"
         "vlc.desktop"
+        "org.gabmus.gfeeds.desktop"
       ];
       name = "Media";
       translate = true;
@@ -51,6 +53,8 @@ with lib.hm.gvariant; {
         "Balatro.desktop"
         "io.github.Foldex.AdwSteamGtk.desktop"
         "io.github.benjamimgois.goverlay.desktop"
+        "mudlet.desktop"
+        "org.godotengine.Godot4.desktop"
       ];
       name = "Fun";
       translate = true;
@@ -90,6 +94,7 @@ with lib.hm.gvariant; {
         "org.gnome.fonts.desktop"
         "org.gnome.Usage.desktop"
         "vinagre.desktop"
+        "io.gitlab.liferooter.TextPieces.desktop"
       ];
       categories = ["X-GNOME-Utilities"];
       name = "X-GNOME-Utilities.directory";
@@ -209,8 +214,8 @@ with lib.hm.gvariant; {
         "obsidian.desktop"
         "heynote.desktop"
         "code.desktop"
+        "dev.zed.Zed.desktop"
         "kitty.desktop"
-        "dev.warp.Warp.desktop"
         "org.gnome.Settings.desktop"
       ];
     };
