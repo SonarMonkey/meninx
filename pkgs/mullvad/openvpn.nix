@@ -1,39 +1,47 @@
-{ lib
-, stdenv
-, openvpn
-, fetchpatch
-, fetchurl
-, libnl
-, autoreconfHook
-, pkg-config
+{
+  lib,
+  stdenv,
+  openvpn,
+  fetchpatch,
+  fetchurl,
+  libnl,
+  autoreconfHook,
+  pkg-config,
 }:
-
-openvpn.overrideAttrs (oldAttrs:
-  let
-    inherit (lib) optional;
-    fetchMullvadPatch = { commit, sha256 }: fetchpatch {
+openvpn.overrideAttrs (oldAttrs: let
+  inherit (lib) optional;
+  fetchMullvadPatch = {
+    commit,
+    sha256,
+  }:
+    fetchpatch {
       url = "https://github.com/mullvad/openvpn/commit/${commit}.patch";
       inherit sha256;
     };
-  in
-  rec {
-    pname = "openvpn-mullvad";
-    version = "2.6.0";
+in rec {
+  pname = "openvpn-mullvad";
+  version = "2.6.0";
 
-    src = fetchurl {
-      url = "https://swupdate.openvpn.net/community/releases/openvpn-${version}.tar.gz";
-      sha256 = "sha256-6+yTMmPJhQ72984SXi8iIUvmCxy7jM/xiJJkP+CDro8=";
-    };
+  src = fetchurl {
+    url = "https://swupdate.openvpn.net/community/releases/openvpn-${version}.tar.gz";
+    sha256 = "sha256-6+yTMmPJhQ72984SXi8iIUvmCxy7jM/xiJJkP+CDro8=";
+  };
 
-    nativeBuildInputs = oldAttrs.nativeBuildInputs or [ ] ++ [
+  nativeBuildInputs =
+    oldAttrs.nativeBuildInputs
+    or []
+    ++ [
       autoreconfHook
       pkg-config
     ];
 
-    buildInputs = oldAttrs.buildInputs or [ ]
-       ++ optional stdenv.isLinux [ libnl.dev ];
+  buildInputs =
+    oldAttrs.buildInputs
+    or []
+    ++ optional stdenv.isLinux [libnl.dev];
 
-    configureFlags = [
+  configureFlags =
+    [
       # Assignement instead of appending to make sure to use exactly the flags required by mullvad
 
       # Flags are based on https://github.com/mullvad/mullvadvpn-app-binaries/blob/main/Makefile#L17
@@ -58,7 +66,10 @@ openvpn.overrideAttrs (oldAttrs:
       "--disable-iproute2"
     ];
 
-    patches = oldAttrs.patches or [ ] ++ [
+  patches =
+    oldAttrs.patches
+    or []
+    ++ [
       # look at compare to find the relevant commits
       # https://github.com/OpenVPN/openvpn/compare/release/2.6...mullvad:mullvad-patches
       # used openvpn version is the latest tag ending with -mullvad
@@ -99,13 +110,19 @@ openvpn.overrideAttrs (oldAttrs:
         sha256 = "sha256-Via62wKVfMWHTmO7xIXXO7b5k0KYHs1D0JVg3qnXkeM=";
       })
     ];
-    postPatch = oldAttrs.postPatch or "" + ''
+  postPatch =
+    oldAttrs.postPatch
+    or ""
+    + ''
       rm ./configure
     '';
 
-    meta = oldAttrs.meta or { } // {
+  meta =
+    oldAttrs.meta
+    or {}
+    // {
       description = "OpenVPN with Mullvad-specific patches applied";
       homepage = "https://github.com/mullvad/openvpn";
-      maintainers = with lib; [ maintainers.cole-h ];
+      maintainers = with lib; [maintainers.cole-h];
     };
-  })
+})

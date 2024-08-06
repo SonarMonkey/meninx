@@ -1,19 +1,20 @@
-{ lib
-, stdenv
-, rustPlatform
-, fetchFromGitHub
-, pkg-config
-, protobuf
-, makeWrapper
-, git
-, dbus
-, libnftnl
-, libmnl
-, libwg
-, enableOpenvpn ? true
-, openvpn-mullvad
-, shadowsocks-rust
-, installShellFiles
+{
+  lib,
+  stdenv,
+  rustPlatform,
+  fetchFromGitHub,
+  pkg-config,
+  protobuf,
+  makeWrapper,
+  git,
+  dbus,
+  libnftnl,
+  libmnl,
+  libwg,
+  enableOpenvpn ? true,
+  openvpn-mullvad,
+  shadowsocks-rust,
+  installShellFiles,
 }:
 rustPlatform.buildRustPackage rec {
   pname = "mullvad";
@@ -73,7 +74,8 @@ rustPlatform.buildRustPackage rec {
       for bin in relay_list translations-converter tunnel-obfuscation; do
         mv "$out/bin/$bin" "$out/bin/mullvad-$bin"
       done
-    '' +
+    ''
+    +
     # Files necessary for OpenVPN tunnels to work.
     lib.optionalString enableOpenvpn ''
       mkdir -p $out/share/mullvad
@@ -81,7 +83,8 @@ rustPlatform.buildRustPackage rec {
       ln -s ${openvpn-mullvad}/bin/openvpn $out/share/mullvad
       ln -s ${shadowsocks-rust}/bin/sslocal $out/share/mullvad
       ln -s $out/lib/libtalpid_openvpn_plugin.so $out/share/mullvad
-    '' +
+    ''
+    +
     # Set the directory where Mullvad will look for its resources by default to
     # `$out/share`, so that we can avoid putting the files in `$out/bin` --
     # Mullvad defaults to looking inside the directory its binary is located in
@@ -100,6 +103,6 @@ rustPlatform.buildRustPackage rec {
     description = "Mullvad VPN command-line client tools";
     homepage = "https://github.com/mullvad/mullvadvpn-app";
     license = licenses.gpl3Only;
-    maintainers = with maintainers; [ cole-h ];
+    maintainers = with maintainers; [cole-h];
   };
 }

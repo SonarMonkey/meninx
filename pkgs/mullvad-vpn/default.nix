@@ -1,35 +1,34 @@
-{ stdenv
-, lib
-, fetchurl
-, dpkg
-, alsa-lib
-, atk
-, cairo
-, cups
-, dbus
-, expat
-, fontconfig
-, freetype
-, gdk-pixbuf
-, glib
-, pango
-, nspr
-, nss
-, gtk3
-, mesa
-, libGL
-, wayland
-, xorg
-, autoPatchelfHook
-, systemd
-, libnotify
-, libappindicator
-, makeWrapper
-, coreutils
-, gnugrep
-}:
-
-let
+{
+  stdenv,
+  lib,
+  fetchurl,
+  dpkg,
+  alsa-lib,
+  atk,
+  cairo,
+  cups,
+  dbus,
+  expat,
+  fontconfig,
+  freetype,
+  gdk-pixbuf,
+  glib,
+  pango,
+  nspr,
+  nss,
+  gtk3,
+  mesa,
+  libGL,
+  wayland,
+  xorg,
+  autoPatchelfHook,
+  systemd,
+  libnotify,
+  libappindicator,
+  makeWrapper,
+  coreutils,
+  gnugrep,
+}: let
   deps = [
     alsa-lib
     atk
@@ -78,68 +77,66 @@ let
     aarch64-linux = "sha256-7uUgewZ9KVLyMUax6u0R6ZN1YS3L4c43meVqJQD77lA=";
   };
 in
+  stdenv.mkDerivation {
+    pname = "mullvad-vpn";
+    inherit version;
 
-stdenv.mkDerivation {
-  pname = "mullvad-vpn";
-  inherit version;
+    src = fetchurl {
+      url = "https://github.com/mullvad/mullvadvpn-app/releases/download/${version}/MullvadVPN-${version}_${platform}.deb";
+      inherit hash;
+    };
 
-  src = fetchurl {
-    url = "https://github.com/mullvad/mullvadvpn-app/releases/download/${version}/MullvadVPN-${version}_${platform}.deb";
-    inherit hash;
-  };
+    nativeBuildInputs = [
+      autoPatchelfHook
+      dpkg
+      makeWrapper
+    ];
 
-  nativeBuildInputs = [
-    autoPatchelfHook
-    dpkg
-    makeWrapper
-  ];
+    buildInputs = deps;
 
-  buildInputs = deps;
+    dontBuild = true;
+    dontConfigure = true;
 
-  dontBuild = true;
-  dontConfigure = true;
+    unpackPhase = "dpkg-deb -x $src .";
 
-  unpackPhase = "dpkg-deb -x $src .";
+    runtimeDependencies = [(lib.getLib systemd) libGL libnotify libappindicator wayland];
 
-  runtimeDependencies = [ (lib.getLib systemd) libGL libnotify libappindicator wayland ];
+    installPhase = ''
+      runHook preInstall
 
-  installPhase = ''
-    runHook preInstall
+      mkdir -p $out/share/mullvad $out/bin
 
-    mkdir -p $out/share/mullvad $out/bin
+      mv usr/share/* $out/share
+      mv usr/bin/* $out/bin
+      mv opt/Mullvad\ VPN/* $out/share/mullvad
 
-    mv usr/share/* $out/share
-    mv usr/bin/* $out/bin
-    mv opt/Mullvad\ VPN/* $out/share/mullvad
+      ln -s $out/share/mullvad/mullvad-{gui,vpn} $out/bin/
+      ln -sf $out/share/mullvad/resources/mullvad-problem-report $out/bin/mullvad-problem-report
 
-    ln -s $out/share/mullvad/mullvad-{gui,vpn} $out/bin/
-    ln -sf $out/share/mullvad/resources/mullvad-problem-report $out/bin/mullvad-problem-report
+      wrapProgram $out/bin/mullvad-vpn \
+        --set MULLVAD_DISABLE_UPDATE_NOTIFICATION 1 \
+        --prefix PATH : ${lib.makeBinPath [coreutils gnugrep]}
 
-    wrapProgram $out/bin/mullvad-vpn \
-      --set MULLVAD_DISABLE_UPDATE_NOTIFICATION 1 \
-      --prefix PATH : ${lib.makeBinPath [ coreutils gnugrep ]}
+      wrapProgram $out/bin/mullvad-daemon \
+          --set-default MULLVAD_RESOURCE_DIR "$out/share/mullvad/resources"
 
-    wrapProgram $out/bin/mullvad-daemon \
-        --set-default MULLVAD_RESOURCE_DIR "$out/share/mullvad/resources"
+      wrapProgram $out/bin/mullvad-gui \
+        --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--enable-features=UseOzonePlatform --ozone-platform=wayland}}"
 
-    wrapProgram $out/bin/mullvad-gui \
-      --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--enable-features=UseOzonePlatform --ozone-platform=wayland}}"
+      sed -i "s|Exec.*$|Exec=$out/bin/mullvad-vpn $U|" $out/share/applications/mullvad-vpn.desktop
 
-    sed -i "s|Exec.*$|Exec=$out/bin/mullvad-vpn $U|" $out/share/applications/mullvad-vpn.desktop
+      runHook postInstall
+    '';
 
-    runHook postInstall
-  '';
+    passthru.updateScript = ./update.sh;
 
-  passthru.updateScript = ./update.sh;
-
-  meta = with lib; {
-    homepage = "https://github.com/mullvad/mullvadvpn-app";
-    description = "Client for Mullvad VPN";
-    changelog = "https://github.com/mullvad/mullvadvpn-app/blob/${version}/CHANGELOG.md";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.gpl3Only;
-    platforms = [ "x86_64-linux" "aarch64-linux" ];
-    maintainers = with maintainers; [ Br1ght0ne ymarkus ataraxiasjel ];
-  };
-
-}
+    meta = with lib; {
+      homepage = "https://github.com/mullvad/mullvadvpn-app";
+      description = "Client for Mullvad VPN";
+      changelog = "https://github.com/mullvad/mullvadvpn-app/blob/${version}/CHANGELOG.md";
+      sourceProvenance = with sourceTypes; [binaryNativeCode];
+      license = licenses.gpl3Only;
+      platforms = ["x86_64-linux" "aarch64-linux"];
+      maintainers = with maintainers; [Br1ght0ne ymarkus ataraxiasjel];
+    };
+  }

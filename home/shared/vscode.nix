@@ -30,7 +30,6 @@
 
       # Extensions from nix-vscode-extenions
       vscode-marketplace.karunamurti.tera
-      vscode-marketplace.codeium.codeium
     ];
 
     # General settings mostly taken from piousdeer
