@@ -8,6 +8,7 @@
     # Basic settings
     enable = true;
     enableCompletion = true;
+    enableVteIntegration = true;
 
     # Fancy stuff
     initExtra = ''
