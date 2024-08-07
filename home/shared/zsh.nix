@@ -23,8 +23,8 @@
     # Increase histsize and configure
     history = {
       extended = true;
-      save = "100000";
-      size = "100000";
+      save = 100000;
+      size = 100000;
     };
 
     # Enable default substring search
