@@ -10,7 +10,7 @@
     ./home.nix
     ./kitty.nix
     ./nixvim.nix
-    ./starship.nix
+    #./starship.nix
     ./tools.nix
     ./vscode.nix
     ./zsh.nix

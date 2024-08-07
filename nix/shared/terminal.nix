@@ -42,4 +42,12 @@
 
   # Ensure completion is available to zsh
   environment.pathsToLink = ["/share/zsh"];
+
+  # Enable starship system-wide
+  programs.starship = {
+    enable = true;
+    presets = [
+      "jetpack"
+    ];
+  };
 }

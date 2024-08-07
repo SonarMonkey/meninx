@@ -76,6 +76,11 @@
     };
   };
 
+  # Starship prompt
+  programs.starship = {
+    enable = true;
+  };
+
   # Yazi
   programs.yazi = {
     enable = true;
