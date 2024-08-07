@@ -10,11 +10,18 @@
     enableCompletion = true;
     enableVteIntegration = true;
     autocd = true;
-    autosuggestion.enable = true;
+
+    # Enable and configure autosuggest
+    autosuggestion = {
+      enable = true;
+      strategy = [
+        "history"
+        "completion"
+      ];
+    };
 
     # Increase histsize and configure
     history = {
-      expireDuplicatesFirst = true;
       extended = true;
       save = "100000";
       size = "100000";
@@ -28,6 +35,11 @@
       eval "$(batpipe)"
       eval "$(nh completions -s zsh)"
     '';
+
+    # Session variables for ZSH
+    sessionVariables = {
+      NIXOS_OZONE_WL = "1";
+    };
 
     # Enable and configure default syntax highlighter
     syntaxHighlighting = {
