@@ -20,6 +20,9 @@
   # Set default shell to zsh
   users.defaultUserShell = pkgs.zsh;
 
+  # Enable command-not-found globally
+  programs.command-not-found.enable = true;
+
   # Tune up bash a little
   programs.bash = {
     # Defaults
@@ -36,4 +39,7 @@
     enableCompletion = true;
     enableBashCompletion = true;
   };
+
+  # Ensure completion is available to zsh
+  environment.pathsToLink = ["/share/zsh"];
 }
