@@ -15,6 +15,13 @@
     ];
   };
 
+  # Make sure to install extra outputs
+  environment.extraOutputsToInstall = [
+    "info"
+    "man"
+    "doc"
+  ];
+
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     # General utilities
