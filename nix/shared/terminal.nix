@@ -47,7 +47,7 @@
   programs.starship = {
     enable = true;
     presets = [
-      "jetpack"
+      "pure"
     ];
   };
 }
