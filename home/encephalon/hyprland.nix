@@ -3,6 +3,15 @@
   pkgs,
   ...
 }: {
+  # Related packages and utilities
+  home.packages = with pkgs; [
+    grimblast
+    hyprnotify
+    syshud
+    sysmenu
+    tofi
+  ];
+
   # Install and configure hyprland
   wayland.windowManager.hyprland = {
     enable = true;
