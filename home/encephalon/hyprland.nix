@@ -85,11 +85,11 @@
         kb_layout = "us";
         accel_profile = "flat";
         follow_mouse = 1;
-      };
 
-      touchpad = {
-        natural_scroll = true;
-        clickfinger_behavior = true;
+        touchpad = {
+          natural_scroll = true;
+          clickfinger_behavior = true;
+        };
       };
 
       # Other settings
