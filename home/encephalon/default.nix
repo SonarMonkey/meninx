@@ -12,6 +12,9 @@
     ./dconf.nix
     ./gnome.nix
 
+    # Hyprland configuration
+    ./hyprland.nix
+
     # Catpuccin theme config
     #./theme.nix
 

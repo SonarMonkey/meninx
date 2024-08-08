@@ -25,6 +25,9 @@
     ./packages.nix
     ./performance.nix
 
+    # Hyprland configuration
+    ./hyprland.nix
+
     # Disabled modules
     #./theme.nix
     #./tailscale.nix
