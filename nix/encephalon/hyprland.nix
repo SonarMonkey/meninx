@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  ...
 }: {
   # Install and ensure system-side for hyprland
   programs.hyprland = {
@@ -9,7 +10,7 @@
   };
 
   # Enable idle daemon and screen locker
-  programs.hypridle.enable = true;
+  services.hypridle.enable = true;
   programs.hyprlock.enable = true;
 
   # Allow hyprlock to authenticate
