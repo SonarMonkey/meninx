@@ -10,6 +10,7 @@
     syshud
     sysmenu
     tofi
+    cliphist
   ];
 
   # Install and configure hyprland
