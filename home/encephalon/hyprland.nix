@@ -22,4 +22,11 @@
   services.hyprpaper = {
     enable = true;
   };
+
+  # Set pointerCursor to fix themes
+  home.pointerCursor = {
+    gtk.enable = true;
+    package = pkgs.adwaita-icon-theme;
+    name = "Adwaita";
+  };
 }
