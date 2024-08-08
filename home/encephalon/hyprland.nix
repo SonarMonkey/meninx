@@ -18,6 +18,92 @@
     enable = true;
     xwayland.enable = true;
     systemd.variables = ["--all"];
+
+    # Configuration settings
+    # TODO configure gestures
+    settings = {
+      # Variables
+      "$mod" = "SUPER";
+      "$terminal" = "kitty";
+      "$browser" = "firefox";
+      "$fileManager" = "nautilus";
+      "$webApps" = "re.sonny.Tangram";
+      "$code" = "code";
+      "$codeAlt" = "zed";
+      "$notes" = "heynote";
+      "$chat" = "vesktop";
+      "$menu" = "tofi-drun";
+      "$menuAlt" = "sysmenu";
+      "$osdHud" = "syshud";
+      "$screenshot" = "grimblast";
+
+      # Startup programs
+      exec-once = [
+        "wl-paste --watch cliphist store"
+        "hyprpaper"
+        "hyprnotify"
+      ];
+
+      # Keybindings
+      bind = [
+        # Apps
+        "$mod, Enter, exec, $terminal"
+
+        # Controls and menus
+        "CTRL, Q, killactive,"
+        "$mod, O, exec, $menu"
+        "$mod+ALT, O, exec, $menuAlt"
+        ", Print, exec, $screenshot"
+
+        # Navigation
+        "$mod, 1, workspace, 1"
+        "$mod, 2, workspace, 2"
+        "$mod, 3, workspace, 3"
+        "$mod, 4, workspace, 4"
+        "$mod, 5, workspace, 5"
+        "$mod, 6, workspace, 6"
+        "$mod, 7, workspace, 7"
+        "$mod, 8, workspace, 8"
+        "$mod, 9, workspace, 9"
+        "$mod, 0, workspace, 0"
+      ];
+
+      # Mouse bindings
+      bindm = [
+        "$mod, mouse:272, movewindow"
+        "$mod, mouse:273, resizewindow"
+        "$mod ALT, mouse:272, resizewindow"
+      ];
+
+      # Monitor config
+      monitor = [
+        ",preferred,auto,auto"
+      ];
+
+      # Input, mouse, touchpad
+      input = {
+        kb_layout = "us";
+        accel_profile = "flat";
+        follow_mouse = 1;
+      };
+
+      touchpad = {
+        natural_scroll = true;
+        clickfinger_behavior = true;
+      };
+
+      # Other settings
+      misc = {
+        disable_hyprland_logo = true;
+        mouse_move_enables_dpms = true;
+        key_press_enables_dpms = true;
+      };
+
+      # Cursor config
+      cursor = {
+        hide_on_key_press = true;
+      };
+    };
   };
 
   # Configure hyprlock
