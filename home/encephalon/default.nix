@@ -13,7 +13,7 @@
     ./gnome.nix
 
     # Hyprland configuration
-    ./hyprland.nix
+    #./hyprland.nix
 
     # Catpuccin theme config
     #./theme.nix

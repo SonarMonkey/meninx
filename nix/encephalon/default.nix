@@ -26,7 +26,7 @@
     ./performance.nix
 
     # Hyprland configuration
-    ./hyprland.nix
+    #./hyprland.nix
 
     # Disabled modules
     #./theme.nix
