@@ -6,6 +6,7 @@
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
+    systemd.variables = ["--all"];
   };
 
   # Configure hyprlock
