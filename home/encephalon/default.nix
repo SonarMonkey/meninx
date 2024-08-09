@@ -12,6 +12,9 @@
     ./dconf.nix
     ./gnome.nix
 
+    # Experimental rio configuration
+    ./rio.nix
+
     # Hyprland configuration
     #./hyprland.nix
 
