@@ -27,6 +27,7 @@
       vscode-extensions.davidanson.vscode-markdownlint
       vscode-extensions.dbaeumer.vscode-eslint
       vscode-extensions.ecmel.vscode-html-css
+      editorconfig.editorconfig
 
       # Extensions from nix-vscode-extenions
       vscode-marketplace.karunamurti.tera
