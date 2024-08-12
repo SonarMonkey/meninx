@@ -3,7 +3,8 @@
   pkgs,
   lib,
   ...
-}: {
+}:
+with lib.hm.gvariant; {
   # GNOME extensions
   programs.gnome-shell = {
     enable = true;
@@ -38,5 +39,67 @@
         package = "pkgs.gnomeExtensions.thinkpad-battery-threshold";
       }
     ];
+  };
+
+  dconf.settings = {
+    "org/gnome/shell" = {
+      # Make sure extensions are enabled
+      disable-user-extensions = false;
+
+      # Enable extensions
+      enabled-extensions = [
+        # Built-in extensions
+        "user-theme@gnome-shell-extensions.gcampax.github.com"
+        "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
+
+        # User-added extensions
+        "AlphabeticalAppGrid@stuarthayhurst"
+        "app-hider@lynith.dev"
+        "caffeine@patapon.info"
+        "grand-theft-focus@zalckos.github.com"
+        "happy-appy-hotkey@jqno.nl"
+        "thinkpad-battery-threshold@marcosdalvarez.org"
+      ];
+    };
+
+    # Apps to hide from appgrid
+    "org/gnome/shell/extensions/app-hider" = {
+      hidden-apps = [
+        "cups.desktop"
+        "Helix.desktop"
+        "nvim.desktop"
+        "org.gnome.Tour.desktop"
+        "Steam Linux Runtime 3.0 (sniper).desktop"
+        "xterm.desktop"
+        "yazi.desktop"
+        "yelp.desktop"
+      ];
+    };
+
+    # Caffeine configuration
+    "org/gnome/shell/extensions/caffeine" = {
+      countdown-timer = 0;
+      indicator-position-max = 2;
+      show-indicator = "only-active";
+    };
+
+    # Custom app hotkeys
+    "org/gnome/shell/extensions/happy-appy-hotkey" = {
+      app-0 = "Heynote";
+      app-1 = "Obsidian";
+      app-2 = "kitty";
+      app-3 = "Firefox";
+      app-4 = "Vesktop";
+      hotkey-0 = ["<Alt>space"];
+      hotkey-1 = ["<Control>space"];
+      hotkey-2 = ["<Control><Alt>Return"];
+      hotkey-3 = ["<Control><Alt>o"];
+      hotkey-4 = ["<Control><Alt>m"];
+    };
+
+    # Battery threshold configuration
+    "org/gnome/shell/extensions/thinkpad-battery-threshold" = {
+      color-mode = false;
+    };
   };
 }

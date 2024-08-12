@@ -19,6 +19,6 @@
     #./theme.nix
 
     # Alternative gnome-extensions config
-    #./extensions.nix
+    ./extensions.nix
   ];
 }

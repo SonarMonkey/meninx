@@ -11,14 +11,6 @@
     gnome-tweaks
     gnome.gnome-backgrounds
     adwsteamgtk
-
-    # GNOME extensions
-    gnomeExtensions.alphabetical-app-grid
-    gnomeExtensions.app-hider
-    gnomeExtensions.caffeine
-    gnomeExtensions.grand-theft-focus
-    gnomeExtensions.happy-appy-hotkey
-    gnomeExtensions.thinkpad-battery-threshold
   ];
 
   # Set envvar for theme just in case
