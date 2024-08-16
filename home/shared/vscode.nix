@@ -28,6 +28,8 @@
       vscode-extensions.dbaeumer.vscode-eslint
       vscode-extensions.ecmel.vscode-html-css
       vscode-extensions.editorconfig.editorconfig
+      vscode-extensions.llvm-vs-code-extensions.vscode-clangd
+      vscode-extensions.xaver.clang-format
 
       # Extensions from nix-vscode-extenions
       vscode-marketplace.karunamurti.tera
