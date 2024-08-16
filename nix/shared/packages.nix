@@ -77,5 +77,6 @@
     go-tools
     delve
     codeium
+    libclang
   ];
 }
