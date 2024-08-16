@@ -21,5 +21,8 @@
     # MUD client
     blightmud
     mudlet
+
+    # PCB and CAD
+    kicad
   ];
 }
