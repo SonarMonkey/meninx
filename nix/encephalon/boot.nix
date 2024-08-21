@@ -6,7 +6,7 @@
   # Configure generic boot settings
   boot = {
     # Use the latest Linux-zen kernel
-    kernelPackages = pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linuxPackages_lqx;
 
     # Enable mutable efivars
     loader.efi.canTouchEfiVariables = true;
