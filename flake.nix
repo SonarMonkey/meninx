@@ -11,10 +11,9 @@
     # Run unpatched binaries
     nix-alien.url = "github:thiagokokada/nix-alien";
 
-    # Gaming optimizations
+    # Hardware/software optimizations
     nix-gaming.url = "github:fufexan/nix-gaming";
-
-    # Pre-defined hardware configs
+    musnix.url = "github:musnix/musnix";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     # Declarative partition setup

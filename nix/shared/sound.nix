@@ -5,7 +5,16 @@
   ...
 }: {
   # Get the low-latency module from nix-gaming
-  imports = [inputs.nix-gaming.nixosModules.pipewireLowLatency];
+  imports = [
+    inputs.nix-gaming.nixosModules.pipewireLowLatency
+    inputs.musnix.nixosModules.musnix
+  ];
+
+  # Configure musnix for better audio
+  musnix = {
+    enable = true;
+    soundcardPciId = "00:1f.3";
+  };
 
   # Disable pulseaudio in favor of pipewire
   hardware.pulseaudio.enable = false;
@@ -19,6 +28,8 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+
+    # May conflict with musnix?
     lowLatency.enable = true;
   };
 }
