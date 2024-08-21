@@ -28,6 +28,7 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    jack.enable = true;
 
     # May conflict with musnix?
     lowLatency.enable = true;

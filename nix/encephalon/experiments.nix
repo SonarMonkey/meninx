@@ -24,5 +24,11 @@
 
     # PCB and CAD
     kicad
+
+    # Modular synth stuff
+    cardinal
+    bespokesynth
+    sunvox
+    orca
   ];
 }
