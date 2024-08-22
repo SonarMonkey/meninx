@@ -30,5 +30,12 @@
     bespokesynth
     sunvox
     orca
+    lsp-plugins
+    tunefish
+    bankstown-lv2
+    chow-tape-model
+    chow-kick
+    chow-centaur
+    chow-phaser
   ];
 }
