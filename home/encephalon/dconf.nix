@@ -9,7 +9,21 @@ with lib.hm.gvariant; {
   dconf.settings = {
     # App folders
     "org/gnome/desktop/app-folders" = {
-      folder-children = ["Utilities" "Office" "Media" "Fun" "Graphics"];
+      folder-children = ["Utilities" "Office" "Media" "Fun" "Graphics" "KiCad"];
+    };
+
+    # KiCad applications
+    "org/gnome/desktop/app-folders/folders/KiCad" = {
+      apps = [
+        "org.kicad.bitmap2component.desktop"
+        "org.kicad.eeschema.desktop"
+        "org.kicad.gerbview.desktop"
+        "org.kicad.kicad.desktop"
+        "org.kicad.pcbcalculator.desktop"
+        "org.kicad.pcbnew.desktop"
+      ];
+      name = "KiCad";
+      translate = true;
     };
 
     # Graphics applications
@@ -192,7 +206,6 @@ with lib.hm.gvariant; {
         "thunderbird.desktop"
         "mullvad-vpn.desktop"
         "org.gnome.Nautilus.desktop"
-        "re.sonny.Tangram.desktop"
         "obsidian.desktop"
         "heynote.desktop"
         "code.desktop"
