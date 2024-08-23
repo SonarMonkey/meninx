@@ -11,7 +11,6 @@
 
     # Completions and fancy pipe
     initExtra = ''
-      eval "$(batpipe)"
       eval "$(nh completions -s zsh)"
     '';
 

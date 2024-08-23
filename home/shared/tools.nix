@@ -5,16 +5,7 @@
   ...
 }: {
   # Bat
-  programs.bat = {
-    enable = true;
-    extraPackages = with pkgs.bat-extras; [
-      prettybat
-      batwatch
-      batpipe
-      batman
-      batgrep
-    ];
-  };
+  programs.bat.enable = true;
 
   # Bottom
   programs.bottom.enable = true;

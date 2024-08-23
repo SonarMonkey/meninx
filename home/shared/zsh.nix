@@ -30,9 +30,8 @@
     # Enable default substring search
     historySubstringSearch.enable = true;
 
-    # Initialize batpipe and nh completions
+    # Initialize nh completions
     initExtra = ''
-      eval "$(batpipe)"
       eval "$(nh completions -s zsh)"
     '';
 

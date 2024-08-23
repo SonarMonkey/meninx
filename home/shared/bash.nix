@@ -12,7 +12,6 @@
 
     # Fancy stuff
     initExtra = ''
-      eval "$(batpipe)"
       eval "$(nh completions -s bash)"
     '';
   };
