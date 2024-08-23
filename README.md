@@ -1,86 +1,58 @@
 # meninx
 
-**Please note that this is a re-factor of my current configuration, which is not public! It is a work in progress, and may or may not work at all!**
-
-**This configuration is now current on my main laptop, but the above message still stands! Boots for me though, :shrug:**
-
 An overly complicated flake configuration for my Nix(OS) systems. Named for a variant of the word [Meninges](https://en.wikipedia.org/wiki/Meninges), the membranes that surround the human nervous system. Years ago I started naming all my computers after parts of the brain, and when I decided to group all my Nix configurations I needed an umbrella term that was on-theme. "Meninx" fit perfectly, and also almost has the word "Nix" in it. :shrug:
 
 ## Disclaimer
 
 This is *my personal configuration* and is not intended to be used as-is outside of my own machines. I make no guarantee that it will work out of the box, and the configuration is subject to change drastically. I'm perfectly happy to field discussion or questions (feel free to open an issue), but I'm hardly an expert on Nix/NixOS and you may have better luck on the NixOS forums. I accept no responsibility for any consequences of attempting to use this configuration for yourself. It is provided as-is for my own convenience and in hopes that it may provide an additional reference for others getting into the Nix space.
 
+Also, note: All references to a "desktop" configuration are still technically true, but I do not use the desktop ("cerebrum") configuration at the moment. It has not been updated for some time and is disabled in the flake. It will likely be archived or completely overhauled in the future. The laptop ("encephalon") configuration is the only one that is currently maintained.
+
 ## Overview
 
 - System Shell: bash + blesh
-- User Shell: zsh + prezto
+- User Shell: zsh + some tweaks
 - Terminal: mostly kitty
 - Prompt Theme: heavily configured starship
 - Desktop Manager: GDM on laptop, SDDM on desktop
 - Desktop Environment: GNOME on laptop, KDE Plasma 6 on desktop
 - GUI Editor: VSCode with extensions
 - Terminal Editor: helix with some LSP's
-- Theme: Catppuccin Mocha on laptop, Breeze Dark on desktop
+- Alternate Term Editor: moderately-configured NixVim
+- Theme: just adwaita-dark with adw-gtk3 for consistency
 
 ## To-Do List
 
 - [x] Review for major errors
-- [x] Review `TODO` and `FIXME` items
-- [x] Make sure everything got migrated
-  - [x] Check against current encephalon config
-  - [x] Check against old cerebrum config
-- [x] Add ISO configurations to flake
-  - [x] Make sure ISO config actually working
-  - [ ] Create encephalon ISO
-  - [ ] Create AMD GPU ISO
-- [ ] Trim cruft packages
-  - [x] Check emacs-related package list
-  - [x] Mark other packages for removal
-  - [x] Remove or keep marked packages
-  - [ ] Probably do another pass now
-- [x] Consolidate package lists
-- [x] Create module system
+- [ ] Review `TODO` and `FIXME` items
+- [ ] Add an ISO configuration to flake
+- [ ] Trim cruft packages (WIP)
+- [x] Create module system (WIP)
 - [x] ~~Fix `pyClock` module (resigned for now)~~
 - [ ] Create "minimal" install config
-- [x] Re-add non-nix assets/files
-- [x] Consider best structure/layout
-- [x] Move aliases to standard location
 - [ ] Fix package locations (mostly done)
-- [x] Fix or remove nix-colors (removed)
-- [ ] Create disko config for cerebrum
-- [ ] Add inline links/documentation
-- [x] Configure git correctly for switch to GitHub
-- [x] Figure out networking stuff for Tailscale/NextDNS/Mullvad (done enough for now)
-- [x] Finish testing builds for all systems
-  - [x] Encephalon
-  - [x] Cerebrum
-- [x] Add AMD GPU configuration
+- [ ] ~~Create disko config for cerebrum (resigned for now)~~
+- [ ] Add inline links/documentation (WIP)
 - [ ] Add NixOS-WSL configuration
-  - [ ] Main config
-  - [ ] ISO config
 - [ ] Add more links/wiki/etc.
-- [ ] Further update README.md
-- [~] Heavily pare back zsh config
-- [ ] Wait for linux builds to package zed
-- [x] Consider outright ditching Emacs
-- [ ] Switch to `programs.gnome-shell` for extensions
-- [ ] Add back nix-index-database?
+- [x] Further update README.md (WIP)
+- [x] Heavily pare back zsh config (prev config incl. for reference)
+- [x] Switch to `programs.gnome-shell` for extensions
 - [x] Add custom font configuration for encephalon
 
 ## Notes
 
 - Themes are currently disabled, as the GNOME 46 update just hit and I did not feel like fixing things. May or may not add them back, honestly don't mind the default dark look of Adwaita these days.
-- My network configuration is still *heavily* a work-in-progress, but adding things back after switching to this config has gone pretty well so far. I still don't actually know how all this low-level networking stuff really works, though.
+- My network configuration is still *heavily* a work-in-progress, but I think it's fine as of removing tailscale and paring back my network config. I still don't actually know how all this low-level networking stuff really works, though.
 
 ## Future Plans
 
-- Switch to NixOS stable for most packages, and only use unstable for stuff that tends to lag in the stable nixpkgs. Not super hard, but need to go over all my packages by hand to get it set up. Has the benefit of more consistent caching, and theoretically overall stability (although, never had much in the way of system instability on unstable.)
 - Add a more nixified way to back up or configure stuff that would be lost or manually reconfigured on a full re-install. Zoxide history, shell history(atuin?), handful of little Firefox tweaks, etc. Also not super difficult, and some of the modules I have planned should solve most of these problems.
 - Switch to using individual NUR repositories instead of pulling in the whole thing. Not sure that I really need to do this necessarily, but it just feels a bit better. Example documented in `flake.nix`. Mostly for rycee's NUR repo that has all the Firefox extensions in it, since I don't currently use anything else from the NUR.
 - Modularize further for Nix code I'm re-using heavily, and things that don't have modules. Especially for declarative Mullvad settings, as this is currently not possible with the default module/package. Also want to look into adding a firefox-csshacks module that covers options for the whole repo. Hoping to end up contributing some of these to Nix itself.
 - Use my own machines as package caches for each other in case I need/want to do a full reinstall of one, or if I get a new machine and have to set it up behind slow internet.
 - Set up the old server I have lying around on Nix as well, mostly to be a better package cache instead of my main machines. Also for a bit of cloud storage and some low-demand services I'd like to run going forward.
-- Switch from Tailscale to a self-hosted Headscale instance. Should be easily(???) configured with NixOS, given that most of my machines (current and planned) will be running Nix as well. In general, want to self-host as much as possible going forward.
+- Set up a self-hosted Headscale instance. Should be easily(???) configured with NixOS, given that most of my machines (current and planned) will be running Nix as well. In general, want to self-host as much as possible going forward.
 - Better document my entire configuration with actual links out to wherever I got the information, especially in weird cases like my network configuration. Alternatively, switch to an entirely literate-programming config with Org or some other tool.
 - Improve overall declarative-ness, especially for key and secret management, wi-fi configurations, shell and browser history, etc. This is already in progress, steps in the right direction in `encephalon/network.nix` at the moment.
 
@@ -97,9 +69,6 @@ This is *my personal configuration* and is not intended to be used as-is outside
   - shared: all generic configurations shared between machines
 - secrets: manages agenix secrets, not directly imported into config
 - pkgs: houses all my custom-defined packages either not in nixpkgs or customized by me
-  - dnd-tools: WIP install of 5e.tools site
-  - mullvad-vpn: used when nixpkgs is behind latest release
-  - warp-terminal: used when nixpkgs is behind latest release
 - modules: houses all my custom NixOS and home manager modules
   - nixos: system-side modules
     - fhs: options to enable running assorted non-Nix binaries
