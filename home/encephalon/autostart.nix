@@ -12,10 +12,6 @@
       package = vesktop;
     })
     (makeAutostartItem {
-      name = "re.sonny.Tangram";
-      package = tangram;
-    })
-    (makeAutostartItem {
       name = "firefox";
       package = firefox;
     })

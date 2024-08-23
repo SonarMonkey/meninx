@@ -22,7 +22,6 @@
     mediawriter
     obsidian
     pika-backup
-    tangram
     textpieces
     thunderbird
     transmission_4-gtk

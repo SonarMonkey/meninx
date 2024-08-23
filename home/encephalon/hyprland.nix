@@ -27,7 +27,6 @@
       "$terminal" = "kitty";
       "$browser" = "firefox";
       "$fileManager" = "nautilus";
-      "$webApps" = "re.sonny.Tangram";
       "$code" = "code";
       "$codeAlt" = "zed";
       "$notes" = "heynote";
