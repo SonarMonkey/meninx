@@ -26,6 +26,7 @@
     kicad
 
     # Modular synth stuff
+    helvum
     cardinal
     vcv-rack
     bespokesynth
