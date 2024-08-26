@@ -11,15 +11,15 @@
   ];
 
   # Define real-time specialisation
-  specialisation.realtime.configuration = {
-    musnix = {
-      rtirq.enable = true;
-      kernel = {
-        realtime = true;
-        packages = pkgs.linuxPackages_latest_rt;
-      };
-    };
-  };
+  #specialisation.realtime.configuration = {
+  #  musnix = {
+  #    rtirq.enable = true;
+  #    kernel = {
+  #      realtime = true;
+  #      packages = pkgs.linuxPackages_latest_rt;
+  #    };
+  #  };
+  #};
 
   # Add user to "audio" group
   users.users.sonar.extraGroups = ["audio"];
