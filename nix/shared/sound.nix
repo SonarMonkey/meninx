@@ -13,7 +13,6 @@
   # Define real-time specialisation
   specialisation.realtime.configuration = {
     musnix = {
-      rtcqs.enable = true;
       rtirq.enable = true;
       kernel = {
         realtime = true;
@@ -29,6 +28,7 @@
   musnix = {
     enable = true;
     soundcardPciId = "00:1f.3";
+    rtcqs.enable = true;
   };
 
   # Disable pulseaudio in favor of pipewire
