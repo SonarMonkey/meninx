@@ -7,9 +7,9 @@
   # GNOME packages
   home.packages = with pkgs; [
     # GNOME-specific applications
-    gnome.gnome-boxes
+    gnome-boxes
     gnome-tweaks
-    gnome.gnome-backgrounds
+    gnome-backgrounds
     adwsteamgtk
   ];
 
