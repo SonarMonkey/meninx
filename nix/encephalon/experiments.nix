@@ -27,6 +27,7 @@
 
     # Modular synth stuff
     cardinal
+    vcv-rack
     bespokesynth
     sunvox
     orca
