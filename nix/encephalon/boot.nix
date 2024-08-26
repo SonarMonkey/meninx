@@ -1,12 +1,13 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }: {
   # Configure generic boot settings
   boot = {
     # Use the latest Linux-zen kernel
-    kernelPackages = pkgs.linuxPackages_lqx;
+    kernelPackages = lib.mkDefault pkgs.linuxPackages_lqx;
 
     # Enable mutable efivars
     loader.efi.canTouchEfiVariables = true;
