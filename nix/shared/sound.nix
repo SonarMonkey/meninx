@@ -22,6 +22,9 @@
     };
   };
 
+  # Add user to "audio" group
+  users.users.sonar.extraGroups = ["audio"];
+
   # Configure musnix for better audio support
   musnix = {
     enable = true;
