@@ -27,6 +27,7 @@
 
     # Modular synth stuff
     helvum
+    easyeffects
     cardinal
     vcv-rack
     bespokesynth
