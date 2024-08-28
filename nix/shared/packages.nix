@@ -45,6 +45,7 @@
     wl-clipboard
     nodePackages.prettier
     libheif
+    pciutils
 
     # Desktop applications
     gimp-with-plugins
