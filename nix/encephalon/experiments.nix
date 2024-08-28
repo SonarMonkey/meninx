@@ -4,7 +4,14 @@
   ...
 }: {
   # Install ollama for running local LLMs
-  services.ollama.enable = true;
+  #services.ollama.enable = true;
+
+  # Nice rules for performance
+  #ananicy = {
+  #  enable = true;
+  #  package = pkgs.ananicy-cpp;
+  #  rulesProvider = pkgs.ananicy-cpp;
+  #};
 
   # Stuff from charm.sh for scripts and experiments
   environment.systemPackages = with pkgs; [

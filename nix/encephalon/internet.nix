@@ -15,7 +15,4 @@
     enableExcludeWrapper = false;
     package = pkgs.mullvad-vpn;
   };
-
-  # Networking-related system packages
-  environment.systemPackages = [pkgs.dig];
 }
