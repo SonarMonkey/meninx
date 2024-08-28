@@ -119,7 +119,7 @@ Also, note: All references to a "desktop" configuration are still technically tr
 ### Resources
 
 - https://wiki.nixos.org
-- https://nixos.wiki
+- https://wiki.nixos.org
 - https://noogle.dev
 - https://home-manager-options.extranix.com
 - https://search.nixos.org
