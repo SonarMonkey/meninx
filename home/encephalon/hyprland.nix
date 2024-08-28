@@ -28,7 +28,6 @@
       "$browser" = "firefox";
       "$fileManager" = "nautilus";
       "$code" = "code";
-      "$codeAlt" = "zed";
       "$notes" = "heynote";
       "$chat" = "vesktop";
       "$menu" = "tofi-drun";

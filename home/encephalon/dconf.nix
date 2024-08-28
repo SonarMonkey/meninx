@@ -209,7 +209,6 @@ with lib.hm.gvariant; {
         "obsidian.desktop"
         "heynote.desktop"
         "code.desktop"
-        "dev.zed.Zed.desktop"
         "kitty.desktop"
         "org.gnome.Settings.desktop"
       ];
