@@ -8,15 +8,9 @@
 
   # Stuff from charm.sh for scripts and experiments
   environment.systemPackages = with pkgs; [
-    # Charm utils
-    gum
-
     # Game dev stuff
     aseprite
     godot_4
-
-    # New editor
-    zed-editor
 
     # MUD client
     blightmud
@@ -24,21 +18,5 @@
 
     # PCB and CAD
     kicad
-
-    # Modular synth stuff
-    helvum
-    easyeffects
-    cardinal
-    vcv-rack
-    bespokesynth
-    sunvox
-    orca
-    lsp-plugins
-    tunefish
-    bankstown-lv2
-    chow-tape-model
-    chow-kick
-    chow-centaur
-    chow-phaser
   ];
 }
