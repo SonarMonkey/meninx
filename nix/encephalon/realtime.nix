@@ -19,7 +19,6 @@
       qjackctl
       jack2Full
       jack_capture
-      carla
     ];
 
     # Configure musnix for realtime
