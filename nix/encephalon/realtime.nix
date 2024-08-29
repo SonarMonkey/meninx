@@ -10,6 +10,18 @@
       inputs.musnix.nixosModules.musnix
     ];
 
+    # Install sound-related packages
+    environment.systemPackages = with pkgs; [
+      # Extra jack-related packages
+      pavucontrol
+      libjack2
+      jack2
+      qjackctl
+      jack2Full
+      jack_capture
+      carla
+    ];
+
     # Configure musnix for realtime
     musnix = {
       # Enable realtime kernel

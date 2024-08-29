@@ -16,6 +16,7 @@
     # Utilities
     helvum
     easyeffects
+    carla
 
     # Audio production
     cardinal
@@ -31,15 +32,6 @@
     chow-kick
     chow-centaur
     chow-phaser
-
-    # Extra jack-related packages
-    pavucontrol
-    libjack2
-    jack2
-    qjackctl
-    jack2Full
-    jack_capture
-    carla
   ];
 
   # Not sure but this is from https://wiki.nixos.org/wiki/JACK
