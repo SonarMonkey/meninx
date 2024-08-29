@@ -24,6 +24,7 @@
     ./internet.nix
     ./packages.nix
     ./performance.nix
+    ./realtime.nix
 
     # Disabled modules
     #./theme.nix

@@ -2,12 +2,12 @@
   config,
   pkgs,
   inputs,
+  lib,
   ...
 }: {
-  # Get the audio modules from my flake
+  # Get the pipewire low-latency audio module from my flake
   imports = [
     inputs.nix-gaming.nixosModules.pipewireLowLatency
-    inputs.musnix.nixosModules.musnix
   ];
 
   # Install sound-related packages
@@ -32,21 +32,14 @@
     chow-phaser
   ];
 
+  # Allow realtime per the NixOS wiki
+  security.rtkit.enable = true;
+
   # Add user to "audio" group
   users.users.sonar.extraGroups = ["audio"];
 
-  # Configure musnix for better audio support
-  musnix = {
-    enable = true;
-    soundcardPciId = "00:1f.3";
-    rtcqs.enable = true;
-  };
-
   # Disable pulseaudio in favor of pipewire
   hardware.pulseaudio.enable = false;
-
-  # Allow realtime
-  security.rtkit.enable = true;
 
   # Enable and configure pipewire
   services.pipewire = {
@@ -56,9 +49,8 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    jack.enable = true;
 
     # Low-latency from nix-gaming
-    lowLatency.enable = true;
+    lowLatency.enable = lib.mkDefault true;
   };
 }
