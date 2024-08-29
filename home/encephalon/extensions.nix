@@ -71,6 +71,7 @@ with lib.hm.gvariant; {
     # Apps to hide from appgrid
     "org/gnome/shell/extensions/app-hider" = {
       hidden-apps = [
+        "bottom.desktop"
         "cups.desktop"
         "Helix.desktop"
         "nvim.desktop"

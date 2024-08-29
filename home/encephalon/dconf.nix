@@ -9,7 +9,34 @@ with lib.hm.gvariant; {
   dconf.settings = {
     # App folders
     "org/gnome/desktop/app-folders" = {
-      folder-children = ["Utilities" "Office" "Media" "Fun" "Graphics" "KiCad"];
+      folder-children = ["Utilities" "Office" "Media" "Fun" "Graphics" "KiCad" "Audio" "Productivity"];
+    };
+
+    # Default productivity applications
+    "org/gnome/desktop/app-folders/folders/Productivity" = {
+      apps = [
+        "org.gnome.Calendar.desktop"
+        "org.gnome.clocks.desktop"
+        "org.gnome.Contacts.desktop"
+        "simple-scan.desktop"
+        "org.gnome.Geary.desktop"
+      ];
+      name = "Productivity";
+      translate = true;
+    };
+
+    # Audio applications
+    "org/gnome/desktop/app-folders/folders/Audio" = {
+      apps = [
+        "BespokeSynth.desktop"
+        "carla.desktop"
+        "carla-control.desktop"
+        "com.github.wwmm.easyeffects.desktop"
+        "org.pipewire.Helvum.desktop"
+        "vcv-rack.desktop"
+      ];
+      name = "Audio";
+      translate = true;
     };
 
     # KiCad applications
