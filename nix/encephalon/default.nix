@@ -24,9 +24,9 @@
     ./internet.nix
     ./packages.nix
     ./performance.nix
-    ./realtime.nix
 
     # Disabled modules
+    #./realtime.nix
     #./theme.nix
     #./tailscale.nix
     #./hyprland.nix
