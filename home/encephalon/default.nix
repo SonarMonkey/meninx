@@ -11,14 +11,10 @@
     ./autostart.nix
     ./dconf.nix
     ./gnome.nix
-
-    # Hyprland configuration
-    #./hyprland.nix
-
-    # Catpuccin theme config
-    #./theme.nix
-
-    # Alternative gnome-extensions config
     ./extensions.nix
+
+    # Disabled modules
+    #./hyprland.nix
+    #./theme.nix
   ];
 }

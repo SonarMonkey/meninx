@@ -10,10 +10,14 @@
     ./home.nix
     ./kitty.nix
     ./nixvim.nix
-    #./starship.nix
     ./terminal.nix
     ./tools.nix
     ./vscode.nix
     ./zsh.nix
+
+    # Disabled modules
+    #./emacs.nix
+    #./starship.nix
+    #./zsh-prezto.nix
   ];
 }
