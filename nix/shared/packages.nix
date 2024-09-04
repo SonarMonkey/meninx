@@ -46,7 +46,7 @@
     nodePackages.prettier
     libheif
     pciutils
-    youtube-dl
+    yt-dlp
     ffmpeg-full
 
     # Desktop applications
