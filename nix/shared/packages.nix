@@ -46,6 +46,8 @@
     nodePackages.prettier
     libheif
     pciutils
+    youtube-dl
+    ffmpeg-full
 
     # Desktop applications
     gimp-with-plugins
@@ -65,14 +67,12 @@
     nixpkgs-review
     nix-update
 
-    # Leave some java laying around
-    nodejs
-    temurin-bin
-
     # Explicitly install NTFS drivers
     ntfs3g
 
     # Other programming language tools
+    nodejs
+    temurin-bin
     go
     gopls
     go-tools
