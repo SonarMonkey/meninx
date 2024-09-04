@@ -79,5 +79,6 @@
     delve
     codeium
     libclang
+    python3Full
   ];
 }
