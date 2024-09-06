@@ -8,6 +8,7 @@
   environment.systemPackages = with pkgs; [
     # Tools
     dconf2nix
+    zola
 
     # Themes
     adwsteamgtk
@@ -29,6 +30,6 @@
     vesktop
     bitwarden-desktop
     gnome-feeds
-    zola
+    arduino-ide
   ];
 }
