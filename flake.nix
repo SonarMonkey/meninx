@@ -97,6 +97,13 @@
         modules = [./nix/encephalon];
       };
 
+      # Prototype server configuration
+      #thalamus = nixpkgs.lib.nixosSystem {
+      #  system = "x86_64-linux";
+      #  specialArgs = {inherit inputs outputs;};
+      #  modules = [./nix/thalamus];
+      #};
+
       # Main desktop configuration
       #cerebrum = nixpkgs.lib.nixosSystem {
       #  system = "x86_64-linux";
