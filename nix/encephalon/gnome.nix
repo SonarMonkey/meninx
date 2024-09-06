@@ -21,7 +21,7 @@
 
   # Udev rules for appindicator
   services.udev.packages = [
-    pkgs.gnome.gnome-settings-daemon
+    pkgs.gnome-settings-daemon
   ];
 
   # Configure QT appearance
