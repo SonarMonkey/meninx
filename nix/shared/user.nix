@@ -11,7 +11,7 @@
     users.sonar = {
       isNormalUser = true;
       description = "Riley Smith";
-      extraGroups = ["networkmanager" "wheel"];
+      extraGroups = ["networkmanager" "wheel" "dialout"];
       hashedPasswordFile = config.age.secrets.sonar.path;
     };
   };
