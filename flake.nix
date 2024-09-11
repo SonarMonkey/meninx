@@ -36,12 +36,6 @@
 
     # Nix-ified neovim
     nixvim.url = "github:nix-community/nixvim";
-
-    # Pre-configured themes
-    stylix = {
-      url = "github:danth/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   # Configure options passed to nix.conf

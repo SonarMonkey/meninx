@@ -15,25 +15,16 @@
     ];
   };
 
-  # Make sure to install extra outputs
-  environment.extraOutputsToInstall = [
-    "info"
-    "man"
-    "doc"
-  ];
-
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     # General utilities
     fd
     fzf
     gcc
-    genact
     gh
     git
     jq
     yq
-    moreutils
     ookla-speedtest
     pandoc
     qmk
@@ -59,13 +50,10 @@
 
     # Nix-related utilities
     alejandra
-    deadnix
     nix-init
     nixfmt-rfc-style
     nurl
     nixd
-    nixpkgs-review
-    nix-update
 
     # Explicitly install NTFS drivers
     ntfs3g
