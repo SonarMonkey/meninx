@@ -7,4 +7,5 @@
   #zed-editor = pkgs.callPackage ./zed-editor {};
   #codieum = pkgs.callPackage ./codeium {};
   heynote = pkgs.callPackage ./heynote {};
+  sunvox = pkgs.callPackage ./sunvox {};
 }
