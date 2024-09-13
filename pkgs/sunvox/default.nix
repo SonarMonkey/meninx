@@ -73,6 +73,10 @@ in
         # Cleanup, make sure we didn't miss anything
         find $out/share/sunvox/sunvox -type f -name readme.txt -delete
         rmdir $out/share/sunvox/sunvox/${bindir} $out/share/sunvox/sunvox
+
+        # desktop item
+        mkdir -p "$out/share"
+        ln -s "${finalAttrs.desktopItem}/share/applications" "$out/share/applications"
       ''
       + lib.optionalString stdenv.hostPlatform.isDarwin ''
         mkdir $out/Applications
