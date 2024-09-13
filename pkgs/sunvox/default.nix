@@ -28,7 +28,7 @@ in
 
     src = fetchzip {
       url = "https://www.warmplace.ru/soft/sunvox/sunvox-${finalAttrs.version}.zip";
-      hash = "sha256-AoKH9uFYEH9yfW7fiUZLWLD/BsWZND097RJcdoQtKko=";
+      hash = "sha256-0pbpOwFQbRagL07ErnqgnFskr9nsQoAHFhmEOLuRle8=";
     };
 
     nativeBuildInputs =
