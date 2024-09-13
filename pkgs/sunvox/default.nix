@@ -27,7 +27,7 @@ in
     version = "2.1.2-beta1";
 
     src = fetchzip {
-      urls = "https://www.warmplace.ru/soft/sunvox/sunvox-${finalAttrs.version}.zip";
+      url = "https://www.warmplace.ru/soft/sunvox/sunvox-${finalAttrs.version}.zip";
       hash = "sha256-AoKH9uFYEH9yfW7fiUZLWLD/BsWZND097RJcdoQtKko=";
     };
 
