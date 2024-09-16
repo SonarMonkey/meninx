@@ -13,9 +13,7 @@
   # FIXME Configure secrets
   age.secrets = {
     sonar.file = ../../secrets/sonar.age;
-    cerebrum.file = ../../secrets/cerebrum.age;
     encephalon.file = ../../secrets/encephalon.age;
-    mullvad.file = ../../secrets/mullvad.age;
   };
 
   # Enable OpenSSH

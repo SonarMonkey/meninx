@@ -5,9 +5,6 @@ let
   encephalon = [rootEncephalon sonarEncephalon];
 in {
   # Secrets files
-  # TODO remove unused
   "sonar.age".publicKeys = encephalon;
-  "cerebrum.age".publicKeys = encephalon;
   "encephalon.age".publicKeys = encephalon;
-  "mullvad.age".publicKeys = encephalon;
 }
