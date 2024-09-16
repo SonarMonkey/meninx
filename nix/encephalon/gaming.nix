@@ -9,7 +9,11 @@
     gamemode = {
       # Basic settings
       enable = true;
-      enableRenice = true;
+
+      # May conflict with ananicy
+      enableRenice = false;
+
+      # Config
       settings = {
         general = {
           reaper_freq = 5;

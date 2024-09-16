@@ -38,18 +38,5 @@
       dedicatedServer.openFirewall = true;
       localNetworkGameTransfers.openFirewall = true;
     };
-
-    # Gamescope (probably not needed)
-    gamescope = {
-      enable = true;
-      capSysNice = true;
-      args = [
-        "--rt"
-        "--steam"
-        "--expose-wayland"
-        "--framerate-limit 150"
-        "--adaptive-sync"
-      ];
-    };
   };
 }
