@@ -34,6 +34,7 @@ with lib.hm.gvariant; {
         "com.github.wwmm.easyeffects.desktop"
         "org.pipewire.Helvum.desktop"
         "vcv-rack.desktop"
+        "sunvox.desktop"
       ];
       name = "Audio";
       translate = true;
@@ -96,6 +97,7 @@ with lib.hm.gvariant; {
         "io.github.benjamimgois.goverlay.desktop"
         "mudlet.desktop"
         "org.godotengine.Godot4.desktop"
+        "SpaceCadetPinball.desktop"
       ];
       name = "Fun";
       translate = true;
