@@ -23,6 +23,13 @@
       # Experimental settings
       accept-flake-config = true;
 
+      # Trust users
+      trusted-users = [
+        "root"
+        "sonar"
+        "@wheel"
+      ];
+
       # Cachix package caches
       extra-substituters = [
         "https://nix-community.cachix.org"
