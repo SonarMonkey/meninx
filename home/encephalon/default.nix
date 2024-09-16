@@ -14,7 +14,6 @@
     ./extensions.nix
 
     # Disabled modules
-    #./hyprland.nix
     #./theme.nix
   ];
 }

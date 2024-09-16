@@ -29,6 +29,5 @@
     #./realtime.nix
     #./theme.nix
     #./tailscale.nix
-    #./hyprland.nix
   ];
 }
