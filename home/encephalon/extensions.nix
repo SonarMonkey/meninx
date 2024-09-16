@@ -21,6 +21,10 @@ with lib.hm.gvariant; {
 
       # User-added extensions
       {
+        id = "appindicatorsupport@rgcjonas.gmail.com";
+        package = pkgs.gnomeExtensions.appindicator;
+      }
+      {
         id = "AlphabeticalAppGrid@stuarthayhurst";
         package = pkgs.gnomeExtensions.alphabetical-app-grid;
       }
