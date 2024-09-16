@@ -4,14 +4,23 @@
   inputs,
   ...
 }: {
+  # Nix-index-database
+  imports = [inputs.nix-index-database.hmModules.nix-index];
+
   # Bat
   programs.bat.enable = true;
 
   # Bottom
   programs.bottom.enable = true;
 
-  # Command-not-found
-  programs.command-not-found.enable = true;
+  # Command-not-found // nix-index
+  programs.nix-index = {
+    enable = true;
+    symlinkToCacheHome = true;
+  };
+
+  # Comma with nix-index-db
+  programs.nix-index-database.comma.enable = true;
 
   # Eza
   programs.eza = {

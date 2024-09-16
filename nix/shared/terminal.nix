@@ -1,8 +1,12 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
+  # Import nix-index-database
+  imports = [inputs.nix-index-database.nixosModules.nix-index];
+
   # Show password feedback on sudo
   security.sudo.extraConfig = "Defaults pwfeedback";
 
@@ -20,8 +24,11 @@
   # Set default shell to zsh
   users.defaultUserShell = pkgs.zsh;
 
-  # Enable command-not-found globally
-  programs.command-not-found.enable = true;
+  # Enable command-not-found globally (via nix-index)
+  programs.nix-index.enable = true;
+
+  # Enable comma wrapped with nix-index-db
+  programs.nix-index-database.comma.enable = true;
 
   # Tune up bash a little
   programs.bash = {

@@ -9,6 +9,12 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nix-alien.url = "github:thiagokokada/nix-alien";
 
+    # Package database
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Hardware/software optimizations
     nix-gaming.url = "github:fufexan/nix-gaming";
     musnix.url = "github:musnix/musnix";
