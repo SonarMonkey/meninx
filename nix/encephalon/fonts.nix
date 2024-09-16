@@ -7,12 +7,12 @@
   fonts = {
     # Basic settings and packages
     enableDefaultPackages = true;
-    allowBitmaps = true;
     fontDir.enable = true;
 
     # Fontconfig
     fontconfig = {
       enable = true;
+      allowBitmaps = true;
 
       # Set system-wide default fonts
       defaultFonts = {
