@@ -7,6 +7,7 @@
   fonts = {
     # Basic settings and packages
     enableDefaultPackages = true;
+    allowBitmaps = true;
     fontDir.enable = true;
 
     # Fontconfig
