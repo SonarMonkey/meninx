@@ -87,6 +87,13 @@ with lib.hm.gvariant; {
       ];
     };
 
+    # Appindicator config
+    "org/gnome/shell/extensions/appindicator" = {
+      tray-pos = "right";
+      icon-saturation = 1.0;
+      icon-opacity = 255;
+    };
+
     # Caffeine configuration
     "org/gnome/shell/extensions/caffeine" = {
       countdown-timer = 0;
