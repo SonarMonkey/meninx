@@ -12,6 +12,11 @@
     username = "sonar";
     homeDirectory = "/home/sonar";
     preferXdgDirectories = true;
+    extraOutputsToInstall = [
+      "info"
+      "man"
+      "doc"
+    ];
   };
 
   # Nicely restart user services on update
