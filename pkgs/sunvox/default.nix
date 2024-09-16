@@ -10,6 +10,7 @@
   libXi,
   makeWrapper,
   makeDesktopItem,
+  fetchurl,
   SDL2,
 }: let
   platforms = {
@@ -29,6 +30,11 @@ in
     src = fetchzip {
       url = "https://www.warmplace.ru/soft/sunvox/sunvox-${finalAttrs.version}.zip";
       hash = "sha256-0pbpOwFQbRagL07ErnqgnFskr9nsQoAHFhmEOLuRle8=";
+    };
+
+    icon = fetchurl {
+      url = "https://warmplace.ru/soft/sunvox/images/icon.png";
+      hash = "sha256-ld2GCOhBhMThuUYBNa+2iTdY2HsYBRyApWiHTPuVgKA=";
     };
 
     nativeBuildInputs =
@@ -74,7 +80,7 @@ in
         find $out/share/sunvox/sunvox -type f -name readme.txt -delete
         rmdir $out/share/sunvox/sunvox/${bindir} $out/share/sunvox/sunvox
 
-        # desktop item
+        # Place desktop item
         mkdir -p "$out/share"
         ln -s "${finalAttrs.desktopItem}/share/applications" "$out/share/applications"
       ''
@@ -97,6 +103,7 @@ in
       genericName = "Sequencer Synthesizer";
       comment = finalAttrs.meta.description;
       categories = ["AudioVideo" "Audio" "Music" "Midi" "Sequencer"];
+      icon = "${finalAttrs.icon}";
       startupWMClass = "SunVox";
       exec = "sunvox_opengl";
     };
