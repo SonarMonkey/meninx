@@ -15,7 +15,6 @@
     # Encephalon-specific configuration
     ./boot.nix
     ./disko.nix
-    ./experiments.nix
     ./fonts.nix
     ./gaming.nix
     ./gnome.nix
@@ -29,5 +28,6 @@
     #./realtime.nix
     #./theme.nix
     #./tailscale.nix
+    #./experiments.nix
   ];
 }

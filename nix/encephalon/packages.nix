@@ -9,6 +9,7 @@
     # Tools
     dconf2nix
     zola
+    blightmud
 
     # Themes
     adwsteamgtk
@@ -16,11 +17,13 @@
 
     # Desktop applications
     adwsteamgtk
+    aseprite
     bottles
     heynote
     komikku
     libreoffice-fresh
     mediawriter
+    mudlet
     obsidian
     pika-backup
     textpieces
@@ -31,5 +34,6 @@
     bitwarden-desktop
     gnome-feeds
     arduino-ide
+    kicad
   ];
 }
