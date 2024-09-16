@@ -7,7 +7,7 @@
   # Configure generic boot settings
   boot = {
     # Use the latest linux-lqx kernel
-    kernelPackages = lib.mkDefault pkgs.linuxPackages_lqx;
+    kernelPackages = lib.mkDefault pkgs.linuxPackages_xanmod_latest;
 
     # Enable mutable efivars
     loader.efi.canTouchEfiVariables = true;
