@@ -7,14 +7,18 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
-
-    # Run unpatched binaries
     nix-alien.url = "github:thiagokokada/nix-alien";
 
     # Hardware/software optimizations
     nix-gaming.url = "github:fufexan/nix-gaming";
     musnix.url = "github:musnix/musnix";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+
+    # Replacement nix implementation
+    lix-module = {
+      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.0.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Declarative partition setup
     disko = {

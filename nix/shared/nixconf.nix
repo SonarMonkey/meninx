@@ -1,15 +1,17 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
   # Set the initially-installed version
   system.stateVersion = "24.05";
 
+  # Import alternative nix implementation
+  imports = [inputs.lix-module.nixosModules.default];
+
   # Enable `nix` and flakes
   nix = {
-    package = pkgs.nixFlakes;
-
     # Configure nix
     settings = {
       # Enable flakes
