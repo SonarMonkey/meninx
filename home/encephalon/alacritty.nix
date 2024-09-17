@@ -23,7 +23,6 @@
         bold.style = "Regular";
         italic.style = "Regular";
         bold_italic.style = "Regular";
-        size = 8;
         builtin_box_drawing = false;
       };
 
