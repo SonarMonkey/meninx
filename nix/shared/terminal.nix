@@ -35,6 +35,7 @@
     # Defaults
     completion.enable = true;
     enableLsColors = true;
+    vteIntegration = true;
 
     # Nicer line editor and completion
     blesh.enable = true;
@@ -48,7 +49,10 @@
   };
 
   # Ensure completion is available to zsh
-  environment.pathsToLink = ["/share/zsh"];
+  environment.pathsToLink = [
+    "/share/zsh"
+    "/share/bash-completion"
+  ];
 
   # Enable starship system-wide
   programs.starship = {
