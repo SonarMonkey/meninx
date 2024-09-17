@@ -25,6 +25,7 @@
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     # General utilities
+    amp
     fd
     fzf
     gcc
