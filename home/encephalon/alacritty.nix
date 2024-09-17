@@ -11,9 +11,8 @@
     settings = {
       # Window config
       window = {
-        opacity = 0.9;
-        blur = true;
-        startup_mode = "Windowed";
+        decorations = "None";
+        startup_mode = "Fullscreen";
       };
 
       # Font config
