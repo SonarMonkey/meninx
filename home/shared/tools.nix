@@ -93,16 +93,6 @@
     };
   };
 
-  # Zellij (for alacritty)
-  programs.zellij = {
-    enable = true;
-    enableBashIntegration = true;
-    enableZshIntegration = true;
-    settings = {
-      theme = "solarized-dark";
-    };
-  };
-
   # Zoxide
   programs.zoxide = {
     enable = true;
