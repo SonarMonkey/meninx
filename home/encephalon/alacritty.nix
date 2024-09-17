@@ -64,4 +64,18 @@
       mouse.hide_when_typing = true;
     };
   };
+
+  # Zellij (for alacritty)
+  programs.zellij = {
+    enable = true;
+    enableFishIntegration = true;
+    settings = {
+      theme = "gruvbox-dark";
+    };
+  };
+
+  # Fish (also for alacritty)
+  programs.fish = {
+    enable = true;
+  };
 }
