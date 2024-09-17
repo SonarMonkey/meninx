@@ -9,7 +9,6 @@
     # Tools
     dconf2nix
     zola
-    blightmud
 
     # Themes
     adwsteamgtk
@@ -23,7 +22,6 @@
     komikku
     libreoffice-fresh
     mediawriter
-    mudlet
     obsidian
     pika-backup
     textpieces
@@ -35,5 +33,10 @@
     gnome-feeds
     arduino-ide
     kicad
+
+    # Games
+    blightmud
+    gnome-sudoku
+    mudlet
   ];
 }
