@@ -47,12 +47,6 @@
     enableBashCompletion = true;
   };
 
-  # Enable and basic options for fish
-  programs.fish = {
-    enable = true;
-    useBabelfish = true;
-  };
-
   # Ensure completion is available to zsh
   environment.pathsToLink = ["/share/zsh"];
 

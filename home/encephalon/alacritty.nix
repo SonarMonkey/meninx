@@ -10,7 +10,7 @@
     # Main alacritty configuration
     settings = {
       # Select shell
-      shell = "fish";
+      shell = "bash";
 
       # Window config
       window = {
@@ -68,14 +68,9 @@
   # Zellij (for alacritty)
   programs.zellij = {
     enable = true;
-    enableFishIntegration = true;
+    enableBashIntegration = true;
     settings = {
       theme = "gruvbox-dark";
     };
-  };
-
-  # Fish (also for alacritty)
-  programs.fish = {
-    enable = true;
   };
 }
