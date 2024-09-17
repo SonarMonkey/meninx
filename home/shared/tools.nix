@@ -25,12 +25,7 @@
   # Eza
   programs.eza = {
     enable = true;
-    git = true;
-    icons = true;
-    extraOptions = [
-      "--group-directories-first"
-      "--header"
-    ];
+    extraOptions = ["--group-directories-first"];
   };
 
   # Git
@@ -55,9 +50,6 @@
   # GitHub CLI
   programs.gh = {
     enable = true;
-
-    # Add extensions (probably don't need these)
-    #extensions = [pkgs.gh-f pkgs.gh-eco pkgs.gh-dash];
 
     # Credential helper (defaults)
     gitCredentialHelper = {
