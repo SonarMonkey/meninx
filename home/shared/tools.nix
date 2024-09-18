@@ -90,7 +90,12 @@
   # Zellij
   programs.zellij = {
     enable = true;
-    enableBashIntegration = true;
+    settings = {
+      simplified_ui = true;
+      default_layout = "compact";
+      copy_command = "wl-copy";
+      copy_on_select = true;
+    };
   };
 
   # Zoxide
