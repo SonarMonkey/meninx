@@ -47,4 +47,11 @@
   environment.pathsToLink = [
     "/share/bash-completion"
   ];
+
+  # Configure console
+  console = {
+    useXkbConfig = true;
+    font = "spleen-8x16";
+    packages = [pkgs.spleen];
+  };
 }
