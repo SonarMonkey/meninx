@@ -6,7 +6,7 @@
   #mullvad = pkgs.callPackage ./mullvad {};
   #zed-editor = pkgs.callPackage ./zed-editor {};
   #codieum = pkgs.callPackage ./codeium {};
+  #cozette = pkgs.callPackage ./cozette {};
   heynote = pkgs.callPackage ./heynote {};
   sunvox = pkgs.callPackage ./sunvox {};
-  cozette = pkgs.callPackage ./cozette {};
 }
