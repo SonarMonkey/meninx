@@ -32,6 +32,7 @@
       nerdfonts
       noto-fonts-color-emoji
       cozette
+      spleen
     ];
   };
 }
