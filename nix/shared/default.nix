@@ -17,5 +17,6 @@
     ./terminal.nix
     ./user.nix
     ./virt.nix
+    ./zsh.nix
   ];
 }
