@@ -9,9 +9,6 @@
 
     # Main alacritty configuration
     settings = {
-      # Select shell
-      shell = "bash";
-
       # Window config
       window = {
         decorations = "None";
@@ -62,14 +59,6 @@
       cursor.vi_mode_style.shape = "Underline";
       cursor.vi_mode_style.blinking = "Off";
       mouse.hide_when_typing = true;
-    };
-  };
-
-  # Zellij (for alacritty)
-  programs.zellij = {
-    enable = true;
-    settings = {
-      theme = "solarized-dark";
     };
   };
 }

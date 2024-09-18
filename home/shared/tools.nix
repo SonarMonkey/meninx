@@ -87,6 +87,14 @@
     };
   };
 
+  # Zellij
+  programs.zellij = {
+    enable = true;
+    settings = {
+      theme = "solarized-dark";
+    };
+  };
+
   # Zoxide
   programs.zoxide = {
     enable = true;
