@@ -6,8 +6,11 @@
   # Set the system time zone
   time.timeZone = "America/Denver";
 
-  # Select keyboard layout
-  services.xserver.xkb.layout = "us";
+  # Select and customize keyboard layout
+  services.xserver.xkb = {
+    layout = "us";
+    options = "terminate:ctrl_alt_bksp,ctrl:nocaps";
+  };
 
   # Select internationalisation options
   i18n = {

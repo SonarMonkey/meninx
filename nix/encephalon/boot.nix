@@ -23,6 +23,7 @@
   services.kmscon = {
     enable = true;
     hwRender = true;
+    useXkbConfig = true;
     fonts = [
       {
         name = "Cozette";
