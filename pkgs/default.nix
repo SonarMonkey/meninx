@@ -8,4 +8,5 @@
   #codieum = pkgs.callPackage ./codeium {};
   heynote = pkgs.callPackage ./heynote {};
   sunvox = pkgs.callPackage ./sunvox {};
+  cozette = pkgs.callPackage ./cozette {};
 }
