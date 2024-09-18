@@ -18,4 +18,16 @@
       configurationLimit = 10;
     };
   };
+
+  # Configure kmscon to replace getty
+  services.kmscon = {
+    enable = true;
+    hwRender = true;
+    fonts = [
+      {
+        name = "Cozette";
+        package = pkgs.cozette;
+      }
+    ];
+  };
 }
