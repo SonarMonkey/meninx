@@ -715,11 +715,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1726692406,
-        "narHash": "sha256-4UufMH8rN2uZkSTZKUIBbXKbdDgRygKWolwF/tXvVaA=",
+        "lastModified": 1726695928,
+        "narHash": "sha256-XZyekNbJWg7rdPYxrBL87j42JKS0l3NWVurGBVSrzIo=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "92898ab9ecea0aa8fc149d9825362c09bafefe29",
+        "rev": "33e23c8a9d2f256b7408d565e37a8e5f66073591",
         "type": "github"
       },
       "original": {
@@ -872,11 +872,11 @@
       },
       "locked": {
         "dir": "packaging/nix",
-        "lastModified": 1726615585,
-        "narHash": "sha256-XOrqMkphrtEsHJTritEQPoj+nB0oXqaA1xjB1q++qfk=",
+        "lastModified": 1726693867,
+        "narHash": "sha256-61aUazxXLOLc1ScgKvy6Joq2ETQBjYP0EQJ2brqOf+w=",
         "ref": "refs/heads/main",
-        "rev": "48741907db5dace31e6861b6be3a648a5cf1fb5b",
-        "revCount": 721,
+        "rev": "aced4416f8927696b73d4b75645c9c638fcb8792",
+        "revCount": 726,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Open-Wine-Components/umu-launcher/"
