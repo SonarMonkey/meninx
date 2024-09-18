@@ -90,6 +90,7 @@
   # Zellij
   programs.zellij = {
     enable = true;
+    enableBashIntegration = true;
     settings = {
       theme = "solarized-dark";
     };
