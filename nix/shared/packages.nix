@@ -25,6 +25,8 @@
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     # General utilities
+    bat
+    bottom
     amp
     fd
     fzf

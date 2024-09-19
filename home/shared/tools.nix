@@ -7,12 +7,6 @@
   # Nix-index-database
   imports = [inputs.nix-index-database.hmModules.nix-index];
 
-  # Bat
-  programs.bat.enable = true;
-
-  # Bottom
-  programs.bottom.enable = true;
-
   # Command-not-found // nix-index
   programs.nix-index = {
     enable = true;
@@ -65,11 +59,6 @@
       git_protocol = "ssh";
       editor = "hx";
     };
-  };
-
-  # Starship prompt
-  programs.starship = {
-    enable = true;
   };
 
   # Yazi
