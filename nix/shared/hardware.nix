@@ -7,6 +7,8 @@
   environment.systemPackages = with pkgs; [
     piper
     via
+    libimobiledevice
+    ifuse
   ];
 
   # Hardware related services
@@ -16,6 +18,9 @@
 
     # Configuration daemon for mice
     ratbagd.enable = true;
+
+    # System service to recognize iOS devices
+    usbmuxd.enable = true;
 
     # Udev rules
     udev.packages = [
