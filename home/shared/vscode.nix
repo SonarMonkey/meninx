@@ -13,7 +13,6 @@
 
     # Extensions
     extensions = with pkgs; [
-      # Extensions from nix repo
       vscode-extensions.christian-kohler.path-intellisense
       vscode-extensions.esbenp.prettier-vscode
       vscode-extensions.gruntfuggly.todo-tree
@@ -30,8 +29,6 @@
       vscode-extensions.editorconfig.editorconfig
       vscode-extensions.llvm-vs-code-extensions.vscode-clangd
       vscode-extensions.xaver.clang-format
-
-      # Extensions from nix-vscode-extenions
       vscode-marketplace.karunamurti.tera
     ];
 
