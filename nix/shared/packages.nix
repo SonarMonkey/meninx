@@ -39,7 +39,6 @@
     # General utilities
     bat
     bottom
-    amp
     fd
     fzf
     gcc
