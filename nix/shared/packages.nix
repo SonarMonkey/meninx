@@ -22,6 +22,18 @@
     "doc"
   ];
 
+  # Enable nix-ld
+  programs.nix-ld = {
+    enable = true;
+    package = pkgs.nix-ld-rs;
+  };
+
+  # Allow running appimages
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
+
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     # General utilities
@@ -49,6 +61,7 @@
     pciutils
     yt-dlp
     ffmpeg-full
+    appimage-run
 
     # Desktop applications
     gimp-with-plugins
@@ -59,6 +72,7 @@
     vlc
 
     # Nix-related utilities
+    inputs.nix-alien.packages.x86_64-linux.nix-alien
     alejandra
     nix-init
     nixfmt-rfc-style
