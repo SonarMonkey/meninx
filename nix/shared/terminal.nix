@@ -43,7 +43,7 @@
     ];
   };
 
-  # Ensure completion is available to zsh
+  # Ensure completion is available to bash
   environment.pathsToLink = [
     "/share/bash-completion"
   ];
