@@ -11,6 +11,9 @@
     ifuse
   ];
 
+  # Enable virtualisation
+  virtualisation.libvirtd.enable = true;
+
   # Hardware related services
   services = {
     # Firmware updater
