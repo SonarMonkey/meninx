@@ -4,5 +4,4 @@
   # List your module files here
   fhs = import ./fhs;
   idevice = import ./idevice;
-  pyClock = import ./pyclock;
 }

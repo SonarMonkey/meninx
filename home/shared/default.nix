@@ -14,10 +14,5 @@
     ./tools.nix
     ./vscode.nix
     ./zsh.nix
-
-    # Disabled modules
-    #./emacs.nix
-    #./starship.nix
-    #./zsh-prezto.nix
   ];
 }

@@ -26,8 +26,6 @@
 
     # Disabled modules
     #./realtime.nix
-    #./theme.nix
-    #./tailscale.nix
     #./experiments.nix
   ];
 }
