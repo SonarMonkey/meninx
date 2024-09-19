@@ -16,7 +16,6 @@
     ./boot.nix
     ./disko.nix
     ./fonts.nix
-    ./gaming.nix
     ./gnome.nix
     ./hardware-configuration.nix
     ./home.nix

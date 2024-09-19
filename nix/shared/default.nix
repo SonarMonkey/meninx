@@ -4,10 +4,8 @@
   ...
 }: {
   imports = [
-    ./fhs.nix
     ./gaming.nix
     ./hardware.nix
-    ./iphone.nix
     ./locale.nix
     ./nixconf.nix
     ./packages.nix
@@ -16,7 +14,6 @@
     ./sound.nix
     ./terminal.nix
     ./user.nix
-    ./virt.nix
     ./zsh.nix
   ];
 }
