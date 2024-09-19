@@ -20,7 +20,7 @@
 
     # Configuration options
     opts = {
-      conceallevel = 1;
+      conceallevel = 0;
       linebreak = true;
     };
 
@@ -110,8 +110,6 @@
       treesitter = {
         enable = true;
         nixvimInjections = true;
-        folding = true;
-
         settings = {
           indent.enable = true;
         };
@@ -122,38 +120,6 @@
 
       # Keymap helper
       which-key.enable = true;
-
-      # Obsidian vault
-      obsidian = {
-        # Enable
-        enable = true;
-
-        # Settings
-        settings = {
-          # Vault location
-          dir = "/home/sonar/Notes";
-          workspaces = [
-            {
-              name = "Notes";
-              path = "/home/sonar/Notes";
-            }
-          ];
-
-          # Subdirectory config
-          notes_subdir = "pages";
-          attachments.img_folder = "assets";
-          daily_notes.folder = "journals";
-          templates.subdir = "templates";
-
-          # Note creation
-          new_notes_location = "notes_subdir";
-          daily_notes.template = "Daily.md";
-          disable_frontmatter = true;
-
-          # Preferred picker
-          picker.name = "telescope.nvim";
-        };
-      };
     };
   };
 }
