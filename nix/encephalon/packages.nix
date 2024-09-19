@@ -15,7 +15,6 @@
     adw-gtk3
 
     # Desktop applications
-    adwsteamgtk
     aseprite
     bottles
     heynote
