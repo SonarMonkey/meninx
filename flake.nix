@@ -9,6 +9,12 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nix-alien.url = "github:thiagokokada/nix-alien";
 
+    # Theming
+    stylix.url = "github:danth/stylix";
+
+    # Nix-ified neovim
+    nixvim.url = "github:nix-community/nixvim";
+
     # Package database
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
@@ -43,9 +49,6 @@
       url = "github:ryantm/agenix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    # Nix-ified neovim
-    nixvim.url = "github:nix-community/nixvim";
   };
 
   # Configure options passed to nix.conf
