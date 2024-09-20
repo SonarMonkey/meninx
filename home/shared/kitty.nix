@@ -8,7 +8,7 @@
     enable = true;
 
     # Theme
-    theme = "Adwaita dark";
+    themeFile = "adwaita_dark";
 
     # Font settings
     font = {
