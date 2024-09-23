@@ -13,5 +13,9 @@
     ./dconf.nix
     ./gnome.nix
     ./extensions.nix
+    ./theme.nix
+
+    # Disabled modules
+    #./adwaita.nix
   ];
 }
