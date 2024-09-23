@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }: {
   # Install fonts
@@ -13,14 +14,6 @@
     fontconfig = {
       enable = true;
       allowBitmaps = true;
-
-      # Set system-wide default fonts
-      defaultFonts = {
-        serif = ["Cantarell"];
-        sansSerif = ["Cantarell"];
-        monospace = ["Maple Mono NF"];
-        emoji = ["Noto Color Emoji"];
-      };
     };
 
     # Personal fonts to install
