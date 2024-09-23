@@ -9,6 +9,8 @@
     # GNOME-specific applications
     gnome-boxes
     gnome-tweaks
+    adw-gtk3
+    adwsteamgtk
   ];
 
   # Enable font discovery

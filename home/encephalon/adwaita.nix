@@ -7,8 +7,6 @@
   # Adwaita packages
   home.packages = with pkgs; [
     gnome-backgrounds
-    adwsteamgtk
-    adw-gtk3
   ];
 
   # Set envvar for theme just in case
