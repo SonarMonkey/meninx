@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }: {
   # Configure alacritty
@@ -17,7 +18,7 @@
 
       # Font config
       font = {
-        normal.family = "Cozette";
+        normal.family = lib.mkForce "Cozette";
         normal.style = "Regular";
         bold.style = "Regular";
         italic.style = "Regular";
