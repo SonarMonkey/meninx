@@ -42,6 +42,9 @@
 
     # Plugins
     plugins = {
+      # Icons (for lspsaga and telescope)
+      web-devicons.enable = true;
+
       # Indent guides
       indent-blankline.enable = true;
 
