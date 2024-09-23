@@ -7,13 +7,6 @@
   programs.kitty = {
     enable = true;
 
-    # Font settings
-    font = {
-      name = "Maple Mono NF";
-      package = pkgs.maple-mono-NF;
-      size = 12;
-    };
-
     # General settings
     settings = {
       # Basic configuration
