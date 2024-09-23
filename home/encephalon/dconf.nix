@@ -151,40 +151,11 @@ with lib.hm.gvariant; {
       xkb-options = ["terminate:ctrl_alt_bksp" "ctrl:nocaps"];
     };
 
-    # Set wallpaper and properties
-    "org/gnome/desktop/background" = {
-      color-shading-type = "solid";
-      picture-options = "zoom";
-      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/adwaita-l.jxl";
-      picture-uri-dark = "file:///run/current-system/sw/share/backgrounds/gnome/adwaita-d.jxl";
-      primary-color = "#3071AE";
-      secondary-color = "#000000";
-    };
-
-    # Set screensaver and properties
-    "org/gnome/desktop/screensaver" = {
-      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/adwaita-l.jxl";
-      primary-color = "#3071AE";
-      secondary-color = "#000000";
-    };
-
     # General interface settings
     "org/gnome/desktop/interface" = {
       # Clock
       clock-format = "12h";
       clock-show-weekday = true;
-
-      # Theme
-      color-scheme = "prefer-dark";
-      gtk-theme = "adw-gtk3-dark";
-      cursor-theme = "Adwaita";
-
-      # Font
-      font-antialiasing = "rgba";
-      font-hinting = "slight";
-      font-name = "Cantarell 12";
-      document-font-name = "Cantarell 12";
-      monospace-font-name = "Maple Mono NF 12";
     };
 
     # Touchpad settings
