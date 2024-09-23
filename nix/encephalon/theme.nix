@@ -12,9 +12,9 @@
     enable = true;
 
     # Wallpaper and colorscheme
-    image = ../../assets/forest.jpg;
+    image = ../../assets/tokyonight.png;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
 
     # Cursor
     cursor = {
