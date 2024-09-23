@@ -10,9 +10,6 @@
     dconf2nix
     zola
 
-    # Themes
-    adwsteamgtk
-
     # Desktop applications
     aseprite
     bottles
