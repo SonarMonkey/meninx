@@ -21,7 +21,6 @@
       vscode-extensions.ms-vscode-remote.remote-ssh
       vscode-extensions.ms-vscode.cpptools-extension-pack
       vscode-extensions.oderwat.indent-rainbow
-      vscode-extensions.piousdeer.adwaita-theme
       vscode-extensions.yzhang.markdown-all-in-one
       vscode-extensions.davidanson.vscode-markdownlint
       vscode-extensions.dbaeumer.vscode-eslint
@@ -38,8 +37,6 @@
       "files.autoSave" = "off";
       "files.trimTrailingWhitespace" = true;
       "editor.detectIndentation" = true;
-      "editor.fontLigatures" = true;
-      "editor.fontFamily" = "'Maple Mono NF', 'monospace', monospace";
 
       # Integrated terminal
       "terminal.integrated.cursorBlinking" = true;
@@ -65,18 +62,6 @@
       # Configure path autocomplete
       "path-intellisense.showHiddenFiles" = true;
       "path-intellisense.autoTriggerNextSuggestion" = true;
-
-      # Appearance/UI settings
-      "editor.renderLineHighlight" = "none";
-      "window.autoDetectColorScheme" = true;
-      "window.commandCenter" = true;
-      "workbench.tree.indent" = 12;
-
-      # Theme settings
-      "workbench.preferredDarkColorTheme" = "Adwaita Dark";
-      "workbench.preferredLightColorTheme" = "Adwaita Light";
-      "workbench.productIconTheme" = "adwaita";
-      "workbench.iconTheme" = null;
     };
   };
 }

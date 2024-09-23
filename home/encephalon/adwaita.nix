@@ -103,4 +103,26 @@
       monospace-font-name = "Maple Mono NF 12";
     };
   };
+
+  # Various application-specific themes
+  programs.helix.settings.theme = "adwaita-dark";
+  programs.kitty.themeFile = "adwaita_dark";
+  programs.vscode.extensions = with pkgs; [vscode-extensions.piousdeer.adwaita-theme];
+  programs.vscode.userSettings = {
+    # Font settings
+    "editor.fontLigatures" = true;
+    "editor.fontFamily" = "'Maple Mono NF', 'monospace', monospace";
+
+    # Appearance/UI settings
+    "editor.renderLineHighlight" = "none";
+    "window.autoDetectColorScheme" = true;
+    "window.commandCenter" = true;
+    "workbench.tree.indent" = 12;
+
+    # Theme settings
+    "workbench.preferredDarkColorTheme" = "Adwaita Dark";
+    "workbench.preferredLightColorTheme" = "Adwaita Light";
+    "workbench.productIconTheme" = "adwaita";
+    "workbench.iconTheme" = null;
+  };
 }

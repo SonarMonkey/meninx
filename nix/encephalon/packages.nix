@@ -12,7 +12,6 @@
 
     # Themes
     adwsteamgtk
-    adw-gtk3
 
     # Desktop applications
     aseprite

@@ -7,9 +7,6 @@
   programs.kitty = {
     enable = true;
 
-    # Theme
-    themeFile = "adwaita_dark";
-
     # Font settings
     font = {
       name = "Maple Mono NF";
