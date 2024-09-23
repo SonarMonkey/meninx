@@ -12,9 +12,15 @@
     enable = true;
 
     # Wallpaper and colorscheme
-    image = "";
+    image = ../../assets/forest.jpg;
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
+
+    # Cursor
+    cursor = {
+      package = pkgs.adwaita-icon-theme;
+      name = "Adwaita";
+    };
 
     # Fonts
     fonts = {

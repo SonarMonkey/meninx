@@ -9,10 +9,12 @@
 
     # Configure individual targets
     targets = {
-      firefox.profilenames = [];
-      gtk.extraCss = '''';
+      firefox.profileNames = ["sonar"];
       kitty.variant256Colors = true;
-      nixvim = {};
+      nixvim.transparentBackground = {
+        main = true;
+        signColumn = true;
+      };
     };
   };
 }
