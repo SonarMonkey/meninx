@@ -23,10 +23,4 @@
   services.udev.packages = [
     pkgs.gnome-settings-daemon
   ];
-
-  # Configure QT appearance
-  qt = {
-    enable = true;
-    style = "adwaita-dark";
-  };
 }
