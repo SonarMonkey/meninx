@@ -80,6 +80,7 @@
   programs.zellij = {
     enable = true;
     settings = {
+      on_force_close = "detach";
       simplified_ui = true;
       default_layout = "default";
       copy_command = "wl-copy";
