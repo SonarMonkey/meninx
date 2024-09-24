@@ -80,10 +80,13 @@
   programs.zellij = {
     enable = true;
     settings = {
+      on_force_close = "quit";
       simplified_ui = true;
-      default_layout = "compact";
+      default_layout = "default";
       copy_command = "wl-copy";
       copy_on_select = true;
+      pane_viewport_serialization = true;
+      scrollback_lines_to_serialize = 0;
     };
   };
 
