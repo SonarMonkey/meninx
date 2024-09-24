@@ -12,9 +12,9 @@
     enable = true;
 
     # Wallpaper and colorscheme
-    image = ../../assets/tokyonight.png;
+    image = ../../assets/gruv-system.jpg;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
 
     # Cursor
     cursor = {
