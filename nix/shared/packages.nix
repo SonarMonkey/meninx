@@ -52,6 +52,7 @@
     ripgrep
     ripgrep-all
     suckit
+    skim
     unzip
     ventoy-full
     wl-clipboard
