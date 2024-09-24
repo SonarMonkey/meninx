@@ -80,7 +80,6 @@
   programs.zellij = {
     enable = true;
     settings = {
-      on_force_close = "quit";
       simplified_ui = true;
       default_layout = "default";
       copy_command = "wl-copy";
@@ -89,6 +88,21 @@
       scrollback_lines_to_serialize = 0;
     };
   };
+
+  # Helper script for zellij
+  home.packages = with pkgs; [
+    (writeShellScriptBin "zsk" ''
+      ZJ_SESSIONS=$(zellij list-sessions)
+      NO_SESSIONS=$(echo "${ZJ_SESSIONS}" | wc -l)
+
+      if [ "${NO_SESSIONS}" -ge 2 ]; then
+          zellij attach \
+          "$(echo "${ZJ_SESSIONS}" | sk)"
+      else
+         zellij attach -c
+      fi
+    '')
+  ];
 
   # Zoxide
   programs.zoxide = {
