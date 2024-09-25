@@ -16,6 +16,9 @@
   # Comma with nix-index-db
   programs.nix-index-database.comma.enable = true;
 
+  # Bat
+  programs.bat.enable = true;
+
   # Eza
   programs.eza = {
     enable = true;

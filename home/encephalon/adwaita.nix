@@ -103,6 +103,7 @@
   };
 
   # Various application-specific themes
+  programs.bat.config.theme = "base16";
   programs.helix.settings.theme = "adwaita-dark";
   programs.kitty.themeFile = "adwaita_dark";
   programs.vscode.extensions = with pkgs; [vscode-extensions.piousdeer.adwaita-theme];
