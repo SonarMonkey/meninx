@@ -10,7 +10,6 @@
     # Encephalon-specific configuration
     ./adwaita.nix
     ./autostart.nix
-    ./alacritty.nix
     ./dconf.nix
     ./gnome.nix
     ./extensions.nix
