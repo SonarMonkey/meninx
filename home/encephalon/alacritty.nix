@@ -16,16 +16,6 @@
         startup_mode = "Fullscreen";
       };
 
-      # Font config
-      font = {
-        normal.family = lib.mkForce "Cozette";
-        normal.style = "Regular";
-        bold.style = "Regular";
-        italic.style = "Regular";
-        bold_italic.style = "Regular";
-        builtin_box_drawing = false;
-      };
-
       # Other misc. settings
       selection.save_to_clipboard = true;
       cursor.style.blinking = "On";
