@@ -19,6 +19,9 @@
   # Bat
   programs.bat.enable = true;
 
+  # Lazygit (mostly for LunarVim)
+  programs.lazygit.enable = true;
+
   # Eza
   programs.eza = {
     enable = true;
@@ -84,7 +87,6 @@
     enable = true;
     settings = {
       on_force_close = "detach";
-      simplified_ui = true;
       default_layout = "default";
       copy_command = "wl-copy";
       copy_on_select = true;
