@@ -10,6 +10,10 @@
     dconf2nix
     zola
 
+    # Neovim stuff
+    lunarvim
+    neovide
+
     # Desktop applications
     aseprite
     bottles
