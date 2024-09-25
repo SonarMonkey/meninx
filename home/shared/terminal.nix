@@ -10,6 +10,7 @@
       NIXOS_OZONE_WL = "1";
       EDITOR = "lvim";
       VISUAL = "neovide";
+      NEOVIM_BIN = "lvim";
     };
 
     # Global shell aliases
