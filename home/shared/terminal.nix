@@ -8,17 +8,18 @@
     # Global home-manager envvars
     sessionVariables = {
       NIXOS_OZONE_WL = "1";
+      EDITOR = "lvim";
+      VISUAL = "neovide";
     };
 
     # Global shell aliases
     shellAliases = {
-      # General stuff
+      # Editor stuff
       e = "$EDITOR";
       se = "sudo $EDITOR";
-      h = "hx";
-      nv = "neovim";
-      ns = "nix-env -qa | fzf";
-      s = "kitten ssh";
+      vi = "lvim";
+      vim = "lvim";
+      nvim = "lvim";
 
       # Mullvad
       mu = "mullvad";
@@ -27,13 +28,6 @@
       mur = "mullvad reconnect";
       mud = "mullvad disconnect";
       mue = "mullvad-exclude";
-
-      # Nix configs
-      ne = "e ~/Nix/";
-      nc = "e ~/Nix/configuration.nix";
-      ndot = "e ~/Nix/nix.d/";
-      he = "e ~/Nix/home.nix";
-      hdot = "e ~/Nix/home.d/";
 
       # nixOS
       nfm = "nix fmt && git commit -a -m \"Format with Alejandra\"";
@@ -48,6 +42,7 @@
       switch = "nh os switch --ask";
       boot = "nh os boot --ask";
       search = "nh search";
+      clean = "nh clean all -k 5";
     };
   };
 
