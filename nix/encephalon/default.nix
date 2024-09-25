@@ -22,9 +22,9 @@
     ./internet.nix
     ./packages.nix
     ./performance.nix
-    ./theme.nix
 
     # Disabled modules
+    #./theme.nix
     #./realtime.nix
     #./experiments.nix
   ];

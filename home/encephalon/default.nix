@@ -8,14 +8,14 @@
     ../shared
 
     # Encephalon-specific configuration
+    ./adwaita.nix
     ./autostart.nix
     ./alacritty.nix
     ./dconf.nix
     ./gnome.nix
     ./extensions.nix
-    ./theme.nix
 
     # Disabled modules
-    #./adwaita.nix
+    #./theme.nix
   ];
 }
