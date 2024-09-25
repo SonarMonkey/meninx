@@ -9,10 +9,9 @@
     # Tools
     dconf2nix
     zola
-
-    # Neovim stuff
     lunarvim
     neovide
+    wordgrinder
 
     # Desktop applications
     aseprite
