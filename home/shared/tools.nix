@@ -67,6 +67,30 @@
     };
   };
 
+  # Neovide
+  programs.neovide = {
+    enable = true;
+
+    # General startup settings
+    settings = {
+      fork = true;
+      frame = "full";
+      idle = true;
+      maximized = true;
+      neovim-bin = "${pkgs.lunarvim}";
+      tabs = false;
+      theme = "auto";
+      vsync = true;
+      wsl = false;
+
+      # Font configuration
+      font = {
+        normal = ["Maple Mono NF"];
+        size = 12.0;
+      };
+    };
+  };
+
   # Yazi
   programs.yazi = {
     enable = true;
