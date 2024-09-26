@@ -84,6 +84,8 @@ with lib.hm.gvariant; {
         "xterm.desktop"
         "yazi.desktop"
         "yelp.desktop"
+        "lvim.desktop"
+        "wordgrinder.desktop"
       ];
     };
 
