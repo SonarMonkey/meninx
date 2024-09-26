@@ -48,12 +48,6 @@ with lib.hm.gvariant; {
         id = "thinkpad-battery-threshold@marcosdalvarez.org";
         package = pkgs.gnomeExtensions.thinkpad-battery-threshold;
       }
-
-      # Experimental extensions
-      {
-        id = "paperwm@paperwm.github.com";
-        package = pkgs.gnomeExtensions.paperwm;
-      }
     ];
   };
 
