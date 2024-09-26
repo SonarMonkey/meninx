@@ -60,6 +60,7 @@
   # Enable and configure pipewire
   services.pipewire = {
     enable = true;
+    audio.enable = true;
 
     # Enable support for other systems
     alsa.enable = true;

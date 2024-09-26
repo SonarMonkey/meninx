@@ -35,11 +35,6 @@
       eval "$(nh completions -s zsh)"
     '';
 
-    # Session variables for ZSH
-    sessionVariables = {
-      NIXOS_OZONE_WL = "1";
-    };
-
     # Enable and configure default syntax highlighter
     syntaxHighlighting = {
       enable = true;

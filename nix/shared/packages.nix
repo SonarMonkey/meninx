@@ -15,17 +15,10 @@
     ];
   };
 
-  # Make sure to install extra outputs
-  environment.extraOutputsToInstall = [
-    "info"
-    "man"
-    "doc"
-  ];
-
   # Enable nix-ld
   programs.nix-ld = {
     enable = true;
-    package = pkgs.nix-ld-rs;
+    package = pkgs.nix-ld;
   };
 
   # Allow running appimages
