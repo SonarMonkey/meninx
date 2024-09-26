@@ -18,6 +18,7 @@
 
     # Personal fonts to install
     packages = with pkgs; [
+      cantarell-fonts
       corefonts
       inter
       atkinson-hyperlegible
