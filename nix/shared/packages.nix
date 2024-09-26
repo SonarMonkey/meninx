@@ -41,11 +41,9 @@
     bottom
     fd
     fzf
-    gcc
     gh
     git
-    jq
-    yq
+    lazygit
     ookla-speedtest
     pandoc
     qmk
@@ -56,7 +54,6 @@
     unzip
     ventoy-full
     wl-clipboard
-    nodePackages.prettier
     libheif
     pciutils
     yt-dlp
@@ -83,6 +80,8 @@
     ntfs3g
 
     # Other programming language tools
+    gcc
+    nodePackages.prettier
     nodejs
     temurin-bin
     go

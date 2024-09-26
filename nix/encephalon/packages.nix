@@ -33,7 +33,6 @@
     kicad
 
     # Games
-    nudoku
     blightmud
     gnome-sudoku
     mudlet
