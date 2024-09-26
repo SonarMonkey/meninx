@@ -22,6 +22,7 @@
     ./internet.nix
     ./packages.nix
     ./performance.nix
+    ./niri.nix
 
     # Disabled modules
     #./theme.nix

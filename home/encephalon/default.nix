@@ -13,6 +13,7 @@
     ./dconf.nix
     ./gnome.nix
     ./extensions.nix
+    ./niri.nix
 
     # Disabled modules
     #./theme.nix
