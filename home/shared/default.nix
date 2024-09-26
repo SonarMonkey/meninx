@@ -6,7 +6,6 @@
   imports = [
     # Shared configuration
     ./firefox.nix
-    ./helix.nix
     ./home.nix
     ./kitty.nix
     ./terminal.nix
@@ -16,5 +15,6 @@
 
     # Disabled modules
     #./nixvim.nix
+    #./helix.nix
   ];
 }
