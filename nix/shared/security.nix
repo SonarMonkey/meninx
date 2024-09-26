@@ -10,7 +10,7 @@
   # Get the agenix tool
   environment.systemPackages = [inputs.agenix.packages.x86_64-linux.default];
 
-  # FIXME Configure secrets
+  # Configure secrets
   age.secrets = {
     sonar.file = ../../secrets/sonar.age;
     encephalon.file = ../../secrets/encephalon.age;
