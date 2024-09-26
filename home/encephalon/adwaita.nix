@@ -9,9 +9,6 @@
     gnome-backgrounds
   ];
 
-  # Set envvar for theme just in case
-  home.sessionVariables.GTK_THEME = "adw-gtk3-dark";
-
   # Enable font discovery and set defaults
   fonts.fontconfig = {
     # Set defaults
@@ -103,8 +100,8 @@
   };
 
   # Various application-specific themes
+  #programs.helix.settings.theme = "adwaita-dark";
   programs.bat.config.theme = "base16";
-  programs.helix.settings.theme = "adwaita-dark";
   programs.kitty.themeFile = "adwaita_dark";
   programs.vscode.extensions = with pkgs; [vscode-extensions.piousdeer.adwaita-theme];
   programs.vscode.userSettings = {
