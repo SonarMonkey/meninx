@@ -1,11 +1,9 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
-  # Enable and configure niri
-  programs.niri.enable = true;
-
   # Notification daemon
   services.mako.enable = true;
 
