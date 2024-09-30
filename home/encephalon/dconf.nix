@@ -9,7 +9,7 @@ with lib.hm.gvariant; {
   dconf.settings = {
     # App folders
     "org/gnome/desktop/app-folders" = {
-      folder-children = ["Utilities" "Office" "Media" "Fun" "Graphics" "KiCad" "Audio" "Productivity"];
+      folder-children = ["Utilities" "Office" "Media" "Fun" "Graphics" "Audio" "Productivity"];
     };
 
     # Default productivity applications
@@ -37,20 +37,6 @@ with lib.hm.gvariant; {
         "sunvox.desktop"
       ];
       name = "Audio";
-      translate = true;
-    };
-
-    # KiCad applications
-    "org/gnome/desktop/app-folders/folders/KiCad" = {
-      apps = [
-        "org.kicad.bitmap2component.desktop"
-        "org.kicad.eeschema.desktop"
-        "org.kicad.gerbview.desktop"
-        "org.kicad.kicad.desktop"
-        "org.kicad.pcbcalculator.desktop"
-        "org.kicad.pcbnew.desktop"
-      ];
-      name = "KiCad";
       translate = true;
     };
 

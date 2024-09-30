@@ -30,7 +30,6 @@
     bitwarden-desktop
     gnome-feeds
     arduino-ide
-    kicad
 
     # Games
     blightmud
