@@ -22,11 +22,11 @@
     ./internet.nix
     ./packages.nix
     ./performance.nix
-    ./niri.nix
 
     # Disabled modules
     #./theme.nix
     #./realtime.nix
     #./experiments.nix
+    #./niri.nix
   ];
 }
