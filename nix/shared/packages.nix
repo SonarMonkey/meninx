@@ -82,7 +82,6 @@
     gopls
     go-tools
     delve
-    codeium
     libclang
     python3Full
   ];
