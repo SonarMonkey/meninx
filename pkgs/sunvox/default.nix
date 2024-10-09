@@ -25,11 +25,11 @@
 in
   stdenv.mkDerivation (finalAttrs: {
     pname = "sunvox";
-    version = "2.1.2-beta1";
+    version = "2.1.2-beta2";
 
     src = fetchzip {
       url = "https://www.warmplace.ru/soft/sunvox/sunvox-${finalAttrs.version}.zip";
-      hash = "sha256-0pbpOwFQbRagL07ErnqgnFskr9nsQoAHFhmEOLuRle8=";
+      hash = "sha256-8HvMCKxSUWaR9I4kZSx2JtYmKBgoqLeH+SOstKrhETU=";
     };
 
     icon = fetchurl {
