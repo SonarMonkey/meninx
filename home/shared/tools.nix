@@ -63,7 +63,7 @@
     # Configure
     settings = {
       git_protocol = "ssh";
-      editor = "hx";
+      editor = "e";
     };
   };
 

@@ -21,6 +21,7 @@
       vi = "lvim";
       vim = "lvim";
       nvim = "lvim";
+      nv = "lvim";
 
       # Mullvad
       mu = "mullvad";
