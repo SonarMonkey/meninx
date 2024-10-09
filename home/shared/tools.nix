@@ -77,7 +77,7 @@
       frame = "full";
       idle = true;
       maximized = true;
-      neovim-bin = "${pkgs.lunarvim}";
+      neovim-bin = "${pkgs.lunarvim}/bin/lvim";
       tabs = false;
       theme = "auto";
       vsync = true;
