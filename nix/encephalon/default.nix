@@ -15,6 +15,7 @@
     # Encephalon-specific configuration
     ./boot.nix
     ./disko.nix
+    ./experiments.nix
     ./fonts.nix
     ./gnome.nix
     ./hardware-configuration.nix
@@ -26,7 +27,6 @@
     # Disabled modules
     #./theme.nix
     #./realtime.nix
-    #./experiments.nix
     #./niri.nix
   ];
 }
