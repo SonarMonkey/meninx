@@ -8,4 +8,5 @@
   #cozette = pkgs.callPackage ./cozette {};
   heynote = pkgs.callPackage ./heynote {};
   sunvox = pkgs.callPackage ./sunvox {};
+  twos = pkgs.callPackage ./twos {};
 }
