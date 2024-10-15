@@ -83,7 +83,6 @@ with lib.hm.gvariant; {
         "io.github.benjamimgois.goverlay.desktop"
         "mudlet.desktop"
         "org.godotengine.Godot4.desktop"
-        "SpaceCadetPinball.desktop"
         "org.gnome.Sudoku.desktop"
       ];
       name = "Fun";

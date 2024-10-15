@@ -18,7 +18,6 @@
     # Games
     osu-lazer-bin
     prismlauncher
-    space-cadet-pinball
   ];
 
   programs = {
