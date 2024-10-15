@@ -78,37 +78,6 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  preFixup = let
-    libPath = lib.makeLibraryPath [
-      glib
-      nss
-      nspr
-      at-spi2-atk
-      cups.lib
-      dbus.lib
-      libdrm
-      gtk3
-      pango
-      cairo
-      xorg.libX11
-      xorg.libXcomposite
-      xorg.libXdamage
-      xorg.libXext
-      xorg.libXfixes
-      xorg.libXrandr
-      xorg.libxcb
-      mesa
-      expat
-      libxkbcommon
-      alsa-lib
-    ];
-  in ''
-    patchelf \
-      --set-interpreter "$(cat $NIX_CC/nix-support/dynamic-linker)" \
-      --set-rpath "${libPath}" \
-      $out/opt/Twos/twos
-  '';
-
   meta = with lib; {
     homepage = "https://www.twosapp.com/";
     description = "Twos: Remember & Share *Things*";
