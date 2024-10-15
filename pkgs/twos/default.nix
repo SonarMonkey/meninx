@@ -1,6 +1,8 @@
 {
   stdenv,
   lib,
+  autoPatchelfHook,
+  dpkg,
   makeWrapper,
   fetchurl,
   glib,
@@ -25,13 +27,44 @@ stdenv.mkDerivation rec {
 
   src = fetchurl {
     url = "https://twos.s3.us-west-2.amazonaws.com/mac/Twos-${version}.deb";
-    sha256 = "";
+    sha256 = "sha256-Sqjs5EB8zUh5G8MzGnKJuUkOzxd0ARWOiV9Lqs0cZi8=";
   };
-  sourceRoot = ".";
-  unpackCmd = "dpkg-deb -x Twos-${version}.deb .";
+
+  nativeBuildInputs = [
+    autoPatchelfHook
+    dpkg
+    makeWrapper
+  ];
+
+  buildInputs = [
+    glib
+    nss
+    nspr
+    at-spi2-atk
+    cups.lib
+    dbus.lib
+    libdrm
+    gtk3
+    pango
+    cairo
+    xorg.libX11
+    xorg.libXcomposite
+    xorg.libXdamage
+    xorg.libXext
+    xorg.libXfixes
+    xorg.libXrandr
+    xorg.libxcb
+    mesa
+    expat
+    libxkbcommon
+    alsa-lib
+  ];
 
   dontConfigure = true;
   dontBuild = true;
+
+  sourceRoot = ".";
+  unpackCmd = "dpkg-deb -x $src .";
 
   installPhase = ''
     runHook preInstall
