@@ -26,12 +26,6 @@
 
     # Plugins
     lsp-plugins
-    tunefish
-    bankstown-lv2
-    chow-tape-model
-    chow-kick
-    chow-centaur
-    chow-phaser
   ];
 
   # Not sure but this is from https://wiki.nixos.org/wiki/JACK
