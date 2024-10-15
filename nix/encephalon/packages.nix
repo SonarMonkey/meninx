@@ -27,7 +27,6 @@
     transmission_4-gtk
     switcheroo
     vesktop
-    bitwarden-desktop
     gnome-feeds
     arduino-ide
 
