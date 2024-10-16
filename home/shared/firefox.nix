@@ -53,11 +53,9 @@
         foxytab
         ghostery
         improved-tube
-        notion-web-clipper
         privacy-badger
         sidebery
         ublock-origin
-        wikiwand-wikipedia-modernized
       ];
 
       # Configure search settings
