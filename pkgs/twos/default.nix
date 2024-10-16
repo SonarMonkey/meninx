@@ -8,7 +8,7 @@
 
   src = fetchurl {
     url = "https://twos.s3.us-west-2.amazonaws.com/mac/Twos-${version}.AppImage";
-    sha256 = "sha256-g3tdGDFEVWAlMS4ZML7IXIUpJna7D03Ldoszi8/p9zw=";
+    sha256 = "sha256-bUus1BOAynTqsUQz0fDtC1cQ7m21rMsczxjUpCWNXfY=";
   };
 
   appimageContents = appimageTools.extract {
