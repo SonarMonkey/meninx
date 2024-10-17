@@ -56,6 +56,7 @@
         privacy-badger
         sidebery
         ublock-origin
+        raindropio
       ];
 
       # Configure search settings
