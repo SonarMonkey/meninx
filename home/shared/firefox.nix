@@ -57,6 +57,7 @@
         sidebery
         ublock-origin
         raindropio
+        unpaywall
       ];
 
       # Configure search settings
