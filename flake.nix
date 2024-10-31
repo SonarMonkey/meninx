@@ -8,13 +8,6 @@
     nur.url = "github:nix-community/NUR";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nix-alien.url = "github:thiagokokada/nix-alien";
-    niri.url = "github:sodiboo/niri-flake";
-
-    # Theming
-    stylix.url = "github:danth/stylix";
-
-    # Nix-ified neovim
-    nixvim.url = "github:nix-community/nixvim";
 
     # Package database
     nix-index-database = {
@@ -50,6 +43,11 @@
       url = "github:ryantm/agenix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Disabled
+    #niri.url = "github:sodiboo/niri-flake";
+    #stylix.url = "github:danth/stylix";
+    #nixvim.url = "github:nix-community/nixvim";
   };
 
   # Configure options passed to nix.conf
