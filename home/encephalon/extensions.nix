@@ -33,6 +33,10 @@ with lib.hm.gvariant; {
         package = pkgs.gnomeExtensions.app-hider;
       }
       {
+        id = "blur-my-shell@aunetx";
+        package = pkgs.gnomeExtensions.blur-my-shell;
+      }
+      {
         id = "caffeine@patapon.info";
         package = pkgs.gnomeExtensions.caffeine;
       }
@@ -62,6 +66,7 @@ with lib.hm.gvariant; {
         # User-added extensions
         "AlphabeticalAppGrid@stuarthayhurst"
         "app-hider@lynith.dev"
+        "blur-my-shell@aunetx"
         "caffeine@patapon.info"
         "happy-appy-hotkey@jqno.nl"
         "thinkpad-battery-threshold@marcosdalvarez.org"
