@@ -69,6 +69,23 @@
       document-font-name = "Cantarell 12";
       monospace-font-name = "Maple Mono NF 12";
     };
+
+    # Wallpaper and screensaver
+    "org/gnome/desktop/background" = {
+      color-shading-type = "solid";
+      picture-options = "zoom";
+      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/amber-l.jxl";
+      picture-uri-dark = "file:///run/current-system/sw/share/backgrounds/gnome/amber-d.jxl";
+      primary-color = "#ff7800";
+      secondary-color = "#000000";
+    };
+
+    # Set screensaver and properties
+    "org/gnome/desktop/screensaver" = {
+      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/amber-l.jxl";
+      primary-color = "#ff7800";
+      secondary-color = "#000000";
+    };
   };
 
   # Various application-specific themes
