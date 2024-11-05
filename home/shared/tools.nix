@@ -93,7 +93,7 @@
 
   # Yazi
   programs.yazi = {
-    enable = true;
+    enable = false;
     enableBashIntegration = true;
     enableZshIntegration = true;
     settings = {
