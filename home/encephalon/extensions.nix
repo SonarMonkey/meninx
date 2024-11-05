@@ -57,6 +57,7 @@ with lib.hm.gvariant; {
         # Built-in extensions
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
+        "drive-menu@gnome-shell-extensions.gcampax.github.com"
 
         # User-added extensions
         "AlphabeticalAppGrid@stuarthayhurst"
@@ -86,7 +87,7 @@ with lib.hm.gvariant; {
 
     # Appindicator config
     "org/gnome/shell/extensions/appindicator" = {
-      tray-pos = "right";
+      tray-pos = "left";
       icon-saturation = 1.0;
       icon-opacity = 255;
     };
