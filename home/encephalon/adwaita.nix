@@ -4,11 +4,6 @@
   lib,
   ...
 }: {
-  # Adwaita packages
-  home.packages = with pkgs; [
-    gnome-backgrounds
-  ];
-
   # Enable font discovery and set defaults
   fonts.fontconfig = {
     # Set defaults
@@ -49,12 +44,7 @@
 
     # gtk3
     gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-
-    # gtk4
-    gtk4.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
+      gtk-application-prefer-dark-theme = true;
     };
   };
 
@@ -66,33 +56,15 @@
 
   # Dconf adwaita theme settings
   dconf.settings = with lib.hm.gvariant; {
-    # Set wallpaper and properties
-    "org/gnome/desktop/background" = {
-      color-shading-type = "solid";
-      picture-options = "zoom";
-      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/adwaita-l.jxl";
-      picture-uri-dark = "file:///run/current-system/sw/share/backgrounds/gnome/adwaita-d.jxl";
-      primary-color = "#3071AE";
-      secondary-color = "#000000";
-    };
-
-    # Set screensaver and properties
-    "org/gnome/desktop/screensaver" = {
-      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/adwaita-l.jxl";
-      primary-color = "#3071AE";
-      secondary-color = "#000000";
-    };
-
     # General interface settings
     "org/gnome/desktop/interface" = {
       # Theme
+      accent-color = "blue";
       color-scheme = "prefer-dark";
       gtk-theme = "adw-gtk3-dark";
       cursor-theme = "Adwaita";
 
       # Font
-      font-antialiasing = "rgba";
-      font-hinting = "slight";
       font-name = "Cantarell 12";
       document-font-name = "Cantarell 12";
       monospace-font-name = "Maple Mono NF 12";
