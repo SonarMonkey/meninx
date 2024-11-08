@@ -23,6 +23,7 @@
       vim = "lvim";
       nvim = "lvim";
       nv = "lvim";
+      wg = "kitty --session=none --start-as=fullscreen --detach wordgrinder";
 
       # Mullvad
       mu = "mullvad";
