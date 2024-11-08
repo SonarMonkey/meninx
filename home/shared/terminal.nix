@@ -8,6 +8,7 @@
     # Global home-manager envvars
     sessionVariables = {
       NIXOS_OZONE_WL = "1";
+      QT_QPA_PLATFORM = "wayland";
       EDITOR = "lvim";
       VISUAL = "neovide";
       NEOVIM_BIN = "lvim";
