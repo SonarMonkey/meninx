@@ -23,7 +23,7 @@
       inter
       atkinson-hyperlegible
       maple-mono-NF
-      nerdfonts
+      #nerd-fonts
       noto-fonts-color-emoji
       cozette
       spleen
