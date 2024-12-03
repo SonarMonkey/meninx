@@ -140,9 +140,7 @@
 
       # Set up userChrome to import my css tweaks
       userChrome = ''
-        @import url(window_control_placeholder_support.css);
-        @import url(window_control_force_linux_system_style.css);
-        @import url(hide_tabs_toolbar.css);
+        @import url(hide_tabs_toolbar_v2.css);
         @import url(urlbar_centered_text.css);
         @import url(autohide_sidebar.css);
 
@@ -153,14 +151,6 @@
         #sidebar-box{
           --uc-sidebar-width: 34px;
           --uc-sidebar-hover-width: 230px;
-          --uc-autohide-sidebar-delay: 600ms;
-          --uc-autohide-transition-duration: 115ms;
-          --uc-autohide-transition-type: linear;
-          position: relative;
-          min-width: var(--uc-sidebar-width) !important;
-          width: var(--uc-sidebar-width) !important;
-          max-width: var(--uc-sidebar-width) !important;
-          z-index:1;
         }
       '';
     };
@@ -170,30 +160,8 @@
   home.file = let
     currHash = "sha256-I85eatSWjXHduF3TadTexlkJCn5lRscQB00yP0fbJQ4=";
   in {
-    # Fix window controls
-    ".mozilla/firefox/sonar/chrome/window_control_placeholder_support.css".text =
-      builtins.readFile
-      (pkgs.fetchFromGitHub {
-          owner = "MrOtherGuy";
-          repo = "firefox-csshacks";
-          rev = "master";
-          hash = currHash;
-        }
-        + "/chrome/window_control_placeholder_support.css");
-
-    # Fix window control theme
-    ".mozilla/firefox/sonar/chrome/window_control_force_linux_system_style.css".text =
-      builtins.readFile
-      (pkgs.fetchFromGitHub {
-          owner = "MrOtherGuy";
-          repo = "firefox-csshacks";
-          rev = "master";
-          hash = currHash;
-        }
-        + "/chrome/window_control_force_linux_system_style.css");
-
     # Hide the tab toolbar
-    ".mozilla/firefox/sonar/chrome/hide_tabs_toolbar.css".text =
+    ".mozilla/firefox/sonar/chrome/hide_tabs_toolbar_v2.css".text =
       builtins.readFile
       (pkgs.fetchFromGitHub {
           owner = "MrOtherGuy";
