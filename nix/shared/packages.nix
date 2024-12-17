@@ -9,7 +9,7 @@
   nixpkgs = {
     config.allowUnfree = true;
     overlays = [
-      inputs.nur.overlay
+      inputs.nur.overlays.default
       inputs.nix-vscode-extensions.overlays.default
       outputs.overlays.additions
     ];
