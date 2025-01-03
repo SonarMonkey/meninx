@@ -39,9 +39,6 @@
   # Add user to "audio" group
   users.users.sonar.extraGroups = ["audio"];
 
-  # Disable pulseaudio in favor of pipewire
-  hardware.pulseaudio.enable = false;
-
   # Enable and configure musnix
   musnix = {
     # Basic settings
