@@ -14,7 +14,6 @@
     wordgrinder
 
     # Desktop applications
-    aseprite
     bottles
     heynote
     komikku
