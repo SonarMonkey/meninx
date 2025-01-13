@@ -6,7 +6,7 @@
   #zed-editor = pkgs.callPackage ./zed-editor {};
   #codieum = pkgs.callPackage ./codeium {};
   #cozette = pkgs.callPackage ./cozette {};
+  #twos = pkgs.callPackage ./twos {};
   heynote = pkgs.callPackage ./heynote {};
   sunvox = pkgs.callPackage ./sunvox {};
-  twos = pkgs.callPackage ./twos {};
 }
