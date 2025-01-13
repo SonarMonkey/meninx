@@ -28,6 +28,7 @@
       vscode-extensions.editorconfig.editorconfig
       vscode-extensions.llvm-vs-code-extensions.vscode-clangd
       vscode-extensions.xaver.clang-format
+      vscode-marketplace.dendron.dendron
       vscode-marketplace.karunamurti.tera
     ];
 
