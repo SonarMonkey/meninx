@@ -20,8 +20,8 @@
       package = kitty;
     })
     (makeAutostartItem {
-      name = "mullvad-vpn";
-      package = mullvad-vpn;
+      name = "protonvpn-app";
+      package = protonvpn-gui;
     })
     (makeAutostartItem {
       name = "heynote";

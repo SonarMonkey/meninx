@@ -54,6 +54,7 @@
         ghostery
         improved-tube
         privacy-badger
+        proton-vpn
         sidebery
         ublock-origin
         raindropio

@@ -28,6 +28,7 @@
     vesktop
     gnome-feeds
     arduino-ide
+    protonvpn-gui
 
     # Games
     blightmud
