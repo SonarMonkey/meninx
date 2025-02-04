@@ -191,6 +191,7 @@ with lib.hm.gvariant; {
         "vesktop.desktop"
         "thunderbird.desktop"
         "mullvad-vpn.desktop"
+        "protonvpn-app.desktop"
         "org.gnome.Nautilus.desktop"
         "obsidian.desktop"
         "heynote.desktop"
