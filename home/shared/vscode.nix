@@ -29,9 +29,6 @@
       vscode-extensions.llvm-vs-code-extensions.vscode-clangd
       vscode-extensions.xaver.clang-format
       vscode-extensions.redhat.vscode-yaml
-      vscode-marketplace.dendron.dendron
-      vscode-marketplace.dendron.dendron-paste-image
-      vscode-marketplace.dendron.dendron-markdown-shortcuts
       vscode-marketplace.karunamurti.tera
     ];
 
