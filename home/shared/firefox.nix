@@ -159,7 +159,7 @@
 
   # Add the actual CSS tweaks
   home.file = let
-    currHash = "sha256-O31wh4w/2OEbzkvUN+6lHYtLOTnz9Z/rHj659UzOtzg=";
+    currHash = "sha256-MDqlQ7V8KR/1xHhbPPX+z4qsixlSx9IFTzzczIdFJY8=";
   in {
     # Hide the tab toolbar
     ".mozilla/firefox/sonar/chrome/hide_tabs_toolbar_v2.css".text =
