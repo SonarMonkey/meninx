@@ -28,7 +28,6 @@
     vesktop
     gnome-feeds
     arduino-ide
-    protonvpn-gui
     legcord
 
     # Games

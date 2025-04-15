@@ -20,10 +20,6 @@
       package = kitty;
     })
     (makeAutostartItem {
-      name = "protonvpn-app";
-      package = protonvpn-gui;
-    })
-    (makeAutostartItem {
       name = "heynote";
       package = heynote;
     })
