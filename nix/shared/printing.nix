@@ -12,7 +12,6 @@
       drivers = with pkgs; [
         gutenprint
         gutenprintBin
-        canon-cups-ufr2
         hplip
         hplipWithPlugin
         postscript-lexmark
