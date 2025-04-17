@@ -92,8 +92,8 @@
   #programs.helix.settings.theme = "adwaita-dark";
   programs.bat.config.theme = "base16";
   programs.kitty.themeFile = "adwaita_dark";
-  programs.vscode.extensions = with pkgs; [vscode-extensions.piousdeer.adwaita-theme];
-  programs.vscode.userSettings = {
+  programs.vscode.profiles.default.extensions = with pkgs; [vscode-extensions.piousdeer.adwaita-theme];
+  programs.vscode.profiles.default.userSettings = {
     # Font settings
     "editor.fontLigatures" = true;
     "editor.fontFamily" = "'Maple Mono NF', 'monospace', monospace";
