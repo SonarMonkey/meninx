@@ -22,7 +22,7 @@
       corefonts
       inter
       atkinson-hyperlegible
-      maple-mono-NF
+      maple-mono.NF
       #nerd-fonts
       noto-fonts-color-emoji
       cozette
