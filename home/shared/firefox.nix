@@ -62,9 +62,9 @@
 
       # Configure search settings
       search = {
-        default = "DuckDuckGo";
+        default = "ddg";
         force = true;
-        order = ["DuckDuckGo" "Nix Packages" "NixOS Wiki" "Google"];
+        order = ["ddg" "np" "nw"];
 
         # Add Nix and Wiki searching
         engines = {
@@ -101,9 +101,10 @@
           };
 
           # Disable garbage
-          "Bing".metaData.hidden = true;
-          "Amazon.com".metaData.hidden = true;
-          "eBay".metaData.hidden = true;
+          "google".metaData.hidden = true;
+          "bing".metaData.hidden = true;
+          "amazondotcom-us".metaData.hidden = true;
+          "ebay".metaData.hidden = true;
         };
       };
 
