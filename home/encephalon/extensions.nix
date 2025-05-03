@@ -107,20 +107,15 @@ with lib.hm.gvariant; {
     # Custom app hotkeys
     "org/gnome/shell/extensions/happy-appy-hotkey" = {
       app-0 = "Heynote";
-      app-1 = "Obsidian";
-      app-2 = "kitty";
-      app-3 = "Firefox";
-      app-4 = "Vesktop";
+      app-1 = "kitty";
       hotkey-0 = ["<Alt>space"];
       hotkey-1 = ["<Control>space"];
-      hotkey-2 = ["<Control><Alt>Return"];
-      hotkey-3 = ["<Control><Alt>o"];
-      hotkey-4 = ["<Control><Alt>m"];
     };
 
     # Battery threshold configuration
     "org/gnome/shell/extensions/thinkpad-battery-threshold" = {
       color-mode = false;
+      indicator-mode = "ACTIVE";
     };
   };
 }
