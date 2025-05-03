@@ -8,7 +8,6 @@
   # Get the pipewire low-latency audio module from my flake
   imports = [
     inputs.nix-gaming.nixosModules.pipewireLowLatency
-    inputs.musnix.nixosModules.musnix
   ];
 
   # Install sound-related packages
@@ -28,25 +27,11 @@
     lsp-plugins
   ];
 
-  # Not sure but this is from https://wiki.nixos.org/wiki/JACK
-  security.sudo.extraConfig = ''
-    sonar ALL=(ALL) NOPASSWD: ${pkgs.systemd}/bin/systemctl
-  '';
-
   # Allow realtime per the NixOS wiki
   security.rtkit.enable = true;
 
   # Add user to "audio" group
   users.users.sonar.extraGroups = ["audio"];
-
-  # Enable and configure musnix
-  musnix = {
-    # Basic settings
-    enable = true;
-    soundcardPciId = "00:1f.3";
-    alsaSeq.enable = false;
-    rtcqs.enable = true;
-  };
 
   # Enable and configure pipewire
   services.pipewire = {

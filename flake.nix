@@ -17,7 +17,6 @@
 
     # Hardware/software optimizations
     nix-gaming.url = "github:fufexan/nix-gaming";
-    musnix.url = "github:musnix/musnix";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     # Replacement nix implementation
