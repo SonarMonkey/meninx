@@ -31,7 +31,7 @@
     historySubstringSearch.enable = true;
 
     # Initialize nh completions
-    initExtra = ''
+    initContent = ''
       eval "$(nh completions -s zsh)"
     '';
 
