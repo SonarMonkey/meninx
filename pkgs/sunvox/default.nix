@@ -25,7 +25,7 @@
 in
   stdenv.mkDerivation (finalAttrs: {
     pname = "sunvox";
-    version = "2.1.2";
+    version = "2.1.2b";
 
     src = fetchzip {
       url = "https://www.warmplace.ru/soft/sunvox/sunvox-${finalAttrs.version}.zip";
