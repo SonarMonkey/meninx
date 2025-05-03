@@ -7,7 +7,7 @@
     # Make users immutable
     mutableUsers = false;
 
-    # Define my defauly user account
+    # Define my default user account
     users.sonar = {
       isNormalUser = true;
       description = "Riley Smith";
