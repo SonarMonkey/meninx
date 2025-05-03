@@ -21,6 +21,7 @@
     enable = true;
 
     # Nautilus bookmarks
+    # TODO update these
     gtk3.bookmarks = [
       "file:///home/sonar/Nix"
       "file:///home/sonar/Notes"
