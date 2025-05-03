@@ -17,13 +17,13 @@
     };
 
     # Personal fonts to install
+    # TODO nerd-fonts
     packages = with pkgs; [
       cantarell-fonts
       corefonts
       inter
       atkinson-hyperlegible
       maple-mono.NF
-      #nerd-fonts
       noto-fonts-color-emoji
       cozette
       spleen
