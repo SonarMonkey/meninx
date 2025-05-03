@@ -32,7 +32,7 @@
 
     # Initialize nh completions
     initContent = ''
-      eval "$(nh completions -s zsh)"
+      eval "$(nh completions zsh)"
     '';
 
     # Enable and configure default syntax highlighter
