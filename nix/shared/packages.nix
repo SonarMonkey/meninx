@@ -45,7 +45,6 @@
     suckit
     skim
     unzip
-    ventoy-full
     wl-clipboard
     libheif
     pciutils
