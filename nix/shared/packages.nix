@@ -75,12 +75,14 @@
     gcc
     nodePackages.prettier
     nodejs
-    temurin-bin
     go
     gopls
     go-tools
     delve
     libclang
     python3Full
+    jdk
+    jdk8
+    jdk17
   ];
 }
