@@ -29,7 +29,7 @@ in
 
     src = fetchzip {
       url = "https://www.warmplace.ru/soft/sunvox/sunvox-${finalAttrs.version}.zip";
-      hash = "sha256-7DZyoOz3jDYsuGqbs0PRs6jdWCxBhSDUKk8KVJQm/3o=";
+      hash = "sha256-RmGqko1OLkQb0Oeydpfy4wxzp6iz2MpS7R22d4qjEaE=";
     };
 
     icon = fetchurl {
