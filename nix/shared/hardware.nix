@@ -8,7 +8,6 @@
     piper
     via
     libimobiledevice
-    ifuse
   ];
 
   # Enable virtualisation
@@ -22,8 +21,14 @@
     # Configuration daemon for mice
     ratbagd.enable = true;
 
+    #GVFS for auto-mounting and stuff
+    gvfs.enable = true;
+
     # System service to recognize iOS devices
-    usbmuxd.enable = true;
+    usbmuxd = {
+      enable = true;
+      package = pkgs.usbmuxd2;
+    };
 
     # Udev rules
     udev.packages = [
