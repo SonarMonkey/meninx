@@ -31,6 +31,7 @@ with lib.hm.gvariant; {
         "BespokeSynth.desktop"
         "carla.desktop"
         "carla-control.desktop"
+        "org.gnome.Decibels.desktop"
         "com.github.wwmm.easyeffects.desktop"
         "org.pipewire.Helvum.desktop"
         "vcv-rack.desktop"
@@ -108,6 +109,8 @@ with lib.hm.gvariant; {
     "org/gnome/desktop/app-folders/folders/Utilities" = {
       apps = [
         "org.gnome.FileRoller.desktop"
+        "org.gnome.font-viewer.desktop"
+        "org.gnome.Characters.desktop"
         "org.gnome.Connections.desktop"
         "org.gnome.baobab.desktop"
         "org.gnome.DiskUtility.desktop"
@@ -189,10 +192,10 @@ with lib.hm.gvariant; {
       favorite-apps = [
         "firefox.desktop"
         "vesktop.desktop"
+        "legcord.desktop"
         "thunderbird.desktop"
         "mullvad-vpn.desktop"
         "org.gnome.Nautilus.desktop"
-        "obsidian.desktop"
         "heynote.desktop"
         "code.desktop"
         "kitty.desktop"
