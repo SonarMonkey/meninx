@@ -15,18 +15,4 @@
 
   # Enable font discovery
   fonts.fontconfig.enable = true;
-
-  # GTK-related settings
-  gtk = {
-    enable = true;
-
-    # Nautilus bookmarks
-    # TODO update these
-    gtk3.bookmarks = [
-      "file:///home/sonar/Nix"
-      "file:///home/sonar/Notes"
-      "file:///home/sonar/Projects"
-      "file:///home/sonar/Documents/Work"
-    ];
-  };
 }

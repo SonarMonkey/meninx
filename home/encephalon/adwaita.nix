@@ -17,6 +17,9 @@
 
   # GTK settings
   gtk = {
+    # Enable configuration
+    enable = true;
+
     # Font settings
     font = {
       package = pkgs.cantarell-fonts;
