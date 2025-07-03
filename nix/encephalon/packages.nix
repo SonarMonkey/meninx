@@ -26,7 +26,6 @@
     transmission_4-gtk
     switcheroo
     vesktop
-    gnome-feeds
     arduino-ide
     legcord
 
@@ -34,5 +33,8 @@
     blightmud
     gnome-sudoku
     mudlet
+
+    # FIXME Disabled for some lxml failure
+    #gnome-feeds
   ];
 }
