@@ -18,6 +18,7 @@ with lib.hm.gvariant; {
         "org.gnome.Calendar.desktop"
         "org.gnome.clocks.desktop"
         "org.gnome.Contacts.desktop"
+        "obsidian.desktop"
         "simple-scan.desktop"
         "org.gnome.Geary.desktop"
       ];
