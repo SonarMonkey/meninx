@@ -15,7 +15,9 @@
     # Utilities
     helvum
     easyeffects
-    carla
+
+    # Disabled for cython issue https://github.com/NixOS/nixpkgs/issues/389149
+    #carla
 
     # Audio production
     cardinal
