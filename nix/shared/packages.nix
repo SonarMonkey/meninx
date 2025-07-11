@@ -51,6 +51,7 @@
     yt-dlp
     ffmpeg-full
     appimage-run
+    gum
 
     # Desktop applications
     gimp-with-plugins
