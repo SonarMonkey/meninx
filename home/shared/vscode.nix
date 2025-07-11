@@ -33,6 +33,12 @@
         vscode-extensions.llvm-vs-code-extensions.vscode-clangd
         vscode-extensions.xaver.clang-format
         vscode-extensions.redhat.vscode-yaml
+        vscode-extensions.timonwong.shellcheck
+        vscode-extensions.ms-python.python
+        vscode-extensions.ms-python.debugpy
+        vscode-extensions.ms-python.vscode-pylance
+        vscode-extensions.ms-python.pylint
+        vscode-extensions.ms-python.black-formatter
         vscode-marketplace.karunamurti.tera
       ];
 
