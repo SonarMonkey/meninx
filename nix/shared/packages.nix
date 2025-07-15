@@ -29,6 +29,9 @@
 
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
+    # Rust coreutils
+    uutils-coreutils-noprefix
+
     # General utilities
     bat
     bottom
@@ -52,6 +55,8 @@
     ffmpeg-full
     appimage-run
     gum
+    hyperfine
+    kondo
 
     # Desktop applications
     gimp-with-plugins
