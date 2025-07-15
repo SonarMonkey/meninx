@@ -31,6 +31,7 @@
   # Git
   programs.git = {
     enable = true;
+    delta.enable = true;
     package = pkgs.gitAndTools.gitFull;
 
     # User settings
