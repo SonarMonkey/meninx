@@ -6,6 +6,8 @@
   imports = [
     # Shared configuration
     ./firefox.nix
+    ./fish.nix
+    ./ghostty.nix
     ./home.nix
     ./kitty.nix
     ./terminal.nix

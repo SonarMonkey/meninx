@@ -4,6 +4,7 @@
   ...
 }: {
   imports = [
+    ./fish.nix
     ./gaming.nix
     ./hardware.nix
     ./locale.nix
