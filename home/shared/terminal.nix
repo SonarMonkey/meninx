@@ -5,6 +5,9 @@
 }: {
   # Home-manager specific configs
   home = {
+    # Enable global shell integrations
+    shell.enableShellIntegration = true;
+
     # Global home-manager envvars
     sessionVariables = {
       NIXOS_OZONE_WL = "1";
