@@ -42,7 +42,6 @@
     lazygit
     ookla-speedtest
     pandoc
-    qmk
     ripgrep
     ripgrep-all
     suckit
