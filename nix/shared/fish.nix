@@ -8,4 +8,7 @@
     enable = true;
     useBabelfish = true;
   };
+
+  # Disable mancaches
+  documentation.man.generateCaches = false;
 }
