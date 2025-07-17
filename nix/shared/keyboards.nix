@@ -6,6 +6,7 @@
   # Hardware-related system packages
   environment.systemPackages = with pkgs; [
     via
+    qmk
   ];
 
   # Udev rules for via and qmk
