@@ -6,7 +6,6 @@
   # Hardware-related system packages
   environment.systemPackages = with pkgs; [
     piper
-    via
     libimobiledevice
   ];
 
@@ -29,11 +28,6 @@
       enable = true;
       package = pkgs.usbmuxd2;
     };
-
-    # Udev rules
-    udev.packages = [
-      pkgs.via
-    ];
   };
 
   # Other hardware configs
@@ -43,9 +37,6 @@
 
     # Enable updating CPU microcode
     enableRedistributableFirmware = true;
-
-    # Non-root access to QMK boards
-    keyboard.qmk.enable = true;
 
     # OpenTabletDriver daemon, GUI, & udev rules
     opentabletdriver = {
