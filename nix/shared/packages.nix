@@ -87,7 +87,6 @@
     libclang
     python3Full
     jdk
-    jdk8
     jdk17
   ];
 }
