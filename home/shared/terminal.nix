@@ -66,6 +66,7 @@
       boot = "nh os boot --ask";
       search = "nh search";
       clean = "nh clean all -k 5";
+      ntest = "nh os test";
     };
   };
 }
