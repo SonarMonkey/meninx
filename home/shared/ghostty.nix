@@ -11,18 +11,26 @@
 
     # General settings
     settings = {
+      # Appearance
       font-family = "Maple Mono NF";
       theme = "Adwaita Dark";
+      gtk-titlebar-hide-when-maximized = true;
+      gtk-adwaita = true;
+
+      # Startup
+      command = "fish -i";
+      maximize = true;
+
+      # Mouse settings
       cursor-click-to-move = true;
       mouse-hide-while-typing = true;
-      command = "fish -i";
       focus-follows-mouse = true;
+
+      # Clipboard usage
       clipboard-read = "allow";
       clipboard-write = "allow";
       clipboard-trim-trailing-spaces = true;
       copy-on-select = "clipboard";
-      gtk-titlebar-hide-when-maximized = true;
-      gtk-adwaita = true;
     };
   };
 }
