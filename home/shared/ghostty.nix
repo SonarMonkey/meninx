@@ -15,13 +15,13 @@
       theme = "Adwaita Dark";
       cursor-click-to-move = true;
       mouse-hide-while-typing = true;
-      command = "fish";
+      command = "fish -i";
       focus-follows-mouse = true;
       clipboard-read = "allow";
       clipboard-write = "allow";
       clipboard-trim-trailing-spaces = true;
       copy-on-select = "clipboard";
-      gtk-titlebar-hide-when-maximised = true;
+      gtk-titlebar-hide-when-maximized = true;
       gtk-adwaita = true;
     };
   };
