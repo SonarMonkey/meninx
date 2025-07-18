@@ -9,6 +9,6 @@
     useBabelfish = true;
   };
 
-  # Disable mancaches
+  # Disable mancaches for faster build
   documentation.man.generateCaches = false;
 }

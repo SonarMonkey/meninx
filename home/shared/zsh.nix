@@ -44,5 +44,8 @@
         "cursor"
       ];
     };
+
+    # Shell aliases (dupe of bash.shellAliases)
+    shellAliases = config.programs.bash.shellAliases;
   };
 }

@@ -35,7 +35,23 @@
       mur = "mullvad reconnect";
       mud = "mullvad disconnect";
       mue = "mullvad-exclude";
+    };
+  };
 
+  # Configure bash
+  programs.bash = {
+    # Basic settings
+    enable = true;
+    enableCompletion = true;
+    enableVteIntegration = true;
+
+    # Fancy stuff
+    initExtra = ''
+      eval "$(nh completions -s bash)"
+    '';
+
+    # Shell-specific aliases (duplicated in zsh and fish)
+    shellAliases = {
       # nixOS
       nfm = "nix fmt && git commit -a -m \"Format with Alejandra\"";
       fup = "nix flake --refresh update --commit-lock-file";
@@ -51,18 +67,5 @@
       search = "nh search";
       clean = "nh clean all -k 5";
     };
-  };
-
-  # Configure bash
-  programs.bash = {
-    # Basic settings
-    enable = true;
-    enableCompletion = true;
-    enableVteIntegration = true;
-
-    # Fancy stuff
-    initExtra = ''
-      eval "$(nh completions -s bash)"
-    '';
   };
 }
