@@ -33,4 +33,24 @@
       copy-on-select = "clipboard";
     };
   };
+
+  # Zellij layout until https://github.com/ghostty-org/ghostty/discussions/2480
+  programs.zellij = {
+    enable = true;
+
+    # Only enable fish integration
+    enableBashIntegration = false;
+    enableZshIntegration = false;
+    enableFishIntegration = true;
+
+    # Resume and exit automatically
+    attachExistingSession = true;
+    exitShellOnExit = true;
+
+    # General settings
+    settings = {
+      default_shell = "fish";
+      copy_command = "wl-copy";
+    };
+  };
 }
