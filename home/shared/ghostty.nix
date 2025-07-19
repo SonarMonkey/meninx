@@ -68,19 +68,28 @@
     layouts = {
       # Default layout
       default = ''
+        // Default layout
         layout {
-            pane size=1 borderless=true {
-                plugin location="tab-bar"
-            }
-            pane split_direction="vertical" {
-                pane
-                pane split_direction="horizontal" {
-                    pane cwd="~/Nix"
-                    pane command="btm" close_on_exit=true
+            // Re-usable base layout for tabs
+            default_tab_template {
+                pane size=1 borderless=true {
+                    plugin location="zellij:tab-bar"
+                }
+                children
+                pane size=2 borderless=true {
+                    plugin location="zellij:status-bar"
                 }
             }
-            pane size=1 borderless=true {
-                plugin location="status-bar"
+
+            // Default startup layout
+            tab {
+                pane split_direction="vertical" {
+                    pane
+                    pane split_direction="horizontal" {
+                        pane cwd="~/Nix"
+                        pane command="btm" close_on_exit=true
+                    }
+                }
             }
         }
       '';
