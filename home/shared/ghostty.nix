@@ -43,14 +43,47 @@
     enableZshIntegration = false;
     enableFishIntegration = true;
 
-    # Resume and exit automatically
+    # Resume automatically
     attachExistingSession = true;
     exitShellOnExit = true;
 
     # General settings
     settings = {
+      # Basic stuff
       default_shell = "fish";
       copy_command = "wl-copy";
+
+      # Start and resume nicely
+      pane_viewport_serialization = true;
+      show_startup_tips = false;
+
+      # Improve UI a bit
+      ui.pane_frames = {
+        rounded_corners = true;
+        hide_session_name = true;
+      };
+    };
+
+    # Configure available layouts
+    layouts = {
+      # Default layout
+      default = ''
+        layout {
+            pane size=1 borderless=true {
+                plugin location="tab-bar"
+            }
+            pane split_direction="vertical" {
+                pane
+                pane split_direction="horizontal" {
+                    pane cwd="~/Nix"
+                    pane command="btm" close_on_exit=true
+                }
+            }
+            pane size=1 borderless=true {
+                plugin location="status-bar"
+            }
+        }
+      '';
     };
   };
 }
