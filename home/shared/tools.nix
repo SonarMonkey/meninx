@@ -92,6 +92,11 @@
     };
   };
 
+  # Helix
+  programs.helix = {
+    enable = true;
+  };
+
   # Yazi
   programs.yazi = {
     enable = true;

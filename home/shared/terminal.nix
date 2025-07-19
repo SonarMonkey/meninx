@@ -12,7 +12,7 @@
     sessionVariables = {
       NIXOS_OZONE_WL = "1";
       QT_QPA_PLATFORM = "wayland";
-      EDITOR = "lvim";
+      EDITOR = "hx";
       VISUAL = "neovide";
       NEOVIM_BIN = "lvim";
     };
