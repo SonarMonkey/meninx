@@ -18,7 +18,7 @@
       gtk-adwaita = true;
 
       # Startup
-      command = "fish -i";
+      command = "zellij -l \"welcome\"";
       maximize = true;
 
       # Mouse settings
