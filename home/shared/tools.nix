@@ -17,7 +17,16 @@
   programs.nix-index-database.comma.enable = true;
 
   # Bat
-  programs.bat.enable = true;
+  programs.bat = {
+    enable = true;
+    extraPackages = with pkgs.bat-extras; [
+      core
+      batgrep
+      batman
+      batpipe
+      batwatch
+    ];
+  };
 
   # Lazygit (mostly for LunarVim)
   programs.lazygit.enable = true;

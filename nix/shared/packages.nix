@@ -56,6 +56,7 @@
     gum
     hyperfine
     kondo
+    entr
 
     # Desktop applications
     gimp3-with-plugins
