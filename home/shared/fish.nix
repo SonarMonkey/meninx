@@ -8,9 +8,10 @@
     # Enable and basic settings
     enable = true;
 
-    # Disable greeting
+    # Interactive shell init
     interactiveShellInit = ''
       set fish_greeting
+      fish_config theme choose "Base16 Default Dark"
     '';
 
     # Use programs-configured aliases as abbrs

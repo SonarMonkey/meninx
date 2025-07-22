@@ -53,6 +53,9 @@
       default_shell = "fish";
       copy_command = "wl-copy";
 
+      # Theme (use term colors)
+      theme = "ansi";
+
       # Start and resume nicely
       pane_viewport_serialization = true;
       show_startup_tips = false;
