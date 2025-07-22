@@ -20,7 +20,6 @@
   programs.bat = {
     enable = true;
     extraPackages = with pkgs.bat-extras; [
-      core
       batgrep
       batman
       batpipe
