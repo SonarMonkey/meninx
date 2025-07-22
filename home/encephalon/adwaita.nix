@@ -91,10 +91,7 @@
     };
   };
 
-  # Various application-specific themes
-  programs.helix.settings.theme = "adwaita-dark";
-  programs.bat.config.theme = "base16";
-  programs.kitty.themeFile = "adwaita_dark";
+  # VSCode theme
   programs.vscode.profiles.default.extensions = with pkgs; [vscode-extensions.piousdeer.adwaita-theme];
   programs.vscode.profiles.default.userSettings = {
     # Font settings

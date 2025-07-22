@@ -11,6 +11,7 @@
     ./home.nix
     ./kitty.nix
     ./terminal.nix
+    ./themes.nix
     ./tools.nix
     ./vscode.nix
     ./zsh.nix

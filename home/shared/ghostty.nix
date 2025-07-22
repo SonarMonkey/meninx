@@ -13,7 +13,6 @@
     settings = {
       # Appearance
       font-family = "Maple Mono NF";
-      theme = "Adwaita Dark";
       gtk-titlebar-hide-when-maximized = true;
       gtk-adwaita = true;
 
@@ -34,7 +33,7 @@
     };
   };
 
-  # Zellij layout until https://github.com/ghostty-org/ghostty/discussions/2480
+  # Zellij for layout until https://github.com/ghostty-org/ghostty/discussions/2480
   programs.zellij = {
     enable = true;
 
@@ -52,9 +51,6 @@
       # Basic stuff
       default_shell = "fish";
       copy_command = "wl-copy";
-
-      # Theme (use term colors)
-      theme = "ansi";
 
       # Layout (use my custom below)
       default_layout = "sonar";
