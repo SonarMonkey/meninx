@@ -36,14 +36,6 @@
     blesh.enable = true;
   };
 
-  # Enable starship system-wide
-  programs.starship = {
-    enable = true;
-    presets = [
-      "plain-text-symbols"
-    ];
-  };
-
   # Ensure completion is available to bash
   environment.pathsToLink = [
     "/share/bash-completion"

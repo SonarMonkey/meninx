@@ -109,6 +109,12 @@
     };
   };
 
+  # Starship
+  programs.starship = {
+    enable = true;
+    enableFishIntegration = false;
+  };
+
   # Yazi
   programs.yazi = {
     enable = true;
