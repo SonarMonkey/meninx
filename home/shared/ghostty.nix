@@ -55,7 +55,15 @@
 
       # Theme (use term colors)
       theme = "ansi";
-      pane_frames = false;
+
+      # Layout (use my custom below)
+      default_layout = "sonar";
+
+      # UI tweaks
+      ui.pane_frames = {
+        rounded_corners = true;
+        hide_session_name = true;
+      };
 
       # Start and resume nicely
       pane_viewport_serialization = true;
@@ -65,7 +73,7 @@
     # Configure available layouts
     layouts = {
       # Default layout
-      default = ''
+      sonar = ''
         // Default layout
         layout {
             // Re-usable base layout for tabs
@@ -74,8 +82,8 @@
                     plugin location="zellij:tab-bar"
                 }
                 children
-                pane size=1 borderless=true {
-                    plugin location="zellij:compact-bar"
+                pane size=2 borderless=true {
+                    plugin location="zellij:status-bar"
                 }
             }
 
