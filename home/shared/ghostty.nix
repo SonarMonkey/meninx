@@ -55,16 +55,11 @@
 
       # Theme (use term colors)
       theme = "ansi";
+      pane_frames = false;
 
       # Start and resume nicely
       pane_viewport_serialization = true;
       show_startup_tips = false;
-
-      # Improve UI a bit
-      ui.pane_frames = {
-        rounded_corners = true;
-        hide_session_name = true;
-      };
     };
 
     # Configure available layouts
@@ -79,8 +74,8 @@
                     plugin location="zellij:tab-bar"
                 }
                 children
-                pane size=2 borderless=true {
-                    plugin location="zellij:status-bar"
+                pane size=1 borderless=true {
+                    plugin location="zellij:compact-bar"
                 }
             }
 
