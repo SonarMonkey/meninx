@@ -11,13 +11,13 @@
     ./home.nix
     ./kitty.nix
     ./terminal.nix
-    ./theme.nix
     ./tools.nix
     ./vscode.nix
     ./zsh.nix
 
     # Disabled modules
     #./nixvim.nix
+    #./theme.nix
     #./helix.nix
   ];
 }
