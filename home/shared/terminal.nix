@@ -47,7 +47,7 @@
 
     # Fancy stuff
     initExtra = ''
-      eval "$(nh completions -s bash)"
+      eval "$(nh completions bash)"
     '';
 
     # Shell-specific aliases (duplicated in zsh and fish)

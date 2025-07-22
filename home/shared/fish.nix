@@ -18,6 +18,7 @@
     shellInit = ''
       batman --export-env | source
       eval (batpipe)
+      eval (nh completions fish)
     '';
 
     # Use programs-configured aliases as abbrs
