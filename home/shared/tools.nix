@@ -95,6 +95,18 @@
   # Helix
   programs.helix = {
     enable = true;
+
+    # Basic editor settings
+    settings = {
+      editor = {
+        line-number = "relative";
+        cursorline = true;
+        indent-guides.render = true;
+        bufferline = "multiple";
+        color-modes = true;
+        clipboard-provider = "wayland";
+      };
+    };
   };
 
   # Yazi
