@@ -33,8 +33,5 @@
     blightmud
     gnome-sudoku
     mudlet
-
-    # FIXME Disabled for some lxml failure
-    #gnome-feeds
   ];
 }

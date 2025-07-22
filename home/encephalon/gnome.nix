@@ -9,6 +9,7 @@
     # GNOME-specific applications
     gnome-boxes
     gnome-tweaks
+    gnome-feeds
     adw-gtk3
     adwsteamgtk
   ];
