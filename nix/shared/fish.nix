@@ -9,11 +9,6 @@
     useBabelfish = true;
   };
 
-  # Plugins to install from nixpkgs
-  environment.systemPackages = with pkgs.fishPlugins; [
-    pure
-  ];
-
   # Disable mancaches for faster build
   documentation.man.generateCaches = false;
 }

@@ -112,7 +112,8 @@
   # Starship
   programs.starship = {
     enable = true;
-    enableFishIntegration = false;
+    enableInteractive = true;
+    enableTransience = true;
   };
 
   # Yazi
