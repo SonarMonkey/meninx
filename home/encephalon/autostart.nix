@@ -16,8 +16,8 @@
       package = firefox;
     })
     (makeAutostartItem {
-      name = "kitty";
-      package = kitty;
+      name = "ghostty";
+      package = ghostty;
     })
     (makeAutostartItem {
       name = "heynote";

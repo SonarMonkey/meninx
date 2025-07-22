@@ -78,6 +78,7 @@ with lib.hm.gvariant; {
       hidden-apps = [
         "bottom.desktop"
         "cups.desktop"
+        "fish.desktop"
         "Helix.desktop"
         "nvim.desktop"
         "org.gnome.Tour.desktop"
@@ -105,9 +106,10 @@ with lib.hm.gvariant; {
     };
 
     # Custom app hotkeys
+    # TODO maybe remove this??
     "org/gnome/shell/extensions/happy-appy-hotkey" = {
       app-0 = "Heynote";
-      app-1 = "kitty";
+      app-1 = "ghostty";
       hotkey-0 = ["<Alt>space"];
       hotkey-1 = ["<Control>space"];
     };
