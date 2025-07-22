@@ -8,10 +8,16 @@
     # Enable and basic settings
     enable = true;
 
-    # Interactive shell init
+    # Disable greeting and set theme
     interactiveShellInit = ''
       set fish_greeting
       fish_config theme choose "Base16 Default Dark"
+    '';
+
+    # Config and conveniences
+    shellInit = ''
+      batman --export-env | source
+      eval (batpipe)
     '';
 
     # Use programs-configured aliases as abbrs
