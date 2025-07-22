@@ -200,7 +200,7 @@ with lib.hm.gvariant; {
         "heynote.desktop"
         "code.desktop"
         "kitty.desktop"
-        "ghostty.desktop"
+        "com.mitchellh.ghostty.desktop"
         "org.gnome.Settings.desktop"
       ];
     };

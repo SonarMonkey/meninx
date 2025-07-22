@@ -16,7 +16,7 @@
       package = firefox;
     })
     (makeAutostartItem {
-      name = "ghostty";
+      name = "com.mitchellh.ghostty";
       package = ghostty;
     })
     (makeAutostartItem {

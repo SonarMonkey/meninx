@@ -109,9 +109,7 @@ with lib.hm.gvariant; {
     # TODO maybe remove this??
     "org/gnome/shell/extensions/happy-appy-hotkey" = {
       app-0 = "Heynote";
-      app-1 = "ghostty";
       hotkey-0 = ["<Alt>space"];
-      hotkey-1 = ["<Control>space"];
     };
 
     # Battery threshold configuration
