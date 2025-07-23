@@ -214,24 +214,22 @@
     "lix": {
       "flake": false,
       "locked": {
-        "lastModified": 1753223228,
-        "narHash": "sha256-Oqw04eboDM8rrUgAXiT7w5F2uGrQdt8sGX+Mk6mVXZQ=",
-        "rev": "017e93ae637ce6dfc958001e5cdc2a3e0182be6f",
+        "lastModified": 1753223229,
+        "narHash": "sha256-tkT4aCZZE6IEmjYotOzKKa2rV3pGpH3ZREeQn7ACgdU=",
+        "rev": "7ac20fc47cf2f1b7469c7a2f379e5a3a51a6789a",
         "type": "tarball",
-        "url": "https://git.lix.systems/api/v1/repos/lix-project/lix/archive/017e93ae637ce6dfc958001e5cdc2a3e0182be6f.tar.gz?rev=017e93ae637ce6dfc958001e5cdc2a3e0182be6f"
+        "url": "https://git.lix.systems/api/v1/repos/lix-project/lix/archive/7ac20fc47cf2f1b7469c7a2f379e5a3a51a6789a.tar.gz?rev=7ac20fc47cf2f1b7469c7a2f379e5a3a51a6789a"
       },
       "original": {
         "type": "tarball",
-        "url": "https://git.lix.systems/lix-project/lix/archive/2.93.3.tar.gz"
+        "url": "https://git.lix.systems/lix-project/lix/archive/release-2.93.tar.gz"
       }
     },
     "lix-module": {
       "inputs": {
         "flake-utils": "flake-utils",
         "flakey-profile": "flakey-profile",
-        "lix": [
-          "lix"
-        ],
+        "lix": "lix",
         "nixpkgs": [
           "nixpkgs"
         ]
@@ -482,7 +480,6 @@
         "agenix": "agenix",
         "disko": "disko",
         "home-manager": "home-manager_2",
-        "lix": "lix",
         "lix-module": "lix-module",
         "nix-alien": "nix-alien",
         "nix-gaming": "nix-gaming",
