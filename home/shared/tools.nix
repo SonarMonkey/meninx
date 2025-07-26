@@ -42,10 +42,6 @@
     delta.enable = true;
     package = pkgs.gitAndTools.gitFull;
 
-    # User settings
-    userEmail = "12001125+SonarMonkey@users.noreply.github.com";
-    userName = "SonarMonkey";
-
     # Configure aliases
     aliases = {
       aa = "add -A";
@@ -61,19 +57,10 @@
     enable = true;
 
     # Credential helper (defaults)
-    gitCredentialHelper = {
-      enable = true;
-      hosts = [
-        "https://github.com"
-        "https://gist.github.com"
-      ];
-    };
+    gitCredentialHelper.enable = true;
 
     # Configure
-    settings = {
-      git_protocol = "ssh";
-      editor = "e";
-    };
+    settings.git_protocol = "ssh";
   };
 
   # Neovide
