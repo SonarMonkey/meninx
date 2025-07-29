@@ -39,8 +39,12 @@
   # Git
   programs.git = {
     enable = true;
-    delta.enable = true;
-    package = pkgs.gitAndTools.gitFull;
+    package = pkgs.gitFull;
+
+    # Extra secret config
+    includes = [
+      {path = "/home/sonar/.config/git/extra";}
+    ];
 
     # Configure aliases
     aliases = {
@@ -55,12 +59,7 @@
   # GitHub CLI
   programs.gh = {
     enable = true;
-
-    # Credential helper (defaults)
     gitCredentialHelper.enable = true;
-
-    # Configure
-    settings.git_protocol = "ssh";
   };
 
   # Neovide

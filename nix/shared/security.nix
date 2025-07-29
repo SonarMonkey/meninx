@@ -14,6 +14,20 @@
   age.secrets = {
     sonar.file = ../../secrets/sonar.age;
     encephalon.file = ../../secrets/encephalon.age;
+    git = {
+      file = ../../secrets/git.age;
+      path = "/home/sonar/.config/git/extra";
+      owner = "sonar";
+      group = "users";
+      mode = "600";
+    };
+    cred = {
+      file = ../../secrets/cred.age;
+      path = "/home/sonar/.config/git/cred";
+      owner = "sonar";
+      group = "users";
+      mode = "600";
+    };
   };
 
   # Enable OpenSSH

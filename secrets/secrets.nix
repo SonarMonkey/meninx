@@ -8,4 +8,5 @@ in {
   "sonar.age".publicKeys = encephalon;
   "encephalon.age".publicKeys = encephalon;
   "git.age".publicKeys = encephalon;
+  "cred.age".publicKeys = encephalon;
 }
