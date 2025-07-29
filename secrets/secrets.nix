@@ -7,4 +7,5 @@ in {
   # Secrets files
   "sonar.age".publicKeys = encephalon;
   "encephalon.age".publicKeys = encephalon;
+  "git.age".publicKeys = encephalon;
 }
