@@ -8,7 +8,7 @@
   system.stateVersion = "24.05";
 
   # Import alternative nix implementation
-  imports = [inputs.lix-module.nixosModules.default];
+  imports = [inputs.lix-module.nixosModules.lixFromNixpkgs];
 
   # Enable `nix` and flakes
   nix = {
