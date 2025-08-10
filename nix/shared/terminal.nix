@@ -44,7 +44,7 @@
   # Configure console
   console = {
     useXkbConfig = true;
-    font = "spleen-8x16";
-    packages = [pkgs.spleen];
+    font = "${pkgs.cozette}/share/consolefonts/cozette6x13.psfu";
+    packages = [pkgs.cozette];
   };
 }
