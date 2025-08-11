@@ -16,14 +16,14 @@
     encephalon.file = ../../secrets/encephalon.age;
     git = {
       file = ../../secrets/git.age;
-      path = "/home/sonar/.config/git/extra";
+      path = "/home/sonar/.config/git/extra.inc";
       owner = "sonar";
       group = "users";
       mode = "600";
     };
     cred = {
       file = ../../secrets/cred.age;
-      path = "/home/sonar/.config/git/cred";
+      path = "/home/sonar/.config/git/cred.inc";
       owner = "sonar";
       group = "users";
       mode = "600";

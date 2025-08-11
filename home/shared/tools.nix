@@ -41,9 +41,9 @@
     enable = true;
     package = pkgs.gitFull;
 
-    # Extra secret config
+    # Extra secrets config
     includes = [
-      {path = "/home/sonar/.config/git/extra";}
+      {path = "/home/sonar/.config/git/extra.inc";}
     ];
 
     # Configure aliases
