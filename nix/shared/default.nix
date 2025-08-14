@@ -5,6 +5,7 @@
 }: {
   imports = [
     ./fish.nix
+    ./fhs.nix
     ./gaming.nix
     ./hardware.nix
     #./keyboards.nix

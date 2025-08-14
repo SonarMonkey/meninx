@@ -15,18 +15,6 @@
     ];
   };
 
-  # Enable nix-ld
-  programs.nix-ld = {
-    enable = true;
-    package = pkgs.nix-ld;
-  };
-
-  # Allow running appimages
-  programs.appimage = {
-    enable = true;
-    binfmt = true;
-  };
-
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     # Rust coreutils
