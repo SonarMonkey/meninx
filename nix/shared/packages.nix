@@ -47,6 +47,7 @@
     entr
 
     # Desktop applications
+    orca-slicer
     gimp3-with-plugins
     inkscape-with-extensions
     krita
