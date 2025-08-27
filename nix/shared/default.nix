@@ -8,7 +8,7 @@
     ./fhs.nix
     ./gaming.nix
     ./hardware.nix
-    #./keyboards.nix
+    ./keyboards.nix
     ./locale.nix
     ./nixconf.nix
     ./packages.nix
