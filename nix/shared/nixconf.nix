@@ -7,13 +7,27 @@
   # Set the initially-installed version
   system.stateVersion = "24.05";
 
-  # Import alternative nix implementation
-  imports = [inputs.lix-module.nixosModules.lixFromNixpkgs];
+  # Overlay alternative nix implementation
+  nixpkgs.overlays = [
+    (final: prev: {
+      inherit
+        (final.lixPackageSets.stable)
+        nixpkgs-review
+        nix-direnv
+        nix-eval-jobs
+        nix-fast-build
+        colmena
+        ;
+    })
+  ];
 
   # Enable `nix` and flakes
   nix = {
     # Configure nix
     settings = {
+      # Use 'lix' instead
+      package = pkgs.lixPackageSets.stable.lix;
+
       # Enable flakes
       experimental-features = "nix-command flakes";
 

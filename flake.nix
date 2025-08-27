@@ -19,12 +19,6 @@
     nix-gaming.url = "github:fufexan/nix-gaming";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
-    # Replacement nix implementation
-    lix-module = {
-      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.3-1.tar.gz";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Declarative partition setup
     disko = {
       url = "github:nix-community/disko";
