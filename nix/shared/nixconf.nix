@@ -23,11 +23,11 @@
 
   # Enable `nix` and flakes
   nix = {
+    # Use 'lix' instead
+    package = pkgs.lixPackageSets.stable.lix;
+
     # Configure nix
     settings = {
-      # Use 'lix' instead
-      package = pkgs.lixPackageSets.stable.lix;
-
       # Enable flakes
       experimental-features = "nix-command flakes";
 
