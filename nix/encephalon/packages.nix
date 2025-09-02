@@ -28,6 +28,7 @@
     vesktop
     arduino-ide
     legcord
+    openscad
 
     # Games
     blightmud
