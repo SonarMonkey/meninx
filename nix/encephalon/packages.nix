@@ -29,6 +29,8 @@
     arduino-ide
     legcord
     openscad
+    freecad
+    blender
 
     # Games
     blightmud
