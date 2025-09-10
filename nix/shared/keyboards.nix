@@ -7,6 +7,7 @@
   environment.systemPackages = with pkgs; [
     via
     qmk
+    ungoogled-chromium
   ];
 
   # Udev rules for via and qmk
