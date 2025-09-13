@@ -6,7 +6,9 @@
   # Hardware-related system packages
   environment.systemPackages = with pkgs; [
     via
+    vial
     qmk
+    qmk_hid
     ungoogled-chromium
   ];
 
