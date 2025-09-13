@@ -40,7 +40,9 @@
         vscode-extensions.ms-python.pylint
         vscode-extensions.ms-python.black-formatter
         vscode-marketplace.karunamurti.tera
+        vscode-marketplace.marlinfirmware.auto-build
         vscode-extensions.golang.go
+        vscode-extensions.platformio.platformio-vscode-ide
       ];
 
       # General settings mostly taken from piousdeer
