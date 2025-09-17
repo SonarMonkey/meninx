@@ -75,7 +75,7 @@
     go-tools
     delve
     libclang
-    python3Full
+    python3
     jdk
     jdk17
   ];
