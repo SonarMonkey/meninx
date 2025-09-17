@@ -9,6 +9,7 @@
     vial
     qmk
     qmk_hid
+    zmkBATx
     ungoogled-chromium
   ];
 
