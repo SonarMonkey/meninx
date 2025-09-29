@@ -7,8 +7,25 @@
   # Set the initially-installed version
   system.stateVersion = "24.05";
 
+  # Overlay for lix packages
+  # FIXME sync with `nix.package`???
+  nixpkgs.overlays = [
+    (final: prev: {
+      inherit
+        (prev.lixPackageSets.latest)
+        nixpkgs-review
+        nix-eval-jobs
+        nix-fast-build
+        colmena
+        ;
+    })
+  ];
+
   # Enable `nix` and flakes
   nix = {
+    # Use lix instead
+    package = pkgs.lix;
+
     # Configure nix
     settings = {
       # Enable flakes
