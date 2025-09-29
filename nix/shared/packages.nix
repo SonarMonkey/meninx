@@ -68,6 +68,8 @@
 
     # Other programming language tools
     gcc
+    gnumake
+    just
     nodePackages.prettier
     nodejs
     go
