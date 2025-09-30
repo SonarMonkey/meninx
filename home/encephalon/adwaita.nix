@@ -4,8 +4,17 @@
   lib,
   ...
 }: {
+  # Theme packages
+  home.packages = with pkgs; [
+    adw-gtk3
+    adwsteamgtk
+  ];
+
   # Enable font discovery and set defaults
   fonts.fontconfig = {
+    # Enable
+    enable = true;
+
     # Set defaults
     defaultFonts = {
       serif = ["Cantarell"];

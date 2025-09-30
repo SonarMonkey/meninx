@@ -31,6 +31,9 @@
     openscad
     freecad
     blender
+    gnome-boxes
+    gnome-tweaks
+    gnome-feeds
 
     # Games
     blightmud

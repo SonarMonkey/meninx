@@ -11,7 +11,6 @@
     ./adwaita.nix
     ./autostart.nix
     ./dconf.nix
-    ./gnome.nix
     ./extensions.nix
   ];
 }
