@@ -8,13 +8,15 @@
     enable = true;
     installBatSyntax = true;
     installVimSyntax = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
+    enableZshIntegration = true;
 
     # General settings
     settings = {
       # Appearance
       font-family = "Maple Mono NF";
       gtk-titlebar-hide-when-maximized = true;
-      gtk-adwaita = true;
 
       # Startup
       command = "zellij -l \"welcome\"";
