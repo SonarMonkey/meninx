@@ -62,6 +62,7 @@
     nixfmt-rfc-style
     nurl
     nixd
+    lix-diff
 
     # Explicitly install NTFS drivers
     ntfs3g
