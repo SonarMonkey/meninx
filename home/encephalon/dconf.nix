@@ -9,7 +9,7 @@ with lib.hm.gvariant; {
   dconf.settings = {
     # App folders
     "org/gnome/desktop/app-folders" = {
-      folder-children = ["Utilities" "Office" "Media" "Fun" "Graphics" "Audio" "Productivity"];
+      folder-children = ["Utilities" "Office" "Media" "Fun" "Graphics" "Audio" "Productivity" "Input" "Hobby"];
     };
 
     # Default productivity applications
@@ -23,6 +23,19 @@ with lib.hm.gvariant; {
         "org.gnome.Geary.desktop"
       ];
       name = "Productivity";
+      translate = true;
+    };
+
+    # Code/hobby related stuff
+    "org/gnome/desktop/app-folders/folders/Hobby" = {
+      apps = [
+        "arduino-ide.desktop"
+        "neovide.desktop"
+        "openscad.desktop"
+        "OrcaSlicer.desktop"
+        "org.freecad.FreeCAD.desktop"
+      ];
+      name = "Hobby";
       translate = true;
     };
 
@@ -51,6 +64,7 @@ with lib.hm.gvariant; {
         "org.inkscape.Inkscape.desktop"
         "io.gitlab.adhami3310.Converter.desktop"
         "aseprite.desktop"
+        "blender.desktop"
       ];
       name = "Graphics";
       translate = true;
@@ -72,13 +86,9 @@ with lib.hm.gvariant; {
     # Game-related applications
     "org/gnome/desktop/app-folders/folders/Fun" = {
       apps = [
-        "io.github.antimicrox.antimicrox.desktop"
         "com.usebottles.bottles.desktop"
-        "OpenTabletDriver.desktop"
         "osu!.desktop"
-        "org.freedesktop.Piper.desktop"
         "org.prismlauncher.PrismLauncher.desktop"
-        "via-nativia.desktop"
         "steam.desktop"
         "Balatro.desktop"
         "io.github.Foldex.AdwSteamGtk.desktop"
@@ -88,6 +98,20 @@ with lib.hm.gvariant; {
         "org.gnome.Sudoku.desktop"
       ];
       name = "Fun";
+      translate = true;
+    };
+
+    # Input device stuff
+    "org/gnome/desktop/app-folders/folders/Input" = {
+      apps = [
+        "io.github.antimicrox.antimicrox.desktop"
+        "chromium-browser.desktop"
+        "OpenTabletDriver.desktop"
+        "org.freedesktop.Piper.desktop"
+        "via-nativia.desktop"
+        "Vial.desktop"
+      ];
+      name = "Input";
       translate = true;
     };
 
