@@ -13,6 +13,7 @@
     ./terminal.nix
     ./tools.nix
     ./vscode.nix
+    ./zen.nix
     ./zsh.nix
 
     # Disabled modules

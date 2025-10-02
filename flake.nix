@@ -9,6 +9,12 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nix-alien.url = "github:thiagokokada/nix-alien";
 
+    # Cool browser
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Package database
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
