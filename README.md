@@ -11,20 +11,19 @@ Also, note: All references to a "desktop" configuration are still technically tr
 ## Overview
 
 - System Shell: bash + blesh
-- User Shell: zsh + some tweaks
-- Terminal: mostly kitty, may switch to alacritty
+- User Shell: zsh + some tweaks, also playing with fish
+- Terminal: mostly ghostty, keeping kitty around
 - Prompt Theme: starship preset, may remove entirely
 - Desktop Manager: GNOME display manager
 - Desktop Environment: GNOME on laptop
 - GUI Editor: VSCode with extensions
 - Terminal Editor: helix with some LSP's
-- Alternate Term Editor: moderately-configured NixVim
+- Alternate Term Editor: LunarVim (also Neovide for standalone)
 - Theme: just adwaita-dark with adw-gtk3 for consistency
 
 ## To-Do List
 
 - [x] Review for major errors
-- [x] Review `TODO` and `FIXME` items
 - [ ] Add an ISO configuration to flake
 - [ ] Trim cruft packages (WIP)
 - [x] Create module system (WIP)
@@ -39,11 +38,14 @@ Also, note: All references to a "desktop" configuration are still technically tr
 - [x] Heavily pare back zsh config (prev config incl. for reference)
 - [x] Switch to `programs.gnome-shell` for extensions
 - [x] Add custom font configuration for encephalon
+- [ ] General cleanup, archive unused configs, etc.
+- [ ] Simplify Firefox config (or switch to zen??)
 
 ## Notes
 
-- Themes are currently disabled, when the GNOME 46 update just hit and I did not feel like fixing things. May or may not add them back, as I honestly don't mind the default dark look of Adwaita these days.
-- I'm currently in the process of heavily cleaning up this configuration, and it is likely to change drastically in the coming days. I'm getting ready to set up some new stuff, and got a little lax on my organizational theme, so things are a bit messy.
+- Themes are currently disabled, when GNOME 46 hit I did not feel like fixing things. Probably won't add them back, but I've done a pretty decent job of making everything cohesive with modern Adwaita dark.
+- Things have gotten a bit messy in this config. As mentioned, the main laptop config ("encephalon") is the only set of configs that is actively maintained or used. I also have built up quite a lot of general cruft, so I'm planning to do a bit of cleanup, refactoring, and other stuff soon.
+- There are almost certainly un-optimal settings and oversights within even the actively used configuration, as it's been a while since I've really gone through and made sure things are still good with any serious degree of granularity. That said, this has been my daily driver system for multiple years and been essentially fully stable for quite some time, so... :shrug:
 
 ## Future Plans
 
@@ -69,10 +71,10 @@ Also, note: All references to a "desktop" configuration are still technically tr
   - shared: all generic configurations shared between machines
 - modules: houses all my custom NixOS and home manager modules
   - nixos: system-side modules (subject to deletion)
-    - fhs: options to enable running assorted non-Nix binaries
-    - idevice: simple enable of iOS device support
+    - fhs: options to enable running assorted non-Nix binaries (unused, needs more complete packageset)
+    - idevice: simple enable of iOS device support (unused, needs fixes)
   - home-manager: home-side modules (not working yet)
-    - sidebery-css: custom CSS for vertical tabs in Firefox
+    - sidebery-css: custom CSS for vertical tabs in Firefox (unmaintained)
 - overlays: defines a custom overlay to import my packages and such
 - pkgs: houses all my custom-defined packages either not in nixpkgs or customized by me
 - secrets: manages agenix secrets, not directly imported into config
