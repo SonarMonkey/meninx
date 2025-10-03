@@ -120,14 +120,14 @@
       # Zen-specific settings
       settings = {
         "zen.workspaces.continue-where-left-off" = true;
-        "zen.workspaces.natural-scroll" = true;
+        "zen.workspaces.force-container-workspace" = true;
         "zen.view.compact.hide-tabbar" = true;
         "zen.view.compact.hide-toolbar" = true;
+        "zen.view.show-newtab-button-top" = false;
 
         # TODO maybe these too?
         #"zen.view.experimental-no-window-controls" = true;
         #"zen.view.compact.animate-sidebar" = false;
-        #"zen.view.show-newtab-button-top" = false;
         #"zen.pinned-tab-manager.restore-pinned-tabs-to-pinned-url" = true;
 
         # On by default, for future reference <3
@@ -233,6 +233,11 @@
         # TODO hide or delete default other stuff
 
         engines = {
+          # Disable nonsense
+          "google".metaData.hidden = true;
+          "bing".metaData.hidden = true;
+
+          # Nix package search (unstable)
           nix-packages = {
             name = "Nix Packages";
             urls = [
@@ -259,8 +264,9 @@
             definedAliases = ["@np"];
           };
 
+          # NixOS option search (unstable)
           nix-options = {
-            name = "Nix Packages";
+            name = "Nix Options";
             urls = [
               {
                 template = "https://search.nixos.org/packages";
@@ -281,6 +287,7 @@
             definedAliases = ["@no"];
           };
 
+          # Official NixOS wiki search
           nixos-wiki = {
             name = "NixOS Wiki";
             urls = [{template = "https://wiki.nixos.org/w/index.php?search={searchTerms}";}];
