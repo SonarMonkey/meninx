@@ -15,7 +15,6 @@
     # Encephalon-specific configuration
     ./boot.nix
     ./disko.nix
-    ./experiments.nix
     ./fonts.nix
     ./gnome.nix
     ./hardware-configuration.nix
@@ -23,5 +22,8 @@
     ./internet.nix
     ./packages.nix
     ./performance.nix
+
+    # FIXME temporarily disabled
+    #./experiments.nix
   ];
 }
