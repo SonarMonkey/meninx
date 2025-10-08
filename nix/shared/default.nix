@@ -17,6 +17,8 @@
     ./sound.nix
     ./terminal.nix
     ./user.nix
-    ./zsh.nix
+
+    # Disabled
+    #./zsh.nix
   ];
 }

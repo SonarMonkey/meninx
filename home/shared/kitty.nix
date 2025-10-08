@@ -10,7 +10,7 @@
     # General settings
     settings = {
       # Basic configuration
-      shell = "zsh";
+      shell = "fish"; # FIXME zellij integration may cause issues
       enabled_layouts = "tall";
       disable_ligatures = "cursor";
       mouse_hide_wait = 3;
@@ -62,10 +62,10 @@
     layout tall
 
     # Create primary "main" window
-    launch --type=window --cwd=/home/sonar zsh
+    launch --type=window --cwd=/home/sonar fish
 
     # Create secondary "nix" window
-    launch --type=window --cwd=/home/sonar/Nix zsh
+    launch --type=window --cwd=/home/sonar/Nix fish
 
     # Create tertiary "btm" window
     launch --type=window --cwd=/home/sonar btm

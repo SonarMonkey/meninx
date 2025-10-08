@@ -17,26 +17,6 @@
       VISUAL = "neovide";
       NEOVIM_BIN = "lvim";
     };
-
-    # Global shell aliases
-    shellAliases = {
-      # Editor stuff
-      e = "$EDITOR";
-      se = "sudo $EDITOR";
-      vi = "lvim";
-      vim = "lvim";
-      nvim = "lvim";
-      nv = "lvim";
-      wg = "wordgrinder";
-
-      # Mullvad
-      mu = "mullvad";
-      mus = "mullvad status";
-      mup = "mullvad connect";
-      mur = "mullvad reconnect";
-      mud = "mullvad disconnect";
-      mue = "mullvad-exclude";
-    };
   };
 
   # Configure bash
@@ -51,7 +31,7 @@
       eval "$(nh completions bash)"
     '';
 
-    # Shell-specific aliases (duplicated in zsh and fish)
+    # Shell aliases (duplicated as abbrevs by fish)
     shellAliases = {
       # nixOS
       nfm = "nix fmt && git commit -a -m \"Format with Alejandra\"";
@@ -68,6 +48,23 @@
       search = "nh search";
       clean = "nh clean all -k 5";
       ntest = "nh os test --ask";
+
+      # Editor stuff
+      e = "$EDITOR";
+      se = "sudo $EDITOR";
+      vi = "lvim";
+      vim = "lvim";
+      nvim = "lvim";
+      nv = "lvim";
+      wg = "wordgrinder";
+
+      # Mullvad
+      mu = "mullvad";
+      mus = "mullvad status";
+      mup = "mullvad connect";
+      mur = "mullvad reconnect";
+      mud = "mullvad disconnect";
+      mue = "mullvad-exclude";
     };
   };
 }

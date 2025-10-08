@@ -108,13 +108,13 @@
     enable = true;
     enableInteractive = true;
     enableTransience = true;
+    enableBashIntegration = false;
   };
 
   # Yazi
   programs.yazi = {
     enable = true;
     enableBashIntegration = true;
-    enableZshIntegration = true;
   };
 
   # Zoxide

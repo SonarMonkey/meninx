@@ -8,4 +8,9 @@
     enable = true;
     useBabelfish = true;
   };
+
+  # Ensure linked paths
+  environment.pathsToLink = [
+    "/share/fish"
+  ];
 }

@@ -10,7 +10,6 @@
     installVimSyntax = true;
     enableBashIntegration = true;
     enableFishIntegration = true;
-    enableZshIntegration = true;
 
     # General settings
     settings = {
@@ -19,7 +18,7 @@
       gtk-titlebar-hide-when-maximized = true;
 
       # Startup
-      command = "zellij -l \"welcome\"";
+      command = "zellij -l \"welcome\""; # FIXME this whole integration
       maximize = true;
 
       # Mouse settings
@@ -41,7 +40,6 @@
 
     # Only enable fish integration
     enableBashIntegration = false;
-    enableZshIntegration = false;
     enableFishIntegration = true;
 
     # Resume automatically

@@ -14,11 +14,11 @@
     ./tools.nix
     ./vscode.nix
     ./zen.nix
-    ./zsh.nix
 
     # Disabled modules
     #./nixvim.nix
     #./theme.nix
     #./helix.nix
+    #./zsh.nix
   ];
 }

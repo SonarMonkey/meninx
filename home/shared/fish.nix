@@ -9,7 +9,7 @@
     enable = true;
 
     # Config and conveniences
-    shellInit = ''
+    interactiveShellInit = ''
       set fish_greeting
       batman --export-env | source
       eval (batpipe)
