@@ -35,7 +35,7 @@
     shellAliases = {
       # nixOS
       nfm = "nix fmt && git commit -a -m \"Format with Alejandra\"";
-      fup = "nix flake --refresh update --commit-lock-file";
+      fup = "nix flake --refresh update";
       fch = "nix flake check";
       nup = "sudo nixos-rebuild switch -v";
       nbo = "sudo nixos-rebuild boot -v";
