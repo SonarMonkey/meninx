@@ -7,7 +7,7 @@
 }: {
   # Import zen flake module
   imports = [
-    inputs.zen-browser.homeModules.twilight
+    inputs.zen-browser.homeModules.twilight # maybe switch to default/beta
   ];
 
   # TODO maybe add xdg file associations??
@@ -15,7 +15,6 @@
 
   # TODO Install sites as PWA's
   # also see programs.firefoxpwa.* for more
-  # seems very cool and fully declarative
   #programs.zen-browser.nativeMessagingHosts = [pkgs.firefoxpwa];
 
   # Enable and configure Zen browser
@@ -42,12 +41,12 @@
       DisableTelemetry = true; # thoroughly disabled by zen anyway
       DisplayBookmarksToolbar = "never"; # default setting in zen
       DontCheckDefaultBrowser = true; # browsers should not do this
-      HardwareAcceleration = true; # TODO make sure MOZ envvars getting set
-      HttpsOnlyMode = "enabled"; # TODO make sure this doesn't need more config
+      HardwareAcceleration = true; # probably not redundant with below settings
+      HttpsOnlyMode = "enabled"; # inb4 i "proceed anyway" on 1/5th of sites
       NoDefaultBookmarks = true; # also cringe that i have to do this
       OfferToSaveLogins = false; # i have a password manager for a reason
       PromptForDownloadLocation = true;
-      SearchSuggestEnabled = true; # TODO i am not sure if this is what i want
+      SearchSuggestEnabled = true; # i think this is the right behavior i want
       SkipTermsOfUse = true; # default in zen i think? still, leave me alone
 
       # Slightly more aggressive tracking protection
@@ -83,7 +82,6 @@
       };
 
       # Disable DoH and lock
-      # TODO double-check vpn stuff
       DNSOverHTTPS = {
         Enabled = false;
         Locked = true;
@@ -94,6 +92,7 @@
         "browser.aboutConfig.showWarning" = false;
         "browser.contentblocking.category" = "standard";
         "browser.ctrlTab.sortByRecentlyUsed" = true;
+        "browser.display.document_color_use" = 0;
         "browser.tabs.hoverPreview.enabled" = true;
         "browser.tabs.warnOnClose" = false;
         "dom.battery.enabled" = false;
@@ -121,11 +120,12 @@
       settings = {
         "zen.workspaces.continue-where-left-off" = true;
         "zen.workspaces.force-container-workspace" = true;
+        "zen.workspaces.natural-scroll" = false;
         "zen.view.compact.hide-tabbar" = true;
         "zen.view.compact.hide-toolbar" = true;
         "zen.view.show-newtab-button-top" = false;
 
-        # TODO maybe these too?
+        # Maybe these too?
         #"zen.view.experimental-no-window-controls" = true;
         #"zen.view.compact.animate-sidebar" = false;
         #"zen.pinned-tab-manager.restore-pinned-tabs-to-pinned-url" = true;
@@ -146,81 +146,110 @@
       # TODO Basic user bookmarks
       #bookmarks = {};
 
+      # TODO Declarative way to install zen mods?
+      # seems like it wouldn't be that hard with Nix
+
       # Extensions and settings
       extensions = {
         # TODO Packages to use, shout-out rycee
+        # TODO also actually start using RSS for stuff
         packages = with pkgs.nur.repos.rycee.firefox-addons; [
+          # Primary extensions
+          indie-wiki-buddy
+          privacy-pass
+          shinigami-eyes
           ublock-origin
+          proton-pass
+
+          # Other stuff to consider
+          #duckduckgo-privacy-essentials
+          #linkhints
+          #mullvad
+          #proton-vpn
+          #unpaywall
         ];
 
         # Force override, to use settings below
         #force = true;
         # TODO Individual extension settings
+        # Might be kind of a pain in the ass idk
         #settings = {};
       };
 
       # Container setup
       containersForce = true;
       containers = {
+        default = {
+          name = "Default";
+          color = "blue";
+          icon = "fruit";
+          id = 0;
+        };
         personal = {
+          name = "Personal";
           color = "pink";
-          icon = "chill";
+          icon = "fingerprint";
           id = 1;
         };
         work = {
+          name = "Work";
           color = "yellow";
           icon = "briefcase";
           id = 2;
         };
         money = {
+          name = "Money";
           color = "green";
-          icon = "dollar";
+          icon = "cart";
           id = 3;
         };
-        private = {
+        danger = {
+          name = "Danger";
           color = "orange";
-          icon = "fence";
+          icon = "chill";
           id = 4;
         };
       };
 
       # Spaces setup
-      # TODO configure colors and icons
+      # TODO configure colors/themes
       spacesForce = true;
       spaces = {
         "Home" = {
           id = "f7697cda-1207-4a8e-8b78-79ed4133d84a";
-          icon = "";
-          position = 1000;
+          icon = "🏠";
+          position = 1;
+          container = 0;
         };
         "Computer" = {
           id = "a8623239-4496-4153-83f0-1946bd7268af";
-          icon = "";
-          position = 2000;
-        };
-        "Work" = {
-          id = "30fef135-77c3-4683-9ead-d84dc643381c";
-          icon = "";
-          position = 3000;
-          container = 2;
-        };
-        "Shopping" = {
-          id = "50332838-c31b-44d7-8737-fed6e85978f6";
-          icon = "";
-          position = 4000;
-          container = 3;
-        };
-        "Suspicious" = {
-          id = "7d0e8272-9645-44f1-a06f-2a2e431345ae";
-          icon = "";
-          position = 5000;
-          container = 4;
+          icon = "💻";
+          position = 2;
+          container = 0;
         };
         "Personal" = {
           id = "d1bdcffc-3849-40f0-bdeb-c3b392ecae6e";
-          icon = "";
-          position = 6000;
+          icon = "👻";
+          position = 3;
           container = 1;
+        };
+        "Work" = {
+          id = "30fef135-77c3-4683-9ead-d84dc643381c";
+          icon = "💼";
+          position = 4;
+          container = 2;
+        };
+        "Money" = {
+          id = "50332838-c31b-44d7-8737-fed6e85978f6";
+          icon = "💸";
+          position = 5;
+          container = 3;
+        };
+        "Danger" = {
+          id = "7d0e8272-9645-44f1-a06f-2a2e431345ae";
+          icon = "⚠️";
+          position = 5000;
+          container = 6;
         };
       };
 
@@ -228,9 +257,8 @@
       search = {
         force = true;
         default = "ddg";
+        privateDefault = "ddg";
         order = ["ddg" "tabs" "nw" "np" "no"];
-
-        # TODO hide or delete default other stuff
 
         engines = {
           # Disable nonsense
