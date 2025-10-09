@@ -16,33 +16,34 @@
       enableExtensionUpdateCheck = false;
 
       # Extensions
+      # TODO clean this up a little
       extensions = with pkgs; [
+        #vscode-extensions.platformio.platformio-vscode-ide
+        #vscode-marketplace.marlinfirmware.auto-build
         vscode-extensions.christian-kohler.path-intellisense
-        vscode-extensions.esbenp.prettier-vscode
-        vscode-extensions.gruntfuggly.todo-tree
-        vscode-extensions.jnoortheen.nix-ide
-        vscode-extensions.kamadorueda.alejandra
-        vscode-extensions.ms-vscode-remote.remote-ssh
-        vscode-extensions.ms-vscode.cpptools-extension-pack
-        vscode-extensions.oderwat.indent-rainbow
-        vscode-extensions.yzhang.markdown-all-in-one
         vscode-extensions.davidanson.vscode-markdownlint
         vscode-extensions.dbaeumer.vscode-eslint
         vscode-extensions.ecmel.vscode-html-css
         vscode-extensions.editorconfig.editorconfig
+        vscode-extensions.esbenp.prettier-vscode
+        vscode-extensions.golang.go
+        vscode-extensions.gruntfuggly.todo-tree
+        vscode-extensions.jnoortheen.nix-ide
+        vscode-extensions.kamadorueda.alejandra
         vscode-extensions.llvm-vs-code-extensions.vscode-clangd
-        vscode-extensions.xaver.clang-format
+        vscode-extensions.ms-python.black-formatter
+        vscode-extensions.ms-python.debugpy
+        vscode-extensions.ms-python.pylint
+        vscode-extensions.ms-python.python
+        vscode-extensions.ms-python.vscode-pylance
+        vscode-extensions.ms-vscode-remote.remote-ssh
+        vscode-extensions.ms-vscode.cpptools-extension-pack
+        vscode-extensions.oderwat.indent-rainbow
         vscode-extensions.redhat.vscode-yaml
         vscode-extensions.timonwong.shellcheck
-        vscode-extensions.ms-python.python
-        vscode-extensions.ms-python.debugpy
-        vscode-extensions.ms-python.vscode-pylance
-        vscode-extensions.ms-python.pylint
-        vscode-extensions.ms-python.black-formatter
+        vscode-extensions.xaver.clang-format
+        vscode-extensions.yzhang.markdown-all-in-one
         vscode-marketplace.karunamurti.tera
-        vscode-marketplace.marlinfirmware.auto-build
-        vscode-extensions.golang.go
-        vscode-extensions.platformio.platformio-vscode-ide
       ];
 
       # General settings mostly taken from piousdeer
