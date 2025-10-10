@@ -9,7 +9,6 @@
     ./fish.nix
     ./ghostty.nix
     ./home.nix
-    ./kitty.nix
     ./terminal.nix
     ./tools.nix
     ./vscode.nix
@@ -17,6 +16,7 @@
 
     # Disabled modules
     #./nixvim.nix
+    #./kitty.nix
     #./theme.nix
     #./helix.nix
     #./zsh.nix
