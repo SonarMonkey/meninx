@@ -216,6 +216,7 @@ with lib.hm.gvariant; {
       # Favorite apps for dash
       favorite-apps = [
         "firefox.desktop"
+        "zen-twilight.desktop"
         "vesktop.desktop"
         "legcord.desktop"
         "thunderbird.desktop"
