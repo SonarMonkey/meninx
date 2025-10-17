@@ -34,10 +34,12 @@
     gnome-boxes
     gnome-tweaks
     gnome-feeds
+    proton-pass
+    proton-authenticator
 
     # Games
+    #mudlet
     blightmud
     gnome-sudoku
-    mudlet
   ];
 }

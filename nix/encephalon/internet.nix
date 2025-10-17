@@ -9,10 +9,6 @@
   # Enable firewall
   networking.firewall.enable = true;
 
-  # Enable Mullvad VPN w/GUI
-  services.mullvad-vpn = {
-    enable = true;
-    enableExcludeWrapper = false;
-    package = pkgs.mullvad-vpn;
-  };
+  # Enable Proton VPN w/GUI
+  environment.systemPackages = with pkgs; [protonvpn-gui];
 }
