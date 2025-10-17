@@ -43,11 +43,11 @@
       nopt = "sudo nix-store -j 8 -vv --optimise";
 
       # Nix-helper
-      switch = "nh os switch --ask";
-      boot = "nh os boot --ask";
+      switch = "nh os switch -a";
+      boot = "nh os boot -a";
       search = "nh search";
       clean = "nh clean all -k 5";
-      ntest = "nh os test --ask";
+      ntest = "nh os test -vak";
 
       # Editor stuff
       e = "$EDITOR";
