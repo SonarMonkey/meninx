@@ -159,7 +159,7 @@
 
   # Add the actual CSS tweaks
   home.file = let
-    currHash = "sha256-Muq68ZReyt8gISEJCt/ChzVQG+sVjkKS7Qq8+aAIswI=";
+    currHash = "sha256-aAwiI6+QWPQuEGdz0Ey57RFMakM7XuBYiUJuANxECgM=";
   in {
     # Hide the tab toolbar
     ".mozilla/firefox/sonar/chrome/hide_tabs_toolbar_v2.css".text =
@@ -170,7 +170,7 @@
           rev = "master";
           hash = currHash;
         }
-        + "/chrome/hide_tabs_toolbar.css");
+        + "/chrome/hide_tabs_toolbar_v2.css");
 
     # Center the text in the url bar
     ".mozilla/firefox/sonar/chrome/urlbar_centered_text.css".text =
