@@ -160,12 +160,11 @@
           shinigami-eyes
           ublock-origin
           proton-pass
+          proton-vpn
 
           # Other stuff to consider
           #duckduckgo-privacy-essentials
           #linkhints
-          #mullvad
-          #proton-vpn
           #unpaywall
         ];
 
