@@ -78,6 +78,9 @@ with lib.hm.gvariant; {
         "org.gnome.Totem.desktop"
         "vlc.desktop"
         "org.gabmus.gfeeds.desktop"
+        "org.gnome.SimpleScan.desktop"
+        "org.gnome.Papers.desktop"
+        "org.gnome.Showtime.desktop"
       ];
       name = "Media";
       translate = true;
@@ -127,6 +130,18 @@ with lib.hm.gvariant; {
         "writer.desktop"
       ];
       name = "Office";
+      translate = true;
+    };
+
+    "org/gnome/desktop/app-folders/folders/System" = {
+      apps = [
+        "org.gnome.Console.desktop"
+        "org.gnome.Extensions.desktop"
+        "org.gnome.Logs.desktop"
+        "org.gnome.SystemMonitor.desktop"
+        "org.gnome.Yelp.desktop"
+      ];
+      name = "System";
       translate = true;
     };
 
