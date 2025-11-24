@@ -20,10 +20,12 @@
   programs.bat = {
     enable = true;
     extraPackages = with pkgs.bat-extras; [
+      batdiff
       batgrep
       batman
       batpipe
       batwatch
+      prettybat
     ];
   };
 
@@ -47,6 +49,7 @@
     ];
 
     # Configure aliases
+    # FIXME option renamed
     aliases = {
       aa = "add -A";
       pu = "push -u origin main";
