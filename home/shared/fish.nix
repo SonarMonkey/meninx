@@ -11,8 +11,8 @@
     # Config and conveniences
     interactiveShellInit = ''
       set fish_greeting
-      batman --export-env | source
-      eval (batpipe)
+      # batman --export-env | source
+      # eval (batpipe)
       eval (nh completions fish)
     '';
 
