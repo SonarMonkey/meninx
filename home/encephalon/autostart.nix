@@ -23,5 +23,9 @@
       name = "heynote";
       package = heynote;
     })
+    (makeAutostartItem {
+      name = "proton.vpn.app.gtk";
+      package = protonvpn-gui;
+    })
   ];
 }
